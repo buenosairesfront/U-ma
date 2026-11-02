@@ -38,6 +38,9 @@ Buenos Aires Front के, ध्वनि बनाने के लिए व�
 | **[SuperCollider Lab](https://buenosairesfront.github.io/supercollider/)** | ब्राउज़र में SuperCollider सीखें: 30 इंटरैक्टिव पाठ, 10 लैब और लाइव कोडिंग | [कोड](https://github.com/buenosairesfront/supercollider) |
 | **[Laboratorio Pd](https://buenosairesfront.github.io/puredata/)** | Pure Data का इंटरैक्टिव कोर्स: ब्राउज़र में बजने वाले 14 लाइव पैच | [कोड](https://github.com/buenosairesfront/puredata) |
 | **[Una aproximación a las Síntesis](https://buenosairesfront.github.io/synthlab-2/)** | सिंथेसिस तकनीकों का इंटरैक्टिव सफ़र | [कोड](https://github.com/buenosairesfront/synthlab-2) |
+| **[303 Trainer](https://buenosairesfront.github.io/gate303/)** | TB-303 लाइन स्टेप-दर-स्टेप लिखें, सुनें, और असली मशीन के लिए बटन-दर-बटन शीट पाएँ | [कोड](https://github.com/buenosairesfront/gate303) |
+| **[U-MA Hanon](https://buenosairesfront.github.io/hanon/)** | हानोन के 60 पियानो अभ्यास, कीबोर्ड पर दोनों हाथ, मेट्रोनोम और MIDI विश्लेषण | [कोड](https://github.com/buenosairesfront/hanon) |
+| **[U-MA Escalas](https://buenosairesfront.github.io/escalas/)** | 61 पियानो स्केल, फ़िंगरिंग, आर्पेजियो, हार्मनाइज़ेशन और प्रोग्रेशन के साथ | [कोड](https://github.com/buenosairesfront/escalas) |
 
 ---
 

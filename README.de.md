@@ -38,6 +38,9 @@ Nichts zu installieren: öffnen und loslegen.
 | **[SuperCollider Lab](https://buenosairesfront.github.io/supercollider/)** | SuperCollider im Browser lernen: 30 interaktive Lektionen, 10 Labs und Live-Coding | [Code](https://github.com/buenosairesfront/supercollider) |
 | **[Laboratorio Pd](https://buenosairesfront.github.io/puredata/)** | interaktiver Pure-Data-Kurs: 14 lebendige Patches, die im Browser klingen | [Code](https://github.com/buenosairesfront/puredata) |
 | **[Una aproximación a las Síntesis](https://buenosairesfront.github.io/synthlab-2/)** | ein interaktiver Rundgang durch Synthesetechniken | [Code](https://github.com/buenosairesfront/synthlab-2) |
+| **[303 Trainer](https://buenosairesfront.github.io/gate303/)** | TB-303-Linie Schritt für Schritt schreiben, anhören und die Taste-für-Taste-Anleitung für die echte Maschine bekommen | [Code](https://github.com/buenosairesfront/gate303) |
+| **[U-MA Hanon](https://buenosairesfront.github.io/hanon/)** | Hanons 60 Klavierübungen mit beiden Händen auf der Tastatur, Metronom und MIDI-Analyse | [Code](https://github.com/buenosairesfront/hanon) |
+| **[U-MA Escalas](https://buenosairesfront.github.io/escalas/)** | 61 Klaviertonleitern mit Fingersätzen, Arpeggien, Harmonisierung und Progressionen | [Code](https://github.com/buenosairesfront/escalas) |
 
 ---
 

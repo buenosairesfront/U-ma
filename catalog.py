@@ -125,6 +125,33 @@ WEB = [
          "ja": "シンセシス技法をめぐるインタラクティブなツアー",
          "zh": "合成技术的互动导览",
          "hi": "सिंथेसिस तकनीकों का इंटरैक्टिव सफ़र"}},
+    {"repo": "gate303", "name": "303 Trainer",
+     "desc": {
+         "en": "write a TB-303 line step by step, hear it, and get the button-by-button sheet for the real machine",
+         "es": "escribí una línea de TB-303 paso a paso, escuchala y llevate la hoja botón a botón para la máquina real",
+         "fr": "écrire une ligne de TB-303 pas à pas, l'écouter et obtenir la fiche bouton par bouton pour la vraie machine",
+         "de": "TB-303-Linie Schritt für Schritt schreiben, anhören und die Taste-für-Taste-Anleitung für die echte Maschine bekommen",
+         "ja": "TB-303 のラインをステップごとに書いて聴き、実機用のボタンごとの手順書を作成",
+         "zh": "逐步写出 TB-303 旋律线并试听，生成真机逐键输入单",
+         "hi": "TB-303 लाइन स्टेप-दर-स्टेप लिखें, सुनें, और असली मशीन के लिए बटन-दर-बटन शीट पाएँ"}},
+    {"repo": "hanon", "name": "U-MA Hanon",
+     "desc": {
+         "en": "Hanon's 60 piano exercises with both hands on the keyboard, metronome and MIDI analysis",
+         "es": "los 60 ejercicios de piano de Hanon con las dos manos en el teclado, metrónomo y análisis por MIDI",
+         "fr": "les 60 exercices de piano de Hanon avec les deux mains sur le clavier, métronome et analyse MIDI",
+         "de": "Hanons 60 Klavierübungen mit beiden Händen auf der Tastatur, Metronom und MIDI-Analyse",
+         "ja": "アノンの 60 のピアノ練習曲。鍵盤上の両手、メトロノーム、MIDI 分析つき",
+         "zh": "哈农 60 首钢琴练习：键盘上的双手、节拍器和 MIDI 分析",
+         "hi": "हानोन के 60 पियानो अभ्यास, कीबोर्ड पर दोनों हाथ, मेट्रोनोम और MIDI विश्लेषण"}},
+    {"repo": "escalas", "name": "U-MA Escalas",
+     "desc": {
+         "en": "61 piano scales with fingerings, arpeggios, harmonisation and progressions",
+         "es": "61 escalas de piano con digitaciones, arpegios, armonización y progresiones",
+         "fr": "61 gammes au piano avec doigtés, arpèges, harmonisation et progressions",
+         "de": "61 Klaviertonleitern mit Fingersätzen, Arpeggien, Harmonisierung und Progressionen",
+         "ja": "61 のピアノ音階。運指、分散和音、ハーモナイズ、コード進行",
+         "zh": "61 种钢琴音阶，含指法、琶音、和声化与和弦进行",
+         "hi": "61 पियानो स्केल, फ़िंगरिंग, आर्पेजियो, हार्मनाइज़ेशन और प्रोग्रेशन के साथ"}},
 ]
 
 T = {

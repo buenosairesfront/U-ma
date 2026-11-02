@@ -38,6 +38,9 @@ Buenos Aires Front 出品的声音创作乐器与工具。
 | **[SuperCollider Lab](https://buenosairesfront.github.io/supercollider/)** | 在浏览器中学习 SuperCollider：30 节互动课程、10 个实验和现场编程 | [代码](https://github.com/buenosairesfront/supercollider) |
 | **[Laboratorio Pd](https://buenosairesfront.github.io/puredata/)** | Pure Data 互动课程：14 个可在浏览器中发声的实时 patch | [代码](https://github.com/buenosairesfront/puredata) |
 | **[Una aproximación a las Síntesis](https://buenosairesfront.github.io/synthlab-2/)** | 合成技术的互动导览 | [代码](https://github.com/buenosairesfront/synthlab-2) |
+| **[303 Trainer](https://buenosairesfront.github.io/gate303/)** | 逐步写出 TB-303 旋律线并试听，生成真机逐键输入单 | [代码](https://github.com/buenosairesfront/gate303) |
+| **[U-MA Hanon](https://buenosairesfront.github.io/hanon/)** | 哈农 60 首钢琴练习：键盘上的双手、节拍器和 MIDI 分析 | [代码](https://github.com/buenosairesfront/hanon) |
+| **[U-MA Escalas](https://buenosairesfront.github.io/escalas/)** | 61 种钢琴音阶，含指法、琶音、和声化与和弦进行 | [代码](https://github.com/buenosairesfront/escalas) |
 
 ---
 

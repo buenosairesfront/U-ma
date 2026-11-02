@@ -38,6 +38,9 @@ No hay que instalar nada: abrilas y tocá.
 | **[SuperCollider Lab](https://buenosairesfront.github.io/supercollider/)** | aprendé SuperCollider en el navegador: 30 lecciones interactivas, 10 laboratorios y live coding | [código](https://github.com/buenosairesfront/supercollider) |
 | **[Laboratorio Pd](https://buenosairesfront.github.io/puredata/)** | curso interactivo de Pure Data: 14 patches vivos que suenan en el navegador | [código](https://github.com/buenosairesfront/puredata) |
 | **[Una aproximación a las Síntesis](https://buenosairesfront.github.io/synthlab-2/)** | un recorrido interactivo por las técnicas de síntesis | [código](https://github.com/buenosairesfront/synthlab-2) |
+| **[303 Trainer](https://buenosairesfront.github.io/gate303/)** | escribí una línea de TB-303 paso a paso, escuchala y llevate la hoja botón a botón para la máquina real | [código](https://github.com/buenosairesfront/gate303) |
+| **[U-MA Hanon](https://buenosairesfront.github.io/hanon/)** | los 60 ejercicios de piano de Hanon con las dos manos en el teclado, metrónomo y análisis por MIDI | [código](https://github.com/buenosairesfront/hanon) |
+| **[U-MA Escalas](https://buenosairesfront.github.io/escalas/)** | 61 escalas de piano con digitaciones, arpegios, armonización y progresiones | [código](https://github.com/buenosairesfront/escalas) |
 
 ---
 

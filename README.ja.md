@@ -38,6 +38,9 @@ Buenos Aires Front による、音をつくるための楽器とツール。
 | **[SuperCollider Lab](https://buenosairesfront.github.io/supercollider/)** | ブラウザで SuperCollider を学ぶ：30 のレッスン、10 のラボ、ライブコーディング | [コード](https://github.com/buenosairesfront/supercollider) |
 | **[Laboratorio Pd](https://buenosairesfront.github.io/puredata/)** | Pure Data のインタラクティブ講座：ブラウザで鳴る 14 のパッチ | [コード](https://github.com/buenosairesfront/puredata) |
 | **[Una aproximación a las Síntesis](https://buenosairesfront.github.io/synthlab-2/)** | シンセシス技法をめぐるインタラクティブなツアー | [コード](https://github.com/buenosairesfront/synthlab-2) |
+| **[303 Trainer](https://buenosairesfront.github.io/gate303/)** | TB-303 のラインをステップごとに書いて聴き、実機用のボタンごとの手順書を作成 | [コード](https://github.com/buenosairesfront/gate303) |
+| **[U-MA Hanon](https://buenosairesfront.github.io/hanon/)** | アノンの 60 のピアノ練習曲。鍵盤上の両手、メトロノーム、MIDI 分析つき | [コード](https://github.com/buenosairesfront/hanon) |
+| **[U-MA Escalas](https://buenosairesfront.github.io/escalas/)** | 61 のピアノ音階。運指、分散和音、ハーモナイズ、コード進行 | [コード](https://github.com/buenosairesfront/escalas) |
 
 ---
 
