@@ -31,14 +31,13 @@ Rien à installer : ouvrez et jouez.
 
 | | | |
 |---|---|---|
-| **[Drum Patterns](https://buenosairesfront.github.io/drumpatterns/)** | rythmes de boîte à rythmes par style, avec ratchets et export | [ouvrir](https://buenosairesfront.github.io/drumpatterns/) · [code](https://github.com/buenosairesfront/drumpatterns) |
-| **[Matriz de patcheo](https://buenosairesfront.github.io/matrizdepatcheo/)** | synthé modulaire dans le navigateur avec une matrice à fiches façon EMS Synthi | [ouvrir](https://buenosairesfront.github.io/matrizdepatcheo/) · [code](https://github.com/buenosairesfront/matrizdepatcheo) |
-| **[Norns Sound Creator](https://buenosairesfront.github.io/nornssoundcreator/)** | design sonore pour norns et SuperCollider ; exporte Lua, .sc, .scd, Faust (VST/AU) et web app | [ouvrir](https://buenosairesfront.github.io/nornssoundcreator/) · [code](https://github.com/buenosairesfront/nornssoundcreator) |
-| **[norns canvas](https://buenosairesfront.github.io/nornscanvas/)** | éditeur de pixels pour l'écran de norns : 128×64, 16 niveaux de luminosité | [ouvrir](https://buenosairesfront.github.io/nornscanvas/) · [code](https://github.com/buenosairesfront/nornscanvas) |
-| **[SuperCollider Lab](https://buenosairesfront.github.io/supercollider/)** | apprendre SuperCollider dans le navigateur : 30 leçons interactives, 10 labos et live coding | [ouvrir](https://buenosairesfront.github.io/supercollider/) · [code](https://github.com/buenosairesfront/supercollider) |
-| **[Laboratorio Pd](https://buenosairesfront.github.io/puredata/)** | cours interactif de Pure Data : 14 patches vivants qui sonnent dans le navigateur | [ouvrir](https://buenosairesfront.github.io/puredata/) · [code](https://github.com/buenosairesfront/puredata) |
-| **[Una aproximación a las Síntesis](https://buenosairesfront.github.io/synthlab-2/)** | un parcours interactif des techniques de synthèse | [ouvrir](https://buenosairesfront.github.io/synthlab-2/) · [code](https://github.com/buenosairesfront/synthlab-2) |
-| **[Seq](https://buenosairesfront.github.io/seq/)** | séquenceur pour essayer des séquences : mutation avec mémoire et arbre de versions | [ouvrir](https://buenosairesfront.github.io/seq/) · [code](https://github.com/buenosairesfront/seq) |
+| **[Drum Patterns](https://buenosairesfront.github.io/drumpatterns/)** | rythmes de boîte à rythmes par style, avec ratchets et export | [code](https://github.com/buenosairesfront/drumpatterns) |
+| **[Matriz de patcheo](https://buenosairesfront.github.io/matrizdepatcheo/)** | synthé modulaire dans le navigateur avec une matrice à fiches façon EMS Synthi | [code](https://github.com/buenosairesfront/matrizdepatcheo) |
+| **[Norns Sound Creator](https://buenosairesfront.github.io/nornssoundcreator/)** | design sonore pour norns et SuperCollider ; exporte Lua, .sc, .scd, Faust (VST/AU) et web app | [code](https://github.com/buenosairesfront/nornssoundcreator) |
+| **[norns canvas](https://buenosairesfront.github.io/nornscanvas/)** | éditeur de pixels pour l'écran de norns : 128×64, 16 niveaux de luminosité | [code](https://github.com/buenosairesfront/nornscanvas) |
+| **[SuperCollider Lab](https://buenosairesfront.github.io/supercollider/)** | apprendre SuperCollider dans le navigateur : 30 leçons interactives, 10 labos et live coding | [code](https://github.com/buenosairesfront/supercollider) |
+| **[Laboratorio Pd](https://buenosairesfront.github.io/puredata/)** | cours interactif de Pure Data : 14 patches vivants qui sonnent dans le navigateur | [code](https://github.com/buenosairesfront/puredata) |
+| **[Una aproximación a las Síntesis](https://buenosairesfront.github.io/synthlab-2/)** | un parcours interactif des techniques de synthèse | [code](https://github.com/buenosairesfront/synthlab-2) |
 
 ---
 

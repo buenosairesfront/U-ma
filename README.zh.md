@@ -31,14 +31,13 @@ Buenos Aires Front 出品的声音创作乐器与工具。
 
 | | | |
 |---|---|---|
-| **[Drum Patterns](https://buenosairesfront.github.io/drumpatterns/)** | 按风格分类的鼓机节奏型，支持 ratchet 和导出 | [打开](https://buenosairesfront.github.io/drumpatterns/) · [代码](https://github.com/buenosairesfront/drumpatterns) |
-| **[Matriz de patcheo](https://buenosairesfront.github.io/matrizdepatcheo/)** | 浏览器中的模块合成器，配 EMS Synthi 风格的插针矩阵 | [打开](https://buenosairesfront.github.io/matrizdepatcheo/) · [代码](https://github.com/buenosairesfront/matrizdepatcheo) |
-| **[Norns Sound Creator](https://buenosairesfront.github.io/nornssoundcreator/)** | 为 norns 和 SuperCollider 设计声音，可导出 Lua、.sc、.scd、Faust（VST/AU）和网页应用 | [打开](https://buenosairesfront.github.io/nornssoundcreator/) · [代码](https://github.com/buenosairesfront/nornssoundcreator) |
-| **[norns canvas](https://buenosairesfront.github.io/nornscanvas/)** | norns 屏幕的像素编辑器：128×64，16 级亮度 | [打开](https://buenosairesfront.github.io/nornscanvas/) · [代码](https://github.com/buenosairesfront/nornscanvas) |
-| **[SuperCollider Lab](https://buenosairesfront.github.io/supercollider/)** | 在浏览器中学习 SuperCollider：30 节互动课程、10 个实验和现场编程 | [打开](https://buenosairesfront.github.io/supercollider/) · [代码](https://github.com/buenosairesfront/supercollider) |
-| **[Laboratorio Pd](https://buenosairesfront.github.io/puredata/)** | Pure Data 互动课程：14 个可在浏览器中发声的实时 patch | [打开](https://buenosairesfront.github.io/puredata/) · [代码](https://github.com/buenosairesfront/puredata) |
-| **[Una aproximación a las Síntesis](https://buenosairesfront.github.io/synthlab-2/)** | 合成技术的互动导览 | [打开](https://buenosairesfront.github.io/synthlab-2/) · [代码](https://github.com/buenosairesfront/synthlab-2) |
-| **[Seq](https://buenosairesfront.github.io/seq/)** | 用来尝试序列的音序器：带记忆的变异与版本树 | [打开](https://buenosairesfront.github.io/seq/) · [代码](https://github.com/buenosairesfront/seq) |
+| **[Drum Patterns](https://buenosairesfront.github.io/drumpatterns/)** | 按风格分类的鼓机节奏型，支持 ratchet 和导出 | [代码](https://github.com/buenosairesfront/drumpatterns) |
+| **[Matriz de patcheo](https://buenosairesfront.github.io/matrizdepatcheo/)** | 浏览器中的模块合成器，配 EMS Synthi 风格的插针矩阵 | [代码](https://github.com/buenosairesfront/matrizdepatcheo) |
+| **[Norns Sound Creator](https://buenosairesfront.github.io/nornssoundcreator/)** | 为 norns 和 SuperCollider 设计声音，可导出 Lua、.sc、.scd、Faust（VST/AU）和网页应用 | [代码](https://github.com/buenosairesfront/nornssoundcreator) |
+| **[norns canvas](https://buenosairesfront.github.io/nornscanvas/)** | norns 屏幕的像素编辑器：128×64，16 级亮度 | [代码](https://github.com/buenosairesfront/nornscanvas) |
+| **[SuperCollider Lab](https://buenosairesfront.github.io/supercollider/)** | 在浏览器中学习 SuperCollider：30 节互动课程、10 个实验和现场编程 | [代码](https://github.com/buenosairesfront/supercollider) |
+| **[Laboratorio Pd](https://buenosairesfront.github.io/puredata/)** | Pure Data 互动课程：14 个可在浏览器中发声的实时 patch | [代码](https://github.com/buenosairesfront/puredata) |
+| **[Una aproximación a las Síntesis](https://buenosairesfront.github.io/synthlab-2/)** | 合成技术的互动导览 | [代码](https://github.com/buenosairesfront/synthlab-2) |
 
 ---
 

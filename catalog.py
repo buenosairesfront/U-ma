@@ -125,15 +125,6 @@ WEB = [
          "ja": "シンセシス技法をめぐるインタラクティブなツアー",
          "zh": "合成技术的互动导览",
          "hi": "सिंथेसिस तकनीकों का इंटरैक्टिव सफ़र"}},
-    {"repo": "seq", "name": "Seq",
-     "desc": {
-         "en": "a sequencer for trying out sequences: mutation with memory and a version tree",
-         "es": "secuenciador para probar secuencias: mutación con memoria y árbol de versiones",
-         "fr": "séquenceur pour essayer des séquences : mutation avec mémoire et arbre de versions",
-         "de": "Sequencer zum Ausprobieren von Sequenzen: Mutation mit Gedächtnis und Versionsbaum",
-         "ja": "シーケンスを試すためのシーケンサー：記憶付きのミューテーションとバージョンツリー",
-         "zh": "用来尝试序列的音序器：带记忆的变异与版本树",
-         "hi": "सीक्वेंस आज़माने के लिए सीक्वेंसर: याददाश्त वाला म्यूटेशन और वर्ज़न ट्री"}},
 ]
 
 T = {
@@ -189,7 +180,6 @@ T = {
         "ja": "インストール不要：開いてすぐ使えます。",
         "zh": "无需安装：打开即可使用。",
         "hi": "कुछ इंस्टॉल नहीं करना: खोलें और बजाएँ।"},
-    "open": {"en": "open", "es": "abrir", "fr": "ouvrir", "de": "öffnen", "ja": "開く", "zh": "打开", "hi": "खोलें"},
     "code": {"en": "code", "es": "código", "fr": "code", "de": "Code", "ja": "コード", "zh": "代码", "hi": "कोड"},
     "footer": {
         "en": "This page keeps growing: new U-MA things are added as they come out.",

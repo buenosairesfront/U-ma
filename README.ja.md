@@ -31,14 +31,13 @@ Buenos Aires Front による、音をつくるための楽器とツール。
 
 | | | |
 |---|---|---|
-| **[Drum Patterns](https://buenosairesfront.github.io/drumpatterns/)** | スタイル別のドラムマシン・パターン。ラチェットとエクスポート付き | [開く](https://buenosairesfront.github.io/drumpatterns/) · [コード](https://github.com/buenosairesfront/drumpatterns) |
-| **[Matriz de patcheo](https://buenosairesfront.github.io/matrizdepatcheo/)** | EMS Synthi 風のピンマトリクスを備えたブラウザ上のモジュラーシンセ | [開く](https://buenosairesfront.github.io/matrizdepatcheo/) · [コード](https://github.com/buenosairesfront/matrizdepatcheo) |
-| **[Norns Sound Creator](https://buenosairesfront.github.io/nornssoundcreator/)** | norns と SuperCollider の音作り。Lua、.sc、.scd、Faust（VST/AU）、Web アプリに書き出し | [開く](https://buenosairesfront.github.io/nornssoundcreator/) · [コード](https://github.com/buenosairesfront/nornssoundcreator) |
-| **[norns canvas](https://buenosairesfront.github.io/nornscanvas/)** | norns 画面用のピクセルエディター：128×64、16 段階の明るさ | [開く](https://buenosairesfront.github.io/nornscanvas/) · [コード](https://github.com/buenosairesfront/nornscanvas) |
-| **[SuperCollider Lab](https://buenosairesfront.github.io/supercollider/)** | ブラウザで SuperCollider を学ぶ：30 のレッスン、10 のラボ、ライブコーディング | [開く](https://buenosairesfront.github.io/supercollider/) · [コード](https://github.com/buenosairesfront/supercollider) |
-| **[Laboratorio Pd](https://buenosairesfront.github.io/puredata/)** | Pure Data のインタラクティブ講座：ブラウザで鳴る 14 のパッチ | [開く](https://buenosairesfront.github.io/puredata/) · [コード](https://github.com/buenosairesfront/puredata) |
-| **[Una aproximación a las Síntesis](https://buenosairesfront.github.io/synthlab-2/)** | シンセシス技法をめぐるインタラクティブなツアー | [開く](https://buenosairesfront.github.io/synthlab-2/) · [コード](https://github.com/buenosairesfront/synthlab-2) |
-| **[Seq](https://buenosairesfront.github.io/seq/)** | シーケンスを試すためのシーケンサー：記憶付きのミューテーションとバージョンツリー | [開く](https://buenosairesfront.github.io/seq/) · [コード](https://github.com/buenosairesfront/seq) |
+| **[Drum Patterns](https://buenosairesfront.github.io/drumpatterns/)** | スタイル別のドラムマシン・パターン。ラチェットとエクスポート付き | [コード](https://github.com/buenosairesfront/drumpatterns) |
+| **[Matriz de patcheo](https://buenosairesfront.github.io/matrizdepatcheo/)** | EMS Synthi 風のピンマトリクスを備えたブラウザ上のモジュラーシンセ | [コード](https://github.com/buenosairesfront/matrizdepatcheo) |
+| **[Norns Sound Creator](https://buenosairesfront.github.io/nornssoundcreator/)** | norns と SuperCollider の音作り。Lua、.sc、.scd、Faust（VST/AU）、Web アプリに書き出し | [コード](https://github.com/buenosairesfront/nornssoundcreator) |
+| **[norns canvas](https://buenosairesfront.github.io/nornscanvas/)** | norns 画面用のピクセルエディター：128×64、16 段階の明るさ | [コード](https://github.com/buenosairesfront/nornscanvas) |
+| **[SuperCollider Lab](https://buenosairesfront.github.io/supercollider/)** | ブラウザで SuperCollider を学ぶ：30 のレッスン、10 のラボ、ライブコーディング | [コード](https://github.com/buenosairesfront/supercollider) |
+| **[Laboratorio Pd](https://buenosairesfront.github.io/puredata/)** | Pure Data のインタラクティブ講座：ブラウザで鳴る 14 のパッチ | [コード](https://github.com/buenosairesfront/puredata) |
+| **[Una aproximación a las Síntesis](https://buenosairesfront.github.io/synthlab-2/)** | シンセシス技法をめぐるインタラクティブなツアー | [コード](https://github.com/buenosairesfront/synthlab-2) |
 
 ---
 

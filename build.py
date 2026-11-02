@@ -67,7 +67,7 @@ def showcase(lang):
     for w in WEB:
         page = f'{PAGES}{w["repo"]}/'
         out.append(f'| **[{w["name"]}]({page})** | {w["desc"][lang]} | '
-                   f'[{T["open"][lang]}]({page}) · [{T["code"][lang]}]({GH}{w["repo"]}) |')
+                   f'[{T["code"][lang]}]({GH}{w["repo"]}) |')
     out += ["", "---", "", f'*{T["footer"][lang]}*', ""]
     return "\n".join(out)
 
