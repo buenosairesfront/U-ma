@@ -31,16 +31,16 @@ Buenos Aires Front 出品的声音创作乐器与工具。
 
 | | | |
 |---|---|---|
-| **[Drum Patterns](https://buenosairesfront.github.io/drumpatterns/)** | 按风格分类的鼓机节奏型，支持 ratchet 和导出 | [代码](https://github.com/buenosairesfront/drumpatterns) |
-| **[Matriz de patcheo](https://buenosairesfront.github.io/matrizdepatcheo/)** | 浏览器中的模块合成器，配 EMS Synthi 风格的插针矩阵 | [代码](https://github.com/buenosairesfront/matrizdepatcheo) |
-| **[Norns Sound Creator](https://buenosairesfront.github.io/nornssoundcreator/)** | 为 norns 和 SuperCollider 设计声音，可导出 Lua、.sc、.scd、Faust（VST/AU）和网页应用 | [代码](https://github.com/buenosairesfront/nornssoundcreator) |
-| **[norns canvas](https://buenosairesfront.github.io/nornscanvas/)** | norns 屏幕的像素编辑器：128×64，16 级亮度 | [代码](https://github.com/buenosairesfront/nornscanvas) |
-| **[SuperCollider Lab](https://buenosairesfront.github.io/supercollider/)** | 在浏览器中学习 SuperCollider：30 节互动课程、10 个实验和现场编程 | [代码](https://github.com/buenosairesfront/supercollider) |
-| **[Laboratorio Pd](https://buenosairesfront.github.io/puredata/)** | Pure Data 互动课程：14 个可在浏览器中发声的实时 patch | [代码](https://github.com/buenosairesfront/puredata) |
-| **[Una aproximación a las Síntesis](https://buenosairesfront.github.io/synthlab-2/)** | 合成技术的互动导览 | [代码](https://github.com/buenosairesfront/synthlab-2) |
-| **[303 Trainer](https://buenosairesfront.github.io/gate303/)** | 逐步写出 TB-303 旋律线并试听，生成真机逐键输入单 | [代码](https://github.com/buenosairesfront/gate303) |
-| **[U-MA Hanon](https://buenosairesfront.github.io/hanon/)** | 哈农 60 首钢琴练习：键盘上的双手、节拍器和 MIDI 分析 | [代码](https://github.com/buenosairesfront/hanon) |
-| **[U-MA Escalas](https://buenosairesfront.github.io/escalas/)** | 61 种钢琴音阶，含指法、琶音、和声化与和弦进行 | [代码](https://github.com/buenosairesfront/escalas) |
+| <a href="https://buenosairesfront.github.io/drumpatterns/"><img src="img/web/drumpatterns.png" width="200" alt="Drum Patterns"></a> | **[Drum Patterns](https://buenosairesfront.github.io/drumpatterns/)**<br>按风格分类的鼓机节奏型，支持 ratchet 和导出 | [代码](https://github.com/buenosairesfront/drumpatterns) |
+| <a href="https://buenosairesfront.github.io/matrizdepatcheo/"><img src="img/web/matrizdepatcheo.png" width="200" alt="Matriz de patcheo"></a> | **[Matriz de patcheo](https://buenosairesfront.github.io/matrizdepatcheo/)**<br>浏览器中的模块合成器，配 EMS Synthi 风格的插针矩阵 | [代码](https://github.com/buenosairesfront/matrizdepatcheo) |
+| <a href="https://buenosairesfront.github.io/nornssoundcreator/"><img src="img/web/nornssoundcreator.png" width="200" alt="Norns Sound Creator"></a> | **[Norns Sound Creator](https://buenosairesfront.github.io/nornssoundcreator/)**<br>为 norns 和 SuperCollider 设计声音，可导出 Lua、.sc、.scd、Faust（VST/AU）和网页应用 | [代码](https://github.com/buenosairesfront/nornssoundcreator) |
+| <a href="https://buenosairesfront.github.io/nornscanvas/"><img src="img/web/nornscanvas.png" width="200" alt="norns canvas"></a> | **[norns canvas](https://buenosairesfront.github.io/nornscanvas/)**<br>norns 屏幕的像素编辑器：128×64，16 级亮度 | [代码](https://github.com/buenosairesfront/nornscanvas) |
+| <a href="https://buenosairesfront.github.io/supercollider/"><img src="img/web/supercollider.png" width="200" alt="SuperCollider Lab"></a> | **[SuperCollider Lab](https://buenosairesfront.github.io/supercollider/)**<br>在浏览器中学习 SuperCollider：30 节互动课程、10 个实验和现场编程 | [代码](https://github.com/buenosairesfront/supercollider) |
+| <a href="https://buenosairesfront.github.io/puredata/"><img src="img/web/puredata.png" width="200" alt="Laboratorio Pd"></a> | **[Laboratorio Pd](https://buenosairesfront.github.io/puredata/)**<br>Pure Data 互动课程：14 个可在浏览器中发声的实时 patch | [代码](https://github.com/buenosairesfront/puredata) |
+| <a href="https://buenosairesfront.github.io/synthlab-2/"><img src="img/web/synthlab-2.png" width="200" alt="Una aproximación a las Síntesis"></a> | **[Una aproximación a las Síntesis](https://buenosairesfront.github.io/synthlab-2/)**<br>合成技术的互动导览 | [代码](https://github.com/buenosairesfront/synthlab-2) |
+| <a href="https://buenosairesfront.github.io/gate303/"><img src="img/web/gate303.png" width="200" alt="Gate-03"></a> | **[Gate-03](https://buenosairesfront.github.io/gate303/)**<br>逐步写出 TB-303 旋律线并试听，生成真机逐键输入单 | [代码](https://github.com/buenosairesfront/gate303) |
+| <a href="https://buenosairesfront.github.io/hanon/"><img src="img/web/hanon.png" width="200" alt="U-MA Hanon"></a> | **[U-MA Hanon](https://buenosairesfront.github.io/hanon/)**<br>哈农 60 首钢琴练习：键盘上的双手、节拍器和 MIDI 分析 | [代码](https://github.com/buenosairesfront/hanon) |
+| <a href="https://buenosairesfront.github.io/escalas/"><img src="img/web/escalas.png" width="200" alt="U-MA Escalas"></a> | **[U-MA Escalas](https://buenosairesfront.github.io/escalas/)**<br>61 种钢琴音阶，含指法、琶音、和声化与和弦进行 | [代码](https://github.com/buenosairesfront/escalas) |
 
 ---
 

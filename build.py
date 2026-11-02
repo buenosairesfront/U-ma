@@ -65,8 +65,10 @@ def showcase(lang):
     out += ["", f'## {T["sec_web"][lang]}', "", T["web_note"][lang], "",
             "| | | |", "|---|---|---|"]
     for w in WEB:
+        # la captura vive en este repo: img/web/<repo>.png
         page = f'{PAGES}{w["repo"]}/'
-        out.append(f'| **[{w["name"]}]({page})** | {w["desc"][lang]} | '
+        img = f'<a href="{page}"><img src="img/web/{w["repo"]}.png" width="200" alt="{w["name"]}"></a>'
+        out.append(f'| {img} | **[{w["name"]}]({page})**<br>{w["desc"][lang]} | '
                    f'[{T["code"][lang]}]({GH}{w["repo"]}) |')
     out += ["", "---", "", f'*{T["footer"][lang]}*', ""]
     return "\n".join(out)

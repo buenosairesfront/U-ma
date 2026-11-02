@@ -31,16 +31,16 @@ Buenos Aires Front による、音をつくるための楽器とツール。
 
 | | | |
 |---|---|---|
-| **[Drum Patterns](https://buenosairesfront.github.io/drumpatterns/)** | スタイル別のドラムマシン・パターン。ラチェットとエクスポート付き | [コード](https://github.com/buenosairesfront/drumpatterns) |
-| **[Matriz de patcheo](https://buenosairesfront.github.io/matrizdepatcheo/)** | EMS Synthi 風のピンマトリクスを備えたブラウザ上のモジュラーシンセ | [コード](https://github.com/buenosairesfront/matrizdepatcheo) |
-| **[Norns Sound Creator](https://buenosairesfront.github.io/nornssoundcreator/)** | norns と SuperCollider の音作り。Lua、.sc、.scd、Faust（VST/AU）、Web アプリに書き出し | [コード](https://github.com/buenosairesfront/nornssoundcreator) |
-| **[norns canvas](https://buenosairesfront.github.io/nornscanvas/)** | norns 画面用のピクセルエディター：128×64、16 段階の明るさ | [コード](https://github.com/buenosairesfront/nornscanvas) |
-| **[SuperCollider Lab](https://buenosairesfront.github.io/supercollider/)** | ブラウザで SuperCollider を学ぶ：30 のレッスン、10 のラボ、ライブコーディング | [コード](https://github.com/buenosairesfront/supercollider) |
-| **[Laboratorio Pd](https://buenosairesfront.github.io/puredata/)** | Pure Data のインタラクティブ講座：ブラウザで鳴る 14 のパッチ | [コード](https://github.com/buenosairesfront/puredata) |
-| **[Una aproximación a las Síntesis](https://buenosairesfront.github.io/synthlab-2/)** | シンセシス技法をめぐるインタラクティブなツアー | [コード](https://github.com/buenosairesfront/synthlab-2) |
-| **[303 Trainer](https://buenosairesfront.github.io/gate303/)** | TB-303 のラインをステップごとに書いて聴き、実機用のボタンごとの手順書を作成 | [コード](https://github.com/buenosairesfront/gate303) |
-| **[U-MA Hanon](https://buenosairesfront.github.io/hanon/)** | アノンの 60 のピアノ練習曲。鍵盤上の両手、メトロノーム、MIDI 分析つき | [コード](https://github.com/buenosairesfront/hanon) |
-| **[U-MA Escalas](https://buenosairesfront.github.io/escalas/)** | 61 のピアノ音階。運指、分散和音、ハーモナイズ、コード進行 | [コード](https://github.com/buenosairesfront/escalas) |
+| <a href="https://buenosairesfront.github.io/drumpatterns/"><img src="img/web/drumpatterns.png" width="200" alt="Drum Patterns"></a> | **[Drum Patterns](https://buenosairesfront.github.io/drumpatterns/)**<br>スタイル別のドラムマシン・パターン。ラチェットとエクスポート付き | [コード](https://github.com/buenosairesfront/drumpatterns) |
+| <a href="https://buenosairesfront.github.io/matrizdepatcheo/"><img src="img/web/matrizdepatcheo.png" width="200" alt="Matriz de patcheo"></a> | **[Matriz de patcheo](https://buenosairesfront.github.io/matrizdepatcheo/)**<br>EMS Synthi 風のピンマトリクスを備えたブラウザ上のモジュラーシンセ | [コード](https://github.com/buenosairesfront/matrizdepatcheo) |
+| <a href="https://buenosairesfront.github.io/nornssoundcreator/"><img src="img/web/nornssoundcreator.png" width="200" alt="Norns Sound Creator"></a> | **[Norns Sound Creator](https://buenosairesfront.github.io/nornssoundcreator/)**<br>norns と SuperCollider の音作り。Lua、.sc、.scd、Faust（VST/AU）、Web アプリに書き出し | [コード](https://github.com/buenosairesfront/nornssoundcreator) |
+| <a href="https://buenosairesfront.github.io/nornscanvas/"><img src="img/web/nornscanvas.png" width="200" alt="norns canvas"></a> | **[norns canvas](https://buenosairesfront.github.io/nornscanvas/)**<br>norns 画面用のピクセルエディター：128×64、16 段階の明るさ | [コード](https://github.com/buenosairesfront/nornscanvas) |
+| <a href="https://buenosairesfront.github.io/supercollider/"><img src="img/web/supercollider.png" width="200" alt="SuperCollider Lab"></a> | **[SuperCollider Lab](https://buenosairesfront.github.io/supercollider/)**<br>ブラウザで SuperCollider を学ぶ：30 のレッスン、10 のラボ、ライブコーディング | [コード](https://github.com/buenosairesfront/supercollider) |
+| <a href="https://buenosairesfront.github.io/puredata/"><img src="img/web/puredata.png" width="200" alt="Laboratorio Pd"></a> | **[Laboratorio Pd](https://buenosairesfront.github.io/puredata/)**<br>Pure Data のインタラクティブ講座：ブラウザで鳴る 14 のパッチ | [コード](https://github.com/buenosairesfront/puredata) |
+| <a href="https://buenosairesfront.github.io/synthlab-2/"><img src="img/web/synthlab-2.png" width="200" alt="Una aproximación a las Síntesis"></a> | **[Una aproximación a las Síntesis](https://buenosairesfront.github.io/synthlab-2/)**<br>シンセシス技法をめぐるインタラクティブなツアー | [コード](https://github.com/buenosairesfront/synthlab-2) |
+| <a href="https://buenosairesfront.github.io/gate303/"><img src="img/web/gate303.png" width="200" alt="Gate-03"></a> | **[Gate-03](https://buenosairesfront.github.io/gate303/)**<br>TB-303 のラインをステップごとに書いて聴き、実機用のボタンごとの手順書を作成 | [コード](https://github.com/buenosairesfront/gate303) |
+| <a href="https://buenosairesfront.github.io/hanon/"><img src="img/web/hanon.png" width="200" alt="U-MA Hanon"></a> | **[U-MA Hanon](https://buenosairesfront.github.io/hanon/)**<br>アノンの 60 のピアノ練習曲。鍵盤上の両手、メトロノーム、MIDI 分析つき | [コード](https://github.com/buenosairesfront/hanon) |
+| <a href="https://buenosairesfront.github.io/escalas/"><img src="img/web/escalas.png" width="200" alt="U-MA Escalas"></a> | **[U-MA Escalas](https://buenosairesfront.github.io/escalas/)**<br>61 のピアノ音階。運指、分散和音、ハーモナイズ、コード進行 | [コード](https://github.com/buenosairesfront/escalas) |
 
 ---
 

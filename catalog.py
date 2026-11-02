@@ -125,7 +125,7 @@ WEB = [
          "ja": "シンセシス技法をめぐるインタラクティブなツアー",
          "zh": "合成技术的互动导览",
          "hi": "सिंथेसिस तकनीकों का इंटरैक्टिव सफ़र"}},
-    {"repo": "gate303", "name": "303 Trainer",
+    {"repo": "gate303", "name": "Gate-03",
      "desc": {
          "en": "write a TB-303 line step by step, hear it, and get the button-by-button sheet for the real machine",
          "es": "escribí una línea de TB-303 paso a paso, escuchala y llevate la hoja botón a botón para la máquina real",
