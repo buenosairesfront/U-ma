@@ -42,6 +42,7 @@ Rien à installer : ouvrez et jouez.
 | <a href="https://buenosairesfront.github.io/gate303/"><img src="img/web/gate303.png" width="200" alt="Gate-03"></a> | **[Gate-03](https://buenosairesfront.github.io/gate303/)**<br>écrire une ligne de TB-303 pas à pas, l'écouter et obtenir la fiche bouton par bouton pour la vraie machine | [code](https://github.com/buenosairesfront/gate303) |
 | <a href="https://buenosairesfront.github.io/hanon/"><img src="img/web/hanon.png" width="200" alt="U-MA Hanon"></a> | **[U-MA Hanon](https://buenosairesfront.github.io/hanon/)**<br>les 60 exercices de piano de Hanon avec les deux mains sur le clavier, métronome et analyse MIDI | [code](https://github.com/buenosairesfront/hanon) |
 | <a href="https://buenosairesfront.github.io/escalas/"><img src="img/web/escalas.png" width="200" alt="U-MA Escalas"></a> | **[U-MA Escalas](https://buenosairesfront.github.io/escalas/)**<br>61 gammes au piano avec doigtés, arpèges, harmonisation et progressions | [code](https://github.com/buenosairesfront/escalas) |
+| <a href="https://buenosairesfront.github.io/ataripunk/"><img src="img/web/ataripunk.png" width="200" alt="U-MA Atari Punk"></a> | **[U-MA Atari Punk](https://buenosairesfront.github.io/ataripunk/)**<br>monter une Atari Punk Console à deux 555 : changer chaque composant, la voir à l'oscilloscope et l'écouter en direct | [code](https://github.com/buenosairesfront/ataripunk) |
 
 ---
 

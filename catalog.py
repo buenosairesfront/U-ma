@@ -161,6 +161,15 @@ WEB = [
          "ja": "61 のピアノ音階。運指、分散和音、ハーモナイズ、コード進行",
          "zh": "61 种钢琴音阶，含指法、琶音、和声化与和弦进行",
          "hi": "61 पियानो स्केल, फ़िंगरिंग, आर्पेजियो, हार्मनाइज़ेशन और प्रोग्रेशन के साथ"}},
+    {"repo": "ataripunk", "name": "U-MA Atari Punk",
+     "desc": {
+         "en": "build an Atari Punk Console with two 555s: change every part, watch it on a scope and hear it live",
+         "es": "armá una Atari Punk Console con dos 555: cambiá cada pieza, mirala en el osciloscopio y escuchala en vivo",
+         "fr": "monter une Atari Punk Console à deux 555 : changer chaque composant, la voir à l'oscilloscope et l'écouter en direct",
+         "de": "eine Atari Punk Console mit zwei 555 bauen: jedes Bauteil ändern, am Oszilloskop sehen und live hören",
+         "ja": "2 つの 555 で Atari Punk Console を組む。部品を変え、オシロで見て、リアルタイムで聴く",
+         "zh": "用两颗 555 搭建 Atari Punk Console：更换每个元件，在示波器上观察并实时试听",
+         "hi": "दो 555 से Atari Punk Console बनाएँ: हर पुर्ज़ा बदलें, स्कोप पर देखें और लाइव सुनें"}},
 ]
 
 T = {

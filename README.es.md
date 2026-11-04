@@ -42,6 +42,7 @@ No hay que instalar nada: abrilas y tocá.
 | <a href="https://buenosairesfront.github.io/gate303/"><img src="img/web/gate303.png" width="200" alt="Gate-03"></a> | **[Gate-03](https://buenosairesfront.github.io/gate303/)**<br>escribí una línea de TB-303 paso a paso, escuchala y llevate la hoja botón a botón para la máquina real | [código](https://github.com/buenosairesfront/gate303) |
 | <a href="https://buenosairesfront.github.io/hanon/"><img src="img/web/hanon.png" width="200" alt="U-MA Hanon"></a> | **[U-MA Hanon](https://buenosairesfront.github.io/hanon/)**<br>los 60 ejercicios de piano de Hanon con las dos manos en el teclado, metrónomo y análisis por MIDI | [código](https://github.com/buenosairesfront/hanon) |
 | <a href="https://buenosairesfront.github.io/escalas/"><img src="img/web/escalas.png" width="200" alt="U-MA Escalas"></a> | **[U-MA Escalas](https://buenosairesfront.github.io/escalas/)**<br>61 escalas de piano con digitaciones, arpegios, armonización y progresiones | [código](https://github.com/buenosairesfront/escalas) |
+| <a href="https://buenosairesfront.github.io/ataripunk/"><img src="img/web/ataripunk.png" width="200" alt="U-MA Atari Punk"></a> | **[U-MA Atari Punk](https://buenosairesfront.github.io/ataripunk/)**<br>armá una Atari Punk Console con dos 555: cambiá cada pieza, mirala en el osciloscopio y escuchala en vivo | [código](https://github.com/buenosairesfront/ataripunk) |
 
 ---
 

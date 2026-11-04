@@ -42,6 +42,7 @@ Buenos Aires Front による、音をつくるための楽器とツール。
 | <a href="https://buenosairesfront.github.io/gate303/"><img src="img/web/gate303.png" width="200" alt="Gate-03"></a> | **[Gate-03](https://buenosairesfront.github.io/gate303/)**<br>TB-303 のラインをステップごとに書いて聴き、実機用のボタンごとの手順書を作成 | [コード](https://github.com/buenosairesfront/gate303) |
 | <a href="https://buenosairesfront.github.io/hanon/"><img src="img/web/hanon.png" width="200" alt="U-MA Hanon"></a> | **[U-MA Hanon](https://buenosairesfront.github.io/hanon/)**<br>アノンの 60 のピアノ練習曲。鍵盤上の両手、メトロノーム、MIDI 分析つき | [コード](https://github.com/buenosairesfront/hanon) |
 | <a href="https://buenosairesfront.github.io/escalas/"><img src="img/web/escalas.png" width="200" alt="U-MA Escalas"></a> | **[U-MA Escalas](https://buenosairesfront.github.io/escalas/)**<br>61 のピアノ音階。運指、分散和音、ハーモナイズ、コード進行 | [コード](https://github.com/buenosairesfront/escalas) |
+| <a href="https://buenosairesfront.github.io/ataripunk/"><img src="img/web/ataripunk.png" width="200" alt="U-MA Atari Punk"></a> | **[U-MA Atari Punk](https://buenosairesfront.github.io/ataripunk/)**<br>2 つの 555 で Atari Punk Console を組む。部品を変え、オシロで見て、リアルタイムで聴く | [コード](https://github.com/buenosairesfront/ataripunk) |
 
 ---
 
