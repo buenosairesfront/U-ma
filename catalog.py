@@ -49,6 +49,15 @@ NORNS = [
          "ja": "8 波形 × 8 バンクのウェーブテーブル。3D テーブルとして描画",
          "zh": "波表：8 个库、每库 8 个波形，画成 3D 波表",
          "hi": "वेवटेबल: 8 वेव वाले 8 बैंक, 3D टेबल के रूप में"}},
+    {"repo": "chordexchip", "name": "Chordex CHIP", "family": "chordex", "thumb": "docs/1_nes.png",
+     "desc": {
+         "en": "chiptune: 8 console chips × 8 presets, drawn as a tracker",
+         "es": "chiptune: 8 chips de consola × 8 presets, dibujado como un tracker",
+         "fr": "chiptune : 8 puces de console × 8 presets, dessiné comme un tracker",
+         "de": "Chiptune: 8 Konsolenchips × 8 Presets, als Tracker gezeichnet",
+         "ja": "チップチューン：ゲーム機チップ 8 種 × 8 プリセット、トラッカーとして描画",
+         "zh": "芯片音乐：8 种游戏机芯片 × 8 个预设，画成 tracker",
+         "hi": "चिपट्यून: 8 कंसोल चिप × 8 प्रीसेट, ट्रैकर के रूप में"}},
     {"repo": "alto", "name": "alto", "family": None, "thumb": "docs/2_voices.png",
      "desc": {
          "en": "three-layer polyphonic synth with a 3-ring polyrhythmic sequencer; every page is a picture of the sound",
