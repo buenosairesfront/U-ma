@@ -58,6 +58,15 @@ NORNS = [
          "ja": "チップチューン：ゲーム機チップ 8 種 × 8 プリセット、トラッカーとして描画",
          "zh": "芯片音乐：8 种游戏机芯片 × 8 个预设，画成 tracker",
          "hi": "चिपट्यून: 8 कंसोल चिप × 8 प्रीसेट, ट्रैकर के रूप में"}},
+    {"repo": "chordexabnt", "name": "Chordex ABNT", "family": "chordex", "thumb": "docs/1_warm_pad.png",
+     "desc": {
+         "en": "pads, ambient, leads and textures: 4 families × 8 presets, with MOTION instead of an arpeggiator",
+         "es": "pads, ambient, leads y texturas: 4 familias × 8 presets, con MOVIMIENTO en lugar de arpegiador",
+         "fr": "pads, ambient, leads et textures : 4 familles × 8 presets, avec du MOUVEMENT au lieu d'un arpégiateur",
+         "de": "Pads, Ambient, Leads und Texturen: 4 Familien × 8 Presets, mit BEWEGUNG statt Arpeggiator",
+         "ja": "パッド、アンビエント、リード、テクスチャー：4 ファミリー × 8 プリセット、アルペジエーターの代わりにムーブメント",
+         "zh": "铺底、氛围、主奏和纹理：4 个系列 × 8 个预设，用“运动”取代琶音器",
+         "hi": "पैड, एंबिएंट, लीड और टेक्सचर: 4 परिवार × 8 प्रीसेट, आर्पेजिएटर की जगह मूवमेंट"}},
     {"repo": "alto", "name": "alto", "family": None, "thumb": "docs/2_voices.png",
      "desc": {
          "en": "three-layer polyphonic synth with a 3-ring polyrhythmic sequencer; every page is a picture of the sound",
