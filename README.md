@@ -26,6 +26,7 @@ One chord per key, same controls, a different engine in each:
 | | |
 |---|---|
 | <a href="https://github.com/buenosairesfront/alto"><img src="https://raw.githubusercontent.com/buenosairesfront/alto/main/docs/2_voices.png" width="256" alt="alto"></a> | **[alto](https://github.com/buenosairesfront/alto)**<br>three-layer polyphonic synth with a 3-ring polyrhythmic sequencer; every page is a picture of the sound<br>`;install https://github.com/buenosairesfront/alto` |
+| <a href="https://github.com/buenosairesfront/alan"><img src="https://raw.githubusercontent.com/buenosairesfront/alan/main/docs/2_body.png" width="256" alt="alan"></a> | **[alan](https://github.com/buenosairesfront/alan)**<br>a 3D body made of data where every limb is a drone voice: move it, orbit the camera and dissolve it into particles<br>`;install https://github.com/buenosairesfront/alan` |
 
 ## In the browser
 

@@ -26,6 +26,7 @@ Un acorde por tecla, los mismos controles y un motor distinto en cada uno:
 | | |
 |---|---|
 | <a href="https://github.com/buenosairesfront/alto/blob/main/README.es.md"><img src="https://raw.githubusercontent.com/buenosairesfront/alto/main/docs/2_voices.png" width="256" alt="alto"></a> | **[alto](https://github.com/buenosairesfront/alto/blob/main/README.es.md)**<br>sinte polifónico de tres capas con secuenciador polirrítmico de 3 anillos; cada página es un dibujo del sonido<br>`;install https://github.com/buenosairesfront/alto` |
+| <a href="https://github.com/buenosairesfront/alan/blob/main/README.es.md"><img src="https://raw.githubusercontent.com/buenosairesfront/alan/main/docs/2_body.png" width="256" alt="alan"></a> | **[alan](https://github.com/buenosairesfront/alan/blob/main/README.es.md)**<br>un cuerpo en 3D hecho de datos donde cada parte es una voz de drone: movelo, girá la cámara y desintegralo en partículas<br>`;install https://github.com/buenosairesfront/alan` |
 
 ## En el navegador
 

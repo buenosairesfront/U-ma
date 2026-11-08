@@ -26,6 +26,7 @@ Buenos Aires Front による、音をつくるための楽器とツール。
 | | |
 |---|---|
 | <a href="https://github.com/buenosairesfront/alto/blob/main/README.ja.md"><img src="https://raw.githubusercontent.com/buenosairesfront/alto/main/docs/2_voices.png" width="256" alt="alto"></a> | **[alto](https://github.com/buenosairesfront/alto/blob/main/README.ja.md)**<br>3 リングのポリリズム・シーケンサーを備えた 3 レイヤーのポリシンセ。どのページも音の絵<br>`;install https://github.com/buenosairesfront/alto` |
+| <a href="https://github.com/buenosairesfront/alan/blob/main/README.ja.md"><img src="https://raw.githubusercontent.com/buenosairesfront/alan/main/docs/2_body.png" width="256" alt="alan"></a> | **[alan](https://github.com/buenosairesfront/alan/blob/main/README.ja.md)**<br>手足のひとつひとつがドローンの声になる、データでできた 3D の体。動かし、カメラで回り、粒子に崩す<br>`;install https://github.com/buenosairesfront/alan` |
 
 ## ブラウザで
 

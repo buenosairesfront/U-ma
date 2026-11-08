@@ -26,6 +26,7 @@ Ein Akkord pro Taste, gleiche Bedienung, in jedem eine andere Engine:
 | | |
 |---|---|
 | <a href="https://github.com/buenosairesfront/alto/blob/main/README.de.md"><img src="https://raw.githubusercontent.com/buenosairesfront/alto/main/docs/2_voices.png" width="256" alt="alto"></a> | **[alto](https://github.com/buenosairesfront/alto/blob/main/README.de.md)**<br>dreischichtiger polyphoner Synth mit polyrhythmischem 3-Ring-Sequencer; jede Seite ist ein Bild des Klangs<br>`;install https://github.com/buenosairesfront/alto` |
+| <a href="https://github.com/buenosairesfront/alan/blob/main/README.de.md"><img src="https://raw.githubusercontent.com/buenosairesfront/alan/main/docs/2_body.png" width="256" alt="alan"></a> | **[alan](https://github.com/buenosairesfront/alan/blob/main/README.de.md)**<br>ein 3D-Körper aus Daten, in dem jedes Glied eine Drone-Stimme ist: bewege ihn, kreise mit der Kamera und löse ihn in Partikel auf<br>`;install https://github.com/buenosairesfront/alan` |
 
 ## Im Browser
 

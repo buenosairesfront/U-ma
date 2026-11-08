@@ -26,6 +26,7 @@ Un accord par touche, les mêmes contrôles et un moteur différent pour chacun 
 | | |
 |---|---|
 | <a href="https://github.com/buenosairesfront/alto/blob/main/README.fr.md"><img src="https://raw.githubusercontent.com/buenosairesfront/alto/main/docs/2_voices.png" width="256" alt="alto"></a> | **[alto](https://github.com/buenosairesfront/alto/blob/main/README.fr.md)**<br>synthé polyphonique à trois couches avec séquenceur polyrythmique à 3 anneaux ; chaque page est un dessin du son<br>`;install https://github.com/buenosairesfront/alto` |
+| <a href="https://github.com/buenosairesfront/alan/blob/main/README.fr.md"><img src="https://raw.githubusercontent.com/buenosairesfront/alan/main/docs/2_body.png" width="256" alt="alan"></a> | **[alan](https://github.com/buenosairesfront/alan/blob/main/README.fr.md)**<br>un corps en 3D fait de données où chaque membre est une voix de drone : bougez-le, faites tourner la caméra et désintégrez-le en particules<br>`;install https://github.com/buenosairesfront/alan` |
 
 ## Dans le navigateur
 

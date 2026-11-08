@@ -76,6 +76,15 @@ NORNS = [
          "ja": "3 リングのポリリズム・シーケンサーを備えた 3 レイヤーのポリシンセ。どのページも音の絵",
          "zh": "三层复音合成器，配 3 环复节奏音序器；每一页都是声音的图像",
          "hi": "3 रिंग वाले पॉलीरिद्मिक सीक्वेंसर के साथ तीन परतों वाला पॉलीफ़ोनिक सिंथ; हर पेज ध्वनि का चित्र है"}},
+    {"repo": "alan", "name": "alan", "family": None, "thumb": "docs/2_body.png",
+     "desc": {
+         "en": "a 3D body made of data where every limb is a drone voice: move it, orbit the camera and dissolve it into particles",
+         "es": "un cuerpo en 3D hecho de datos donde cada parte es una voz de drone: movelo, girá la cámara y desintegralo en partículas",
+         "fr": "un corps en 3D fait de données où chaque membre est une voix de drone : bougez-le, faites tourner la caméra et désintégrez-le en particules",
+         "de": "ein 3D-Körper aus Daten, in dem jedes Glied eine Drone-Stimme ist: bewege ihn, kreise mit der Kamera und löse ihn in Partikel auf",
+         "ja": "手足のひとつひとつがドローンの声になる、データでできた 3D の体。動かし、カメラで回り、粒子に崩す",
+         "zh": "由数据构成的 3D 身体，每个部位都是一个持续音声部：移动它、环绕摄像机、把它解体成粒子",
+         "hi": "डेटा से बना 3D शरीर, जिसका हर अंग एक ड्रोन आवाज़ है: उसे हिलाएँ, कैमरा घुमाएँ और उसे कणों में बिखेर दें"}},
 ]
 
 # herramientas web (GitHub Pages)

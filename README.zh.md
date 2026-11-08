@@ -26,6 +26,7 @@ Buenos Aires Front 出品的声音创作乐器与工具。
 | | |
 |---|---|
 | <a href="https://github.com/buenosairesfront/alto/blob/main/README.zh.md"><img src="https://raw.githubusercontent.com/buenosairesfront/alto/main/docs/2_voices.png" width="256" alt="alto"></a> | **[alto](https://github.com/buenosairesfront/alto/blob/main/README.zh.md)**<br>三层复音合成器，配 3 环复节奏音序器；每一页都是声音的图像<br>`;install https://github.com/buenosairesfront/alto` |
+| <a href="https://github.com/buenosairesfront/alan/blob/main/README.zh.md"><img src="https://raw.githubusercontent.com/buenosairesfront/alan/main/docs/2_body.png" width="256" alt="alan"></a> | **[alan](https://github.com/buenosairesfront/alan/blob/main/README.zh.md)**<br>由数据构成的 3D 身体，每个部位都是一个持续音声部：移动它、环绕摄像机、把它解体成粒子<br>`;install https://github.com/buenosairesfront/alan` |
 
 ## 浏览器中使用
 

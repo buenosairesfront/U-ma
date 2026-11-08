@@ -26,6 +26,7 @@ Buenos Aires Front के, ध्वनि बनाने के लिए व�
 | | |
 |---|---|
 | <a href="https://github.com/buenosairesfront/alto/blob/main/README.hi.md"><img src="https://raw.githubusercontent.com/buenosairesfront/alto/main/docs/2_voices.png" width="256" alt="alto"></a> | **[alto](https://github.com/buenosairesfront/alto/blob/main/README.hi.md)**<br>3 रिंग वाले पॉलीरिद्मिक सीक्वेंसर के साथ तीन परतों वाला पॉलीफ़ोनिक सिंथ; हर पेज ध्वनि का चित्र है<br>`;install https://github.com/buenosairesfront/alto` |
+| <a href="https://github.com/buenosairesfront/alan/blob/main/README.hi.md"><img src="https://raw.githubusercontent.com/buenosairesfront/alan/main/docs/2_body.png" width="256" alt="alan"></a> | **[alan](https://github.com/buenosairesfront/alan/blob/main/README.hi.md)**<br>डेटा से बना 3D शरीर, जिसका हर अंग एक ड्रोन आवाज़ है: उसे हिलाएँ, कैमरा घुमाएँ और उसे कणों में बिखेर दें<br>`;install https://github.com/buenosairesfront/alan` |
 
 ## ब्राउज़र में
 
