@@ -45,6 +45,7 @@ Buenos Aires Front 出品的声音创作乐器与工具。
 | <a href="https://buenosairesfront.github.io/hanon/"><img src="img/web/hanon.png" width="200" alt="U-MA Hanon"></a> | **[U-MA Hanon](https://buenosairesfront.github.io/hanon/)**<br>哈农 60 首钢琴练习：键盘上的双手、节拍器和 MIDI 分析 | [代码](https://github.com/buenosairesfront/hanon) |
 | <a href="https://buenosairesfront.github.io/escalas/"><img src="img/web/escalas.png" width="200" alt="U-MA Escalas"></a> | **[U-MA Escalas](https://buenosairesfront.github.io/escalas/)**<br>61 种钢琴音阶，含指法、琶音、和声化与和弦进行 | [代码](https://github.com/buenosairesfront/escalas) |
 | <a href="https://buenosairesfront.github.io/ataripunk/"><img src="img/web/ataripunk.png" width="200" alt="U-MA Atari Punk"></a> | **[U-MA Atari Punk](https://buenosairesfront.github.io/ataripunk/)**<br>用两颗 555 搭建 Atari Punk Console：更换每个元件，在示波器上观察并实时试听 | [代码](https://github.com/buenosairesfront/ataripunk) |
+| <a href="https://buenosairesfront.github.io/cmos40/"><img src="img/web/cmos40.png" width="200" alt="U-MA CMOS 40XX"></a> | **[U-MA CMOS 40XX](https://buenosairesfront.github.io/cmos40/)**<br>CMOS 4000 系列 45 颗芯片：引脚、原理、实时逻辑仿真、相互关系，以及每颗芯片的声音制作项目 | [代码](https://github.com/buenosairesfront/cmos40) |
 
 ---
 

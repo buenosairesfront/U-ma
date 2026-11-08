@@ -45,6 +45,7 @@ Buenos Aires Front による、音をつくるための楽器とツール。
 | <a href="https://buenosairesfront.github.io/hanon/"><img src="img/web/hanon.png" width="200" alt="U-MA Hanon"></a> | **[U-MA Hanon](https://buenosairesfront.github.io/hanon/)**<br>アノンの 60 のピアノ練習曲。鍵盤上の両手、メトロノーム、MIDI 分析つき | [コード](https://github.com/buenosairesfront/hanon) |
 | <a href="https://buenosairesfront.github.io/escalas/"><img src="img/web/escalas.png" width="200" alt="U-MA Escalas"></a> | **[U-MA Escalas](https://buenosairesfront.github.io/escalas/)**<br>61 のピアノ音階。運指、分散和音、ハーモナイズ、コード進行 | [コード](https://github.com/buenosairesfront/escalas) |
 | <a href="https://buenosairesfront.github.io/ataripunk/"><img src="img/web/ataripunk.png" width="200" alt="U-MA Atari Punk"></a> | **[U-MA Atari Punk](https://buenosairesfront.github.io/ataripunk/)**<br>2 つの 555 で Atari Punk Console を組む。部品を変え、オシロで見て、リアルタイムで聴く | [コード](https://github.com/buenosairesfront/ataripunk) |
+| <a href="https://buenosairesfront.github.io/cmos40/"><img src="img/web/cmos40.png" width="200" alt="U-MA CMOS 40XX"></a> | **[U-MA CMOS 40XX](https://buenosairesfront.github.io/cmos40/)**<br>CMOS 4000 ファミリー 45 チップ：ピン配置、動作、ライブ論理シミュレーション、関係、チップごとのサウンド製作 | [コード](https://github.com/buenosairesfront/cmos40) |
 
 ---
 

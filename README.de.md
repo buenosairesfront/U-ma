@@ -45,6 +45,7 @@ Nichts zu installieren: öffnen und loslegen.
 | <a href="https://buenosairesfront.github.io/hanon/"><img src="img/web/hanon.png" width="200" alt="U-MA Hanon"></a> | **[U-MA Hanon](https://buenosairesfront.github.io/hanon/)**<br>Hanons 60 Klavierübungen mit beiden Händen auf der Tastatur, Metronom und MIDI-Analyse | [Code](https://github.com/buenosairesfront/hanon) |
 | <a href="https://buenosairesfront.github.io/escalas/"><img src="img/web/escalas.png" width="200" alt="U-MA Escalas"></a> | **[U-MA Escalas](https://buenosairesfront.github.io/escalas/)**<br>61 Klaviertonleitern mit Fingersätzen, Arpeggien, Harmonisierung und Progressionen | [Code](https://github.com/buenosairesfront/escalas) |
 | <a href="https://buenosairesfront.github.io/ataripunk/"><img src="img/web/ataripunk.png" width="200" alt="U-MA Atari Punk"></a> | **[U-MA Atari Punk](https://buenosairesfront.github.io/ataripunk/)**<br>eine Atari Punk Console mit zwei 555 bauen: jedes Bauteil ändern, am Oszilloskop sehen und live hören | [Code](https://github.com/buenosairesfront/ataripunk) |
+| <a href="https://buenosairesfront.github.io/cmos40/"><img src="img/web/cmos40.png" width="200" alt="U-MA CMOS 40XX"></a> | **[U-MA CMOS 40XX](https://buenosairesfront.github.io/cmos40/)**<br>die CMOS-4000-Familie, 45 Chips: Pinbelegung, Funktionsweise, Live-Logiksimulation, Beziehungen und ein Klangprojekt pro Chip | [Code](https://github.com/buenosairesfront/cmos40) |
 
 ---
 

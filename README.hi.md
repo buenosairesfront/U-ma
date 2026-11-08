@@ -45,6 +45,7 @@ Buenos Aires Front के, ध्वनि बनाने के लिए व�
 | <a href="https://buenosairesfront.github.io/hanon/"><img src="img/web/hanon.png" width="200" alt="U-MA Hanon"></a> | **[U-MA Hanon](https://buenosairesfront.github.io/hanon/)**<br>हानोन के 60 पियानो अभ्यास, कीबोर्ड पर दोनों हाथ, मेट्रोनोम और MIDI विश्लेषण | [कोड](https://github.com/buenosairesfront/hanon) |
 | <a href="https://buenosairesfront.github.io/escalas/"><img src="img/web/escalas.png" width="200" alt="U-MA Escalas"></a> | **[U-MA Escalas](https://buenosairesfront.github.io/escalas/)**<br>61 पियानो स्केल, फ़िंगरिंग, आर्पेजियो, हार्मनाइज़ेशन और प्रोग्रेशन के साथ | [कोड](https://github.com/buenosairesfront/escalas) |
 | <a href="https://buenosairesfront.github.io/ataripunk/"><img src="img/web/ataripunk.png" width="200" alt="U-MA Atari Punk"></a> | **[U-MA Atari Punk](https://buenosairesfront.github.io/ataripunk/)**<br>दो 555 से Atari Punk Console बनाएँ: हर पुर्ज़ा बदलें, स्कोप पर देखें और लाइव सुनें | [कोड](https://github.com/buenosairesfront/ataripunk) |
+| <a href="https://buenosairesfront.github.io/cmos40/"><img src="img/web/cmos40.png" width="200" alt="U-MA CMOS 40XX"></a> | **[U-MA CMOS 40XX](https://buenosairesfront.github.io/cmos40/)**<br>CMOS 4000 परिवार की 45 चिप: पिन, काम करने का तरीका, लाइव लॉजिक सिमुलेशन, संबंध और हर चिप का साउंड प्रोजेक्ट | [कोड](https://github.com/buenosairesfront/cmos40) |
 
 ---
 

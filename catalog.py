@@ -188,6 +188,15 @@ WEB = [
          "ja": "2 つの 555 で Atari Punk Console を組む。部品を変え、オシロで見て、リアルタイムで聴く",
          "zh": "用两颗 555 搭建 Atari Punk Console：更换每个元件，在示波器上观察并实时试听",
          "hi": "दो 555 से Atari Punk Console बनाएँ: हर पुर्ज़ा बदलें, स्कोप पर देखें और लाइव सुनें"}},
+    {"repo": "cmos40", "name": "U-MA CMOS 40XX",
+     "desc": {
+         "en": "the CMOS 4000 family, 45 chips: pinouts, how they work, live logic simulation, relations and a sound project for each",
+         "es": "la familia CMOS 4000, 45 chips: patas, funcionamiento, simulación lógica en vivo, relaciones y un proyecto sonoro por chip",
+         "fr": "la famille CMOS 4000, 45 puces : brochages, fonctionnement, simulation logique en direct, liens et un projet sonore par puce",
+         "de": "die CMOS-4000-Familie, 45 Chips: Pinbelegung, Funktionsweise, Live-Logiksimulation, Beziehungen und ein Klangprojekt pro Chip",
+         "ja": "CMOS 4000 ファミリー 45 チップ：ピン配置、動作、ライブ論理シミュレーション、関係、チップごとのサウンド製作",
+         "zh": "CMOS 4000 系列 45 颗芯片：引脚、原理、实时逻辑仿真、相互关系，以及每颗芯片的声音制作项目",
+         "hi": "CMOS 4000 परिवार की 45 चिप: पिन, काम करने का तरीका, लाइव लॉजिक सिमुलेशन, संबंध और हर चिप का साउंड प्रोजेक्ट"}},
 ]
 
 T = {
