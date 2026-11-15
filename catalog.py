@@ -85,6 +85,24 @@ NORNS = [
          "ja": "手足のひとつひとつがドローンの声になる、データでできた 3D の体。動かし、カメラで回り、粒子に崩す",
          "zh": "由数据构成的 3D 身体，每个部位都是一个持续音声部：移动它、环绕摄像机、把它解体成粒子",
          "hi": "डेटा से बना 3D शरीर, जिसका हर अंग एक ड्रोन आवाज़ है: उसे हिलाएँ, कैमरा घुमाएँ और उसे कणों में बिखेर दें"}},
+    {"repo": "umi", "name": "umi", "family": None, "thumb": "docs/1_sea.png",
+     "desc": {
+         "en": "a sea that plays itself: a sailboat, a whale and a bird are three voices, the waves pick the notes and you steer the wind",
+         "es": "un mar que se toca solo: un velero, una ballena y un ave son tres voces, las olas eligen las notas y vos manejás el viento",
+         "fr": "une mer qui joue toute seule : un voilier, une baleine et un oiseau sont trois voix, les vagues choisissent les notes et vous pilotez le vent",
+         "de": "ein Meer, das sich selbst spielt: Segelboot, Wal und Vogel sind drei Stimmen, die Wellen wählen die Noten und du steuerst den Wind",
+         "ja": "ひとりでに鳴る海：ヨット、クジラ、鳥が 3 つの声。波が音を選び、あなたは風を操る",
+         "zh": "一片会自己演奏的海：帆船、鲸鱼和鸟是三个声部，海浪挑选音符，你来掌控风",
+         "hi": "अपने आप बजता समंदर: नाव, व्हेल और चिड़िया तीन आवाज़ें हैं, लहरें सुर चुनती हैं और हवा आप चलाते हैं"}},
+    {"repo": "glitch", "name": "glitch", "family": None, "thumb": "docs/1_kit_a.png",
+     "desc": {
+         "en": "glitch and TV-static drum machine: 3 voices × 3 broken machines, probabilistic polymetric patterns, stutter and mutation",
+         "es": "caja de ritmos de glitch y estática de TV: 3 voces × 3 máquinas rotas, patrones probabilísticos y polimétricos, stutter y mutación",
+         "fr": "boîte à rythmes glitch et neige de télé : 3 voix × 3 machines cassées, motifs probabilistes et polymétriques, stutter et mutation",
+         "de": "Glitch- und TV-Rauschen-Drumcomputer: 3 Stimmen × 3 kaputte Maschinen, polymetrische Wahrscheinlichkeits-Patterns, Stutter und Mutation",
+         "ja": "グリッチとテレビの砂嵐のドラムマシン：3 声 × 3 つの壊れた機械、確率的でポリメトリックなパターン、スタッターとミューテーション",
+         "zh": "故障音与电视雪花鼓机：3 个声部 × 3 台坏掉的机器，概率式复合节拍样式，stutter 与变异",
+         "hi": "ग्लिच और टीवी स्टैटिक ड्रम मशीन: 3 आवाज़ें × 3 टूटी मशीनें, संभावना वाले पॉलीमीट्रिक पैटर्न, स्टटर और म्यूटेशन"}},
 ]
 
 # herramientas web (GitHub Pages)

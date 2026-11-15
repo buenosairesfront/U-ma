@@ -27,6 +27,8 @@ Buenos Aires Front 出品的声音创作乐器与工具。
 |---|---|
 | <a href="https://github.com/buenosairesfront/alto/blob/main/README.zh.md"><img src="https://raw.githubusercontent.com/buenosairesfront/alto/main/docs/2_voices.png" width="256" alt="alto"></a> | **[alto](https://github.com/buenosairesfront/alto/blob/main/README.zh.md)**<br>三层复音合成器，配 3 环复节奏音序器；每一页都是声音的图像<br>`;install https://github.com/buenosairesfront/alto` |
 | <a href="https://github.com/buenosairesfront/alan/blob/main/README.zh.md"><img src="https://raw.githubusercontent.com/buenosairesfront/alan/main/docs/2_body.png" width="256" alt="alan"></a> | **[alan](https://github.com/buenosairesfront/alan/blob/main/README.zh.md)**<br>由数据构成的 3D 身体，每个部位都是一个持续音声部：移动它、环绕摄像机、把它解体成粒子<br>`;install https://github.com/buenosairesfront/alan` |
+| <a href="https://github.com/buenosairesfront/umi/blob/main/README.zh.md"><img src="https://raw.githubusercontent.com/buenosairesfront/umi/main/docs/1_sea.png" width="256" alt="umi"></a> | **[umi](https://github.com/buenosairesfront/umi/blob/main/README.zh.md)**<br>一片会自己演奏的海：帆船、鲸鱼和鸟是三个声部，海浪挑选音符，你来掌控风<br>`;install https://github.com/buenosairesfront/umi` |
+| <a href="https://github.com/buenosairesfront/glitch/blob/main/README.zh.md"><img src="https://raw.githubusercontent.com/buenosairesfront/glitch/main/docs/1_kit_a.png" width="256" alt="glitch"></a> | **[glitch](https://github.com/buenosairesfront/glitch/blob/main/README.zh.md)**<br>故障音与电视雪花鼓机：3 个声部 × 3 台坏掉的机器，概率式复合节拍样式，stutter 与变异<br>`;install https://github.com/buenosairesfront/glitch` |
 
 ## 浏览器中使用
 

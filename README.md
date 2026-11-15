@@ -27,6 +27,8 @@ One chord per key, same controls, a different engine in each:
 |---|---|
 | <a href="https://github.com/buenosairesfront/alto"><img src="https://raw.githubusercontent.com/buenosairesfront/alto/main/docs/2_voices.png" width="256" alt="alto"></a> | **[alto](https://github.com/buenosairesfront/alto)**<br>three-layer polyphonic synth with a 3-ring polyrhythmic sequencer; every page is a picture of the sound<br>`;install https://github.com/buenosairesfront/alto` |
 | <a href="https://github.com/buenosairesfront/alan"><img src="https://raw.githubusercontent.com/buenosairesfront/alan/main/docs/2_body.png" width="256" alt="alan"></a> | **[alan](https://github.com/buenosairesfront/alan)**<br>a 3D body made of data where every limb is a drone voice: move it, orbit the camera and dissolve it into particles<br>`;install https://github.com/buenosairesfront/alan` |
+| <a href="https://github.com/buenosairesfront/umi"><img src="https://raw.githubusercontent.com/buenosairesfront/umi/main/docs/1_sea.png" width="256" alt="umi"></a> | **[umi](https://github.com/buenosairesfront/umi)**<br>a sea that plays itself: a sailboat, a whale and a bird are three voices, the waves pick the notes and you steer the wind<br>`;install https://github.com/buenosairesfront/umi` |
+| <a href="https://github.com/buenosairesfront/glitch"><img src="https://raw.githubusercontent.com/buenosairesfront/glitch/main/docs/1_kit_a.png" width="256" alt="glitch"></a> | **[glitch](https://github.com/buenosairesfront/glitch)**<br>glitch and TV-static drum machine: 3 voices × 3 broken machines, probabilistic polymetric patterns, stutter and mutation<br>`;install https://github.com/buenosairesfront/glitch` |
 
 ## In the browser
 
