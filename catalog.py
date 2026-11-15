@@ -67,6 +67,15 @@ NORNS = [
          "ja": "パッド、アンビエント、リード、テクスチャー：4 ファミリー × 8 プリセット、アルペジエーターの代わりにムーブメント",
          "zh": "铺底、氛围、主奏和纹理：4 个系列 × 8 个预设，用“运动”取代琶音器",
          "hi": "पैड, एंबिएंट, लीड और टेक्सचर: 4 परिवार × 8 प्रीसेट, आर्पेजिएटर की जगह मूवमेंट"}},
+    {"repo": "chordexfilo", "name": "Chordex Filo", "family": "chordex", "thumb": "docs/1_modem.png",
+     "desc": {
+         "en": "broken lo-fi mono: one voice and a cloud of grains, with a FAILURE on K2 instead of an arpeggiator",
+         "es": "mono lo-fi roto: una voz y una nube de granos, con FALLA en K2 en lugar de arpegiador",
+         "fr": "mono lo-fi cassé : une voix et un nuage de grains, avec une PANNE sur K2 au lieu d'un arpégiateur",
+         "de": "kaputter Lo-Fi-Mono: eine Stimme und eine Grain-Wolke, mit STÖRUNG auf K2 statt Arpeggiator",
+         "ja": "壊れたローファイ・モノ：ひとつの声とグレインの雲。アルペジエーターの代わりに K2 で「故障」",
+         "zh": "破碎的 lo-fi 单音：一个声部加一团颗粒云，K2 不是琶音器而是“故障”",
+         "hi": "टूटा हुआ lo-fi मोनो: एक आवाज़ और ग्रेन का बादल, आर्पेजिएटर की जगह K2 पर ख़राबी"}},
     {"repo": "alto", "name": "alto", "family": None, "thumb": "docs/2_voices.png",
      "desc": {
          "en": "three-layer polyphonic synth with a 3-ring polyrhythmic sequencer; every page is a picture of the sound",
