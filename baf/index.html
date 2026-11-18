@@ -1207,7 +1207,18 @@ footer .f-mail{overflow-wrap:anywhere}
     const tick = () => {
       if (hold || !seen || document.hidden || Date.now() - last < 6000) return;
       const end = t.scrollLeft + t.clientWidth > t.scrollWidth - 4;
-      t.scrollTo({ left: end ? 0 : t.scrollLeft + step(), behavior: 'smooth' });
+      glide(end ? 0 : t.scrollLeft + step(), end ? 1800 : 1200);
+    };
+    /* desplazamiento lento y suave (el 'smooth' del navegador es muy rápido) */
+    const glide = (to, ms) => {
+      const from = t.scrollLeft, t0 = performance.now();
+      t.style.scrollSnapType = 'none';
+      const f = now => {
+        const k = Math.min(1, (now - t0) / ms), e = k < .5 ? 4 * k * k * k : 1 - Math.pow(-2 * k + 2, 3) / 2;
+        t.scrollLeft = from + (to - from) * e;
+        if (k < 1 && !hold && Date.now() - last > 300) requestAnimationFrame(f); else t.style.scrollSnapType = '';
+      };
+      requestAnimationFrame(f);
     };
     setInterval(tick, 3500);
     const stop = () => { last = Date.now(); };
