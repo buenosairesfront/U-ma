@@ -1,0 +1,284 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>U-MA · Buenos Aires Front</title>
+<meta name="description" content="Web apps para aprender síntesis y secuencias, scripts para norns y proyectos DIY, por U-MA.">
+<link rel="canonical" href="https://buenosairesfront.github.io/U-ma/baf/u-ma/">
+<link rel="icon" type="image/png" sizes="32x32" href="../img/icon-32.png">
+<link rel="apple-touch-icon" href="../img/icon-180.png">
+<meta name="theme-color" content="#efefed">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Buenos Aires Front">
+<meta property="og:title" content="U-MA · Buenos Aires Front">
+<meta property="og:description" content="Web apps para aprender síntesis y secuencias, scripts para norns y proyectos DIY, por U-MA.">
+<meta property="og:url" content="https://buenosairesfront.github.io/U-ma/baf/u-ma/">
+<meta property="og:image" content="https://buenosairesfront.github.io/U-ma/baf/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="es_AR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="../fonts/fonts.css">
+<link rel="stylesheet" href="../baf.css">
+<style>
+/* solo esta página */
+@media (max-width:760px){.top nav.tnav{grid-template-columns:repeat(5,minmax(0,1fr))}}
+.u-hero .h2l{max-width:none}
+.radio-cta{margin-top:clamp(24px,3vw,36px)}
+</style>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="ar" viewBox="0 0 24 24"><path d="M6 18L18 6M8 6h10v10" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="square"/></symbol>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="../" aria-label="Buenos Aires Front: radio y música"><img src="../img/img-8b13c664.png" alt="Buenos Aires Front" width="51" height="40"><img class="brand-uma" src="../img/img-0386d779.webp" alt="U-MA サウンド" width="64" height="40"></a>
+    <div class="lang" id="lang"><button type="button" class="lang-t" id="lang-t" aria-haspopup="true" aria-expanded="false" aria-controls="lang-m" aria-label="Idioma / Language"><b id="lang-cur">ES</b><svg class="lang-c" viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></button><div class="lang-m" id="lang-m" role="group" aria-label="Idioma / Language" hidden><button type="button" data-lang="es" data-code="ES" lang="es" aria-pressed="true"><b>ES</b>Español</button><button type="button" data-lang="en" data-code="EN" lang="en" aria-pressed="false"><b>EN</b>English</button><button type="button" data-lang="de" data-code="DE" lang="de" aria-pressed="false"><b>DE</b>Deutsch</button><button type="button" data-lang="ja" data-code="JA" lang="ja" aria-pressed="false"><b>JA</b>日本語</button><button type="button" data-lang="zh" data-code="ZH" lang="zh" aria-pressed="false"><b>ZH</b>中文</button><button type="button" data-lang="hi" data-code="HI" lang="hi" aria-pressed="false"><b>HI</b>हिन्दी</button></div></div>
+    <nav class="tnav" id="menu-uma" aria-label="Secciones"><a class="btn sm hk tb" data-sec="web" href="#web" style="--c:var(--grn)">Web apps</a><a class="btn sm hk tb" data-sec="instrumentos" href="#instrumentos" style="--c:var(--mag)">Norns</a><a class="btn sm hk tb" data-sec="diy" href="#diy" style="--c:var(--yel)">DIY</a><a class="btn sm hk rd" href="../#radio" style="--c:var(--cya)"><i class="led" aria-hidden="true"></i>Radio <span class="eqm" aria-hidden="true"><b></b><b></b><b></b></span></a><a class="btn sm hk" href="../#escuchar" style="--c:#fff">Escuchar</a></nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero u-hero">
+    <div class="rail" aria-hidden="true"><span class="v m">Música electrónica DIY</span><span class="v">Buenos Aires · 2026</span></div>
+    <div class="wrap">
+      <h1 class="h1">U-<span class="f">MA</span></h1>
+      <p class="claim">Instrumentos y herramientas para hacer música.</p>
+      <div class="hgrid">
+        <div class="h2l">
+          <p class="desc">Web apps para aprender síntesis y secuencias, scripts para norns y proyectos DIY. Todo es de código abierto y corre en el navegador o en tu norns.</p>
+          <a class="btn sm radio-cta" href="../#radio">Prendé la radio de Buenos Aires Front <svg class="arrow"><use href="#ar"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- secciones de U-MA -->
+  <section class="panels" id="paneles">
+    <div class="wrap">
+      <div class="tabs" id="umaTabs">
+        <div class="tp" id="web" role="tabpanel" aria-label="Herramientas web">
+          <div class="tp-h" style="--c:var(--grn)"><b>Herramientas web</b></div>
+      <h2 class="big" style="margin-bottom:clamp(24px,3vw,36px)">Aprendé, practicá y <span class="g">experimentá</span></h2>
+      <div class="lead-wrap">
+      <figure class="polaroid"><img src="../img/img-8196f1ef.webp" alt="Una de las web apps de U-MA abierta en un celular" width="480" height="480"><figcaption>Web apps</figcaption></figure>
+      <p class="lead">Una serie de recursos para entender, aprender y explorar el diseño sonoro y la síntesis de audio. Todas estas web apps corren en el navegador de tu iPhone, Android, Mac, PC o Linux, y las podés instalar como app. Guardan tus settings y presets, no recolectan datos personales y son de código abierto.</p>
+      </div>
+      <div class="filt" role="group" aria-label="Filtrar herramientas"><button type="button" data-f="all" aria-pressed="true">Todo</button><button type="button" data-f="seq" aria-pressed="false">Secuencias</button><button type="button" data-f="synth" aria-pressed="false">Síntesis</button><button type="button" data-f="piano" aria-pressed="false">Piano</button><button type="button" data-f="elec" aria-pressed="false">Electrónica</button><button type="button" data-f="code" aria-pressed="false">Programación</button></div>
+      <div class="screens web-grid">
+        <div class="card inst lcard" data-cat="seq" style="--c:var(--mag)"><a class="img" href="https://buenosairesfront.github.io/gate303/" target="_blank" rel="noopener"><img src="../img/tool-gate303.webp" alt="Captura de Gate-03" width="480" height="551" loading="lazy"></a><div class="meta"><div><h3>Gate-03</h3><div class="k">Secuenciador · TB-303</div></div></div><p>¿Cómo car4j* se programa una de estas? Escribí tu bass-line, entendé los ligados, los acentos y los tiempos, y llevate un sheet para pasarla a tu 303 paso a paso.</p><div class="lbtns"><a class="btn sm" href="https://buenosairesfront.github.io/gate303/" target="_blank" rel="noopener">Abrir <svg class="arrow"><use href="#ar"/></svg></a><a class="btn sm ghost" href="https://github.com/buenosairesfront/gate303" target="_blank" rel="noopener">GitHub <svg class="arrow"><use href="#ar"/></svg></a></div></div>
+        <div class="card inst lcard" data-cat="synth" style="--c:var(--cya)"><a class="img" href="https://buenosairesfront.github.io/matrizdepatcheo/" target="_blank" rel="noopener"><img src="../img/tool-matrizdepatcheo.webp" alt="Captura de Matriz de patcheo" width="480" height="371" loading="lazy"></a><div class="meta"><div><h3>Matriz de patcheo</h3><div class="k">Sinte modular web</div></div></div><p>¿Qué pasa si conecto un LFO con un attack o con un release? Acá tenés una matriz de patcheo para probar lo que quieras con la calidez del Synthi. Olvidate de que es un sinte: acá la onda es patchear.</p><div class="lbtns"><a class="btn sm" href="https://buenosairesfront.github.io/matrizdepatcheo/" target="_blank" rel="noopener">Abrir <svg class="arrow"><use href="#ar"/></svg></a><a class="btn sm ghost" href="https://github.com/buenosairesfront/matrizdepatcheo" target="_blank" rel="noopener">GitHub <svg class="arrow"><use href="#ar"/></svg></a></div></div>
+        <div class="card inst lcard" data-cat="seq" style="--c:var(--yel)"><a class="img" href="https://buenosairesfront.github.io/drumpatterns/" target="_blank" rel="noopener"><img src="../img/tool-drumpatterns.webp" alt="Captura de Drum Patterns" width="480" height="443" loading="lazy"></a><div class="meta"><div><h3>Drum Patterns</h3><div class="k">Caja de ritmos</div></div></div><p>Practicá cómo hacer un Amen Brother o cómo hiphopearla. La idea es que pruebes cómo se escribe una línea de batería.</p><div class="lbtns"><a class="btn sm" href="https://buenosairesfront.github.io/drumpatterns/" target="_blank" rel="noopener">Abrir <svg class="arrow"><use href="#ar"/></svg></a><a class="btn sm ghost" href="https://github.com/buenosairesfront/drumpatterns" target="_blank" rel="noopener">GitHub <svg class="arrow"><use href="#ar"/></svg></a></div></div>
+        <div class="card inst lcard" data-cat="elec" style="--c:var(--mag)"><a class="img" href="https://buenosairesfront.github.io/ataripunk/" target="_blank" rel="noopener"><img src="../img/tool-ataripunk.webp" alt="Captura de Atari Punk" width="480" height="439" loading="lazy"></a><div class="meta"><div><h3>Atari Punk</h3><div class="k">Simulador de circuito</div></div></div><p>Armá una Atari Punk Console con dos 555. Si vas a construir la tuya, probá cómo cambia el sonido con el valor de cada pieza, miralo en el osciloscopio, probala a ver si te cierra y llevale la lista de componentes a tu dealer de confianza.</p><div class="lbtns"><a class="btn sm" href="https://buenosairesfront.github.io/ataripunk/" target="_blank" rel="noopener">Abrir <svg class="arrow"><use href="#ar"/></svg></a><a class="btn sm ghost" href="https://github.com/buenosairesfront/ataripunk" target="_blank" rel="noopener">GitHub <svg class="arrow"><use href="#ar"/></svg></a></div></div>
+        <div class="card inst lcard" data-cat="elec" style="--c:var(--cya)"><a class="img" href="https://buenosairesfront.github.io/ic4040/" target="_blank" rel="noopener"><img src="../img/tool-ic4040.webp" alt="Captura de CMOS 40XX" width="480" height="439" loading="lazy"></a><div class="meta"><div><h3>CMOS 40XX</h3><div class="k">Chips · CMOS 4000</div></div></div><p>La familia CMOS 4000, 45 chips: patas, funcionamiento, simulación lógica en vivo, relaciones y un proyecto sonoro por chip.</p><div class="lbtns"><a class="btn sm" href="https://buenosairesfront.github.io/ic4040/" target="_blank" rel="noopener">Abrir <svg class="arrow"><use href="#ar"/></svg></a><a class="btn sm ghost" href="https://github.com/buenosairesfront/ic4040" target="_blank" rel="noopener">GitHub <svg class="arrow"><use href="#ar"/></svg></a></div></div>
+        <div class="card inst lcard" data-cat="piano" style="--c:var(--yel)"><a class="img" href="https://buenosairesfront.github.io/escalas/" target="_blank" rel="noopener"><img src="../img/tool-escalas.webp" alt="Captura de Escalas" width="480" height="439" loading="lazy"></a><div class="meta"><div><h3>Escalas</h3><div class="k">Piano · escalas</div></div></div><p>61 escalas de piano con digitaciones, arpegios, armonización y progresiones. Hacé crecer tu sonido y encontrá las sensaciones para tu música.</p><div class="lbtns"><a class="btn sm" href="https://buenosairesfront.github.io/escalas/" target="_blank" rel="noopener">Abrir <svg class="arrow"><use href="#ar"/></svg></a><a class="btn sm ghost" href="https://github.com/buenosairesfront/escalas" target="_blank" rel="noopener">GitHub <svg class="arrow"><use href="#ar"/></svg></a></div></div>
+        <div class="card inst lcard" data-cat="piano" style="--c:var(--cya)"><a class="img" href="https://buenosairesfront.github.io/hanon/" target="_blank" rel="noopener"><img src="../img/tool-hanon.webp" alt="Captura de Hanon" width="480" height="388" loading="lazy"></a><div class="meta"><div><h3>Hanon</h3><div class="k">Piano · técnica</div></div></div><p>Si usás sintes, tenés que aprender a usar los deditos. Usá esta app para entrenarte, joven padawan.</p><div class="lbtns"><a class="btn sm" href="https://buenosairesfront.github.io/hanon/" target="_blank" rel="noopener">Abrir <svg class="arrow"><use href="#ar"/></svg></a><a class="btn sm ghost" href="https://github.com/buenosairesfront/hanon" target="_blank" rel="noopener">GitHub <svg class="arrow"><use href="#ar"/></svg></a></div></div>
+        <div class="card inst lcard" data-cat="code" style="--c:var(--mag)"><a class="img" href="https://buenosairesfront.github.io/supercollider/" target="_blank" rel="noopener"><img src="../img/tool-supercollider.webp" alt="Captura de SuperCollider Lab" width="480" height="381" loading="lazy"></a><div class="meta"><div><h3>SuperCollider Lab</h3><div class="k">Curso · SuperCollider</div></div></div><p>Sí, «programar no es para vos», pero acá tenés una aproximación real y usable para dar tus primeros pasos en este lenguaje, que también sirve para norns.</p><div class="lbtns"><a class="btn sm" href="https://buenosairesfront.github.io/supercollider/" target="_blank" rel="noopener">Abrir <svg class="arrow"><use href="#ar"/></svg></a><a class="btn sm ghost" href="https://github.com/buenosairesfront/supercollider" target="_blank" rel="noopener">GitHub <svg class="arrow"><use href="#ar"/></svg></a></div></div>
+        <div class="card inst lcard" data-cat="code" style="--c:var(--yel)"><a class="img" href="https://buenosairesfront.github.io/puredata/" target="_blank" rel="noopener"><img src="../img/tool-puredata.webp" alt="Captura de Laboratorio Pd" width="480" height="382" loading="lazy"></a><div class="meta"><div><h3>Laboratorio Pd</h3><div class="k">Curso · Pure Data</div></div></div><p>Pure Data es una bomba: aprendé qué cable cortar para que te explote en el cerebro.</p><div class="lbtns"><a class="btn sm" href="https://buenosairesfront.github.io/puredata/" target="_blank" rel="noopener">Abrir <svg class="arrow"><use href="#ar"/></svg></a><a class="btn sm ghost" href="https://github.com/buenosairesfront/puredata" target="_blank" rel="noopener">GitHub <svg class="arrow"><use href="#ar"/></svg></a></div></div>
+        <div class="card inst lcard" data-cat="synth" style="--c:var(--cya)"><a class="img" href="https://buenosairesfront.github.io/synthlab-2/" target="_blank" rel="noopener"><img src="../img/tool-synthlab-2.webp" alt="Captura de Una aproximación a las Síntesis" width="480" height="391" loading="lazy"></a><div class="meta"><div><h3>Una aproximación a las Síntesis</h3><div class="k">Síntesis</div></div></div><p>Un recorrido por las bases de todo esto. Es imprescindible que, aunque sea, «lo tengas visto»: acá hay un par de cositas visuales que te la hacen más asible.</p><div class="lbtns"><a class="btn sm" href="https://buenosairesfront.github.io/synthlab-2/" target="_blank" rel="noopener">Abrir <svg class="arrow"><use href="#ar"/></svg></a><a class="btn sm ghost" href="https://github.com/buenosairesfront/synthlab-2" target="_blank" rel="noopener">GitHub <svg class="arrow"><use href="#ar"/></svg></a></div></div>
+      </div>
+      <div class="note inst-note"><svg viewBox="0 0 34 34" fill="none" stroke="#0b0b0b" stroke-width="2"><rect x="4" y="6" width="26" height="20" rx="2"/><path d="M12 30h10M10 14l4 4 8-8" stroke="#f5007f" stroke-width="2.6"/></svg><div><p>Todos están en el GitHub de Buenos Aires Front. Se abren en el navegador, sin instalar nada; si querés, bajá el código desde cada repo.</p><a class="btn sm" href="https://github.com/buenosairesfront" target="_blank" rel="noopener">Ver todo en GitHub <svg class="arrow"><use href="#ar"/></svg></a></div></div>
+          <a class="back" href="#top"><span aria-hidden="true">↑</span> Volver arriba</a>
+        </div>
+        <div class="tp" id="instrumentos" role="tabpanel" aria-label="Instrumentos norns">
+          <div class="tp-h" style="--c:var(--mag)"><b>Instrumentos norns</b></div>
+      <h2 class="big">Scripts que <span class="y">suenan</span></h2>
+      <div class="lead-wrap">
+      <figure class="polaroid"><img src="../img/img-9b4f95a9.webp" alt="norns shield DIY con carcasa naranja" width="365" height="384"><figcaption>Norns Shield</figcaption></figure>
+      <p class="lead">norns es un instrumento abierto creado por monome: un sinte mini con pantalla, tres perillas y tres botones que corre scripts escritos en Lua, con motores de sonido en SuperCollider. El norns shield es su versión DIY que se monta sobre una Raspberry Pi. Estos son los scripts que hago para él. Cada uno es un instrumento distinto, con su propio motor, pensado para tocar de verdad y meterle fantasía a tu sonido. También los encontrás en <a href="https://www.rackears.io/" target="_blank" rel="noopener">rackears.io</a> y <a href="https://norns.community" target="_blank" rel="noopener">norns.community</a>.</p>
+      </div>
+      <div class="screens">
+        <a class="card inst" href="https://github.com/buenosairesfront/chordex80" target="_blank" rel="noopener" style="--c:var(--mag)"><div class="oled"><img src="../img/img-4fe17681.png" alt="Pantalla de Chordex 80 en norns" width="512" height="256" loading="lazy"></div><div class="meta"><div><h3>Chordex 80</h3><div class="k">Polisynth · acordes</div></div><svg class="arrow"><use href="#ar"/></svg></div><p>Synth ochentoso, puede contener trazas de synthwave, dreamwave y Windows 3.1.</p><div class="inst-i"><span class="lbl">Instalar en maiden</span><code>;install https://github.com/buenosairesfront/chordex80</code></div></a>
+        <a class="card inst" href="https://github.com/buenosairesfront/chordexfm" target="_blank" rel="noopener" style="--c:#0aa6be"><div class="oled"><img src="../img/img-ce33c863.png" alt="Pantalla de Chordex FM en norns" width="512" height="256" loading="lazy"></div><div class="meta"><div><h3>Chordex FM</h3><div class="k">FM · acordes</div></div><svg class="arrow"><use href="#ar"/></svg></div><p>FM de 4 operadores, un DX7 shield.</p><div class="inst-i"><span class="lbl">Instalar en maiden</span><code>;install https://github.com/buenosairesfront/chordexfm</code></div></a>
+        <a class="card inst" href="https://github.com/buenosairesfront/chordexstg" target="_blank" rel="noopener" style="--c:var(--mag)"><div class="oled"><img src="../img/img-99478188.png" alt="Pantalla de ChordexSTG en norns" width="512" height="256" loading="lazy"></div><div class="meta"><div><h3>ChordexSTG</h3><div class="k">Cuerdas · acordes</div></div><svg class="arrow"><use href="#ar"/></svg></div><p>Un sinte de strings para meter orquesta a tu sonido.</p><div class="inst-i"><span class="lbl">Instalar en maiden</span><code>;install https://github.com/buenosairesfront/chordexstg</code></div></a>
+        <a class="card inst" href="https://github.com/buenosairesfront/chordexwt" target="_blank" rel="noopener" style="--c:#0aa6be"><div class="oled"><img src="../img/img-031d058c.png" alt="Pantalla de Chordex WT en norns" width="512" height="256" loading="lazy"></div><div class="meta"><div><h3>Chordex WT</h3><div class="k">Wavetable · acordes</div></div><svg class="arrow"><use href="#ar"/></svg></div><p>Wavetable para todos: barré los 8 bancos con sus 8 formas de onda.</p><div class="inst-i"><span class="lbl">Instalar en maiden</span><code>;install https://github.com/buenosairesfront/chordexwt</code></div></a>
+        <a class="card inst" href="https://github.com/buenosairesfront/chordexchip" target="_blank" rel="noopener" style="--c:var(--mag)"><div class="oled"><img src="../img/img-f00dfc86.png" alt="Pantalla de Chordex CHIP en norns" width="512" height="256" loading="lazy"></div><div class="meta"><div><h3>Chordex CHIP</h3><div class="k">Chiptune · acordes</div></div><svg class="arrow"><use href="#ar"/></svg></div><p>Sonido de consola con estética tracker: 8 chips y 8 presets que van a gastar todas tus monedas y atrofiarte los pulgares.</p><div class="inst-i"><span class="lbl">Instalar en maiden</span><code>;install https://github.com/buenosairesfront/chordexchip</code></div></a>
+        <a class="card inst" href="https://github.com/buenosairesfront/chordexabnt" target="_blank" rel="noopener" style="--c:#0aa6be"><div class="oled"><img src="../img/img-9b448ba3.png" alt="Pantalla de Chordex ABNT en norns" width="512" height="256" loading="lazy"></div><div class="meta"><div><h3>Chordex ABNT</h3><div class="k">Pads · acordes</div></div><svg class="arrow"><use href="#ar"/></svg></div><p>Pads, texturas, drones... usá el movimiento para generar layers de sonido.</p><div class="inst-i"><span class="lbl">Instalar en maiden</span><code>;install https://github.com/buenosairesfront/chordexabnt</code></div></a>
+        <a class="card inst" href="https://github.com/buenosairesfront/alto" target="_blank" rel="noopener" style="--c:#0aa6be"><div class="oled"><img src="../img/img-f52edabf.png" alt="Pantalla de alto en norns" width="512" height="256" loading="lazy"></div><div class="meta"><div><h3>alto</h3><div class="k">Sinte · secuenciador</div></div><svg class="arrow"><use href="#ar"/></svg></div><p>El sinte flagship de U-MA: 3 voces con decenas de motores combinables para crear el sonido que buscás, y la posibilidad de secuenciar todo en un sequencer circular de tres pistas.</p><div class="inst-i"><span class="lbl">Instalar en maiden</span><code>;install https://github.com/buenosairesfront/alto</code></div></a>
+        <a class="card inst" href="https://github.com/buenosairesfront/alan" target="_blank" rel="noopener" style="--c:var(--mag)"><div class="oled"><img src="../img/img-5990611b.png" alt="Pantalla de alan en norns" width="512" height="256" loading="lazy"></div><div class="meta"><div><h3>alan</h3><div class="k">Drone · cuerpo 3D</div></div><svg class="arrow"><use href="#ar"/></svg></div><p>Un cuerpo en 3D hecho de datos donde cada parte es una voz de drone: movelo, girá la cámara y desintegralo en partículas.</p><div class="inst-i"><span class="lbl">Instalar en maiden</span><code>;install https://github.com/buenosairesfront/alan</code></div></a>
+        <a class="card inst" href="https://github.com/buenosairesfront/umi" target="_blank" rel="noopener" style="--c:#0aa6be"><div class="oled"><img src="../img/img-897838d7.png" alt="Pantalla de umi en norns" width="512" height="256" loading="lazy"></div><div class="meta"><div><h3>umi</h3><div class="k">Sinte · mar generativo</div></div><svg class="arrow"><use href="#ar"/></svg></div><p>Un mar que se toca solo: Tucker el velero, Mobba la ballena y Lea el ave son tres voces. Las olas eligen las notas y vos manejás el viento.</p><div class="inst-i"><span class="lbl">Instalar en maiden</span><code>;install https://github.com/buenosairesfront/umi</code></div></a>
+        <a class="card inst" href="https://github.com/buenosairesfront/glitch" target="_blank" rel="noopener" style="--c:var(--mag)"><div class="oled"><img src="../img/img-d5390fac.png" alt="Pantalla de glitch en norns" width="512" height="256" loading="lazy"></div><div class="meta"><div><h3>glitch</h3><div class="k">Batería · glitch</div></div><svg class="arrow"><use href="#ar"/></svg></div><p>Caja de ritmos hecha de electrónica rota: 3 voces con 3 máquinas cada una, patrones con probabilidad que se desfasan solos, stutter y estática de TV.</p><div class="inst-i"><span class="lbl">Instalar en maiden</span><code>;install https://github.com/buenosairesfront/glitch</code></div></a>
+      </div>
+                <div class="note inst-note"><svg viewBox="0 0 34 34" fill="none" stroke="#0b0b0b" stroke-width="2"><path d="M17 4v18M10 15l7 7 7-7" stroke="#f5007f" stroke-width="2.6"/><path d="M5 24v6h24v-6"/></svg><div><p>Todos están en el GitHub de Buenos Aires Front. Copiá el comando ;install en maiden y después reiniciá la norns para que compile el motor de sonido.</p><a class="btn sm" href="https://github.com/buenosairesfront" target="_blank" rel="noopener">Ver todo en GitHub <svg class="arrow"><use href="#ar"/></svg></a></div></div>
+          <div class="sub" id="herramientas-norns">
+            <div class="sh"><h2>Herramientas para norns</h2></div>
+      <h2 class="big" style="margin-bottom:clamp(28px,4vw,48px)">Diseñá tu <span class="m">script</span></h2>
+      <div class="tools">
+        <div class="info">
+          <span class="lbl" style="color:var(--dim)">Para quien programa norns</span>
+          <h3>Buscá tu sonido, diseñá tu imagen</h3>
+          <p>Explorá el sonido de tu instrumento con Norns Sound Creator, buscá elementos gráficos para darle rostro a tu proyecto con Norns Canvas y exportá el código listo para pegar en tu script. Todo desde el navegador, en Mac, PC y Linux o en tu Android o iPhone.</p>
+        </div>
+        <div class="card lcard" data-link="norns-canvas" style="--c:var(--mag)">
+          <a class="img" href="https://buenosairesfront.github.io/nornscanvas/" target="_blank" rel="noopener" aria-label="Abrir Norns Canvas"><svg id="fig-canvas" viewBox="0 0 200 125" aria-hidden="true" style="display:none"></svg><img src="../img/tool-nornscanvas.webp" alt="Pantalla de Norns Canvas en el celular" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;max-width:none"></a>
+          <div class="meta"><div><h3>Norns Canvas</h3><div class="k">Editor de pantalla</div></div></div>
+          <p>Probá cómo sería la cara de tu instrumento: elegí entre las formas prediseñadas, las de la galería o dibujá a mano. Cuando lo tengas, exportá el código Lua de screen.</p>
+        <div class="lbtns"><a class="btn sm" href="https://buenosairesfront.github.io/nornscanvas/" target="_blank" rel="noopener">Abrir <svg class="arrow"><use href="#ar"/></svg></a><a class="btn sm ghost" href="https://github.com/buenosairesfront/nornscanvas" target="_blank" rel="noopener">GitHub <svg class="arrow"><use href="#ar"/></svg></a></div>
+        </div>
+        <div class="card lcard" data-link="norns-sound-creator" style="--c:#0aa6be">
+          <a class="img" href="https://buenosairesfront.github.io/nornssoundcreator/" target="_blank" rel="noopener" aria-label="Abrir Norns Sound Creator"><svg id="fig-sound" viewBox="0 0 200 125" aria-hidden="true"></svg><img src="../img/tool-nornssoundcreator.webp" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top center;max-width:none"></a>
+          <div class="meta"><div><h3>Norns Sound Creator</h3><div class="k">Diseño de sonido</div></div></div>
+          <p>Explorá las posibilidades de sonido de la norns, ¡con motores que ni sabías que existían! Probalos, sumalos, restalos y llevate el código para tu script.</p>
+        <div class="lbtns"><a class="btn sm" href="https://buenosairesfront.github.io/nornssoundcreator/" target="_blank" rel="noopener">Abrir <svg class="arrow"><use href="#ar"/></svg></a><a class="btn sm ghost" href="https://github.com/buenosairesfront/nornssoundcreator" target="_blank" rel="noopener">GitHub <svg class="arrow"><use href="#ar"/></svg></a></div>
+        </div>
+      </div>
+          </div>
+          <a class="back" href="#top"><span aria-hidden="true">↑</span> Volver arriba</a>
+        </div>
+        <div class="tp" id="diy" role="tabpanel" aria-label="DIY">
+          <div class="tp-h" style="--c:var(--yel)"><b>DIY</b></div>
+      <h2 class="big">Hacé tus propios<br><span class="m">instrumentos</span></h2>
+      <p class="lead" style="margin-bottom:clamp(24px,3vw,36px)">Prototipos, sintes, módulos y cosas electrónicas</p>
+      <div class="screens diy-grid">
+        <div class="card inst lcard soon-card" style="--c:var(--yel)"><div class="img"><img src="../img/img-95885ef9.webp" alt="Módulo rítmico de bajo rendimiento: perillas naranjas y llaves sobre el panel" width="640" height="583" loading="lazy" style="object-position:center 55%"><span class="stamp">Próximamente</span></div><div class="meta"><div><h3>Módulo rítmico de bajo rendimiento</h3><div class="k">DIY · CMOS</div></div></div><p>Una batería glitch construida a partir de un 40106 y un 4021.</p></div>
+        <div class="card inst lcard soon-card" style="--c:var(--yel)"><div class="img"><img src="../img/img-efc315dd.webp" alt="Clon del Coron DS7: perillas violetas, roja y celeste sobre el panel negro" width="640" height="360" loading="lazy" style="object-position:center 45%"><span class="stamp">Próximamente</span></div><div class="meta"><div><h3>Coron DS7 clon</h3><div class="k">DIY · Clon</div></div></div><p>Un clon de esa pequeña bestia sobrada en versatilidad.</p></div>
+        <div class="card inst lcard soon-card" style="--c:var(--yel)"><div class="img"><img src="../img/img-da89b210.webp" alt="Módulos Eurorack DIY: Logical, Clock Divider y Буран" width="640" height="583" loading="lazy" style="object-position:center 40%"><span class="stamp">Próximamente</span></div><div class="meta"><div><h3>Módulos</h3><div class="k">DIY · Eurorack</div></div></div><p>VCO, LFO, VCA, ADSR y más: todos proyectos DIY.</p></div>
+      </div>
+          <a class="back" href="#top"><span aria-hidden="true">↑</span> Volver arriba</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="sec contacto" id="contacto">
+    <div class="wrap">
+      <div class="contact"><span class="ct-l">Contacto</span><a class="ct-mail" id="ct-mail" href="#contacto" data-a="tnorfseriasoneub" data-b="moc.liamg">buenosairesfront (arroba) gmail.com</a><button type="button" class="ct-copy" id="ct-copy">Copiar</button></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fb"><div class="fb-logos"><img src="../img/img-8b13c664.png" alt="Buenos Aires Front" width="82" height="64"><img class="fb-uma" src="../img/img-0386d779.webp" alt="U-MA サウンド" width="102" height="64"></div><p class="fb-c"><svg class="cl" viewBox="0 0 24 24" role="img" aria-label="Copyleft"><circle cx="12" cy="12" r="10.2" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M9.2 8.1a5.2 5.2 0 1 1 0 7.8" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg><span>2026 Buenos Aires Front</span></p><p>Hecho en casa</p><p>San Telmo</p><p>Argentina</p></div>
+    <p class="ai-note">Estas herramientas, instrumentos y textos se hicieron con ayuda de inteligencia artificial (Claude, de Anthropic, y algo de Gemini). El diseño, la curaduría, las pruebas en hardware real y las decisiones son míos. Puede que haya errores en algún feature: si encontrás alguno, avisame y lo corrijo.</p>
+  </div>
+</footer>
+
+<script src="../tr.js"></script>
+<script>
+(() => {
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const OLED = [255, 207, 31];
+
+  /* ---------- idioma: es (default), en, de, ja, zh, hi ---------- */
+  const LANGS = ['es','en','de','ja','zh','hi'];
+  const i18n = [];
+  (() => {
+    const INL = new Set(['SPAN','B','BR','EM','I','STRONG']), SKIP = new Set(['SCRIPT','STYLE','svg','CANVAS','TITLE','NOSCRIPT','LINK','META','BUTTON']);
+    const norm = h => h.replace(/\s+/g, ' ').trim();
+    const walk = el => {
+      if (SKIP.has(el.tagName) || el.classList.contains('lang')) return;
+      const direct = [...el.childNodes].some(n => n.nodeType === 3 && n.nodeValue.trim());
+      if (direct && [...el.querySelectorAll('*')].every(d => INL.has(d.tagName))){ const k = norm(el.innerHTML); if (TR[k]) i18n.push({ el, k }); return; }
+      for (const n of el.childNodes){
+        if (n.nodeType === 3 && n.nodeValue.trim()){ const k = norm(n.nodeValue); if (TR[k]) i18n.push({ node: n, k, pre: n.nodeValue.match(/^\s*/)[0], post: n.nodeValue.match(/\s*$/)[0] }); }
+        else if (n.nodeType === 1) walk(n);
+      }
+    };
+    walk(document.body);
+  })();
+  function setLang(l){
+    if (!LANGS.includes(l)) l = 'es';
+    const ix = LANGS.indexOf(l) - 1;
+    i18n.forEach(it => { const v = ix < 0 ? it.k : (TR[it.k][ix] || it.k); if (it.el) it.el.innerHTML = v; else it.node.nodeValue = it.pre + v.replace(/&gt;/g, '>') + it.post; });
+    document.documentElement.lang = l;
+    document.querySelectorAll('.lang-m button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.lang === l)));
+    const cur = document.getElementById('lang-cur'); if (cur) cur.textContent = l.toUpperCase();
+    const cp = document.getElementById('ct-copy'); if (cp) cp.textContent = COPY[l][0];
+  }
+  const COPY = {es:['Copiar','¡Copiado!'], en:['Copy','Copied!'], de:['Kopieren','Kopiert!'], ja:['コピー','コピーしました'], zh:['复制','已复制'], hi:['कॉपी करें','कॉपी हो गया']};
+  /* idioma inicial: lo que eligió la persona; si no, según dónde está (zona horaria del dispositivo) y el idioma del navegador; si no, español */
+  function detectLang(){
+    let tz = ''; try { tz = Intl.DateTimeFormat().resolvedOptions().timeZone || ''; } catch(e){}
+    if (/^(America\/(Argentina\/.*|Buenos_Aires|Montevideo|Santiago|Punta_Arenas|Asuncion|La_Paz|Lima|Bogota|Caracas|Guayaquil|Mexico_City|Cancun|Merida|Monterrey|Matamoros|Chihuahua|Ciudad_Juarez|Ojinaga|Hermosillo|Mazatlan|Bahia_Banderas|Tijuana|Guatemala|El_Salvador|Tegucigalpa|Managua|Costa_Rica|Panama|Havana|Santo_Domingo|Puerto_Rico)|Europe\/Madrid|Atlantic\/Canary|Africa\/(Ceuta|Malabo)|Pacific\/(Galapagos|Easter))$/.test(tz)) return 'es';
+    if (/^Asia\/Tokyo$/.test(tz)) return 'ja';
+    if (/^Asia\/(Shanghai|Chongqing|Chungking|Harbin|Urumqi|Hong_Kong|Macau|Taipei)$/.test(tz)) return 'zh';
+    if (/^Asia\/(Kolkata|Calcutta)$/.test(tz)) return 'hi';
+    if (/^Europe\/(Berlin|Busingen|Vienna|Zurich|Vaduz)$/.test(tz)) return 'de';
+    const prefs = (navigator.languages && navigator.languages.length) ? navigator.languages : [navigator.language || ''];
+    for (const p of prefs){ const b = String(p).toLowerCase().split('-')[0]; if (LANGS.includes(b)) return b; }
+    return 'es';
+  }
+  const lt = document.getElementById('lang-t'), lm = document.getElementById('lang-m');
+  const openLang = o => { lm.hidden = !o; lt.setAttribute('aria-expanded', String(o)); };
+  lt.addEventListener('click', e => { e.stopPropagation(); openLang(lm.hidden); });
+  document.addEventListener('click', e => { if (!lm.hidden && !e.target.closest('#lang')) openLang(false); });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape' && !lm.hidden){ openLang(false); lt.focus(); } });
+  lm.querySelectorAll('button').forEach(b => b.addEventListener('click', () => { setLang(b.dataset.lang); try { localStorage.setItem('baf-lang-pick', b.dataset.lang); } catch(e){} openLang(false); }));
+  let saved = null; try { saved = localStorage.getItem('baf-lang-pick'); } catch(e){}
+  setLang(LANGS.includes(saved) ? saved : detectLang());
+  /* el mail no está escrito en el HTML (para que no lo junten los robots de spam): se arma acá, al revés */
+  const ml = document.getElementById('ct-mail'), rv = t => t.split('').reverse().join('');
+  const MAIL = ml ? rv(ml.dataset.a) + '@' + rv(ml.dataset.b) : '';
+  if (ml){ ml.textContent = MAIL; ml.href = 'mailto:' + MAIL; }
+  const cpb = document.getElementById('ct-copy');
+  if (cpb) cpb.addEventListener('click', async () => {
+    const l = document.documentElement.lang in COPY ? document.documentElement.lang : 'es';
+    try { await navigator.clipboard.writeText(MAIL); cpb.textContent = COPY[l][1]; cpb.classList.add('ok'); setTimeout(() => { cpb.textContent = COPY[l][0]; cpb.classList.remove('ok'); }, 1600); }
+    catch(e){ const r = document.createRange(); r.selectNodeContents(document.querySelector('.ct-mail')); const sel = getSelection(); sel.removeAllRanges(); sel.addRange(r); }
+  });
+
+  /* reloj de Buenos Aires */
+  const clk = document.getElementById('clk');
+  const fmt = new Intl.DateTimeFormat('es-AR', { timeZone: 'America/Argentina/Buenos_Aires', hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false });
+  const tick = () => { try { clk.textContent = fmt.format(new Date()); } catch(e){} };
+  if (clk){ tick(); setInterval(tick, 1000); }
+
+  /* figuras de las tarjetas */
+  const NS = 'http://www.w3.org/2000/svg';
+  const el = (svg, tag, a) => { const n = document.createElementNS(NS, tag); for (const k in a) n.setAttribute(k, a[k]); svg.appendChild(n); return n; };
+  (() => { const s = document.getElementById('fig-matrix'); if (!s) return; const pins = {'1,2':'#f5007f','3,5':'#01d6f4','5,1':'#f5d802','6,6':'#f5007f','2,8':'#01d6f4','7,3':'#f5d802','4,10':'#f5007f','0,12':'#01d6f4','6,11':'#f5d802'};
+    for (let r = 0; r < 8; r++) for (let q = 0; q < 14; q++){ const c = pins[r+','+q]; el(s,'circle',{cx:18+q*12.6,cy:26+r*12.5,r:c?4:2.2,fill:c||'#3a3a38'}); } })();
+  (() => { const s = document.getElementById('fig-seq'); if (!s) return; const h = [60,30,72,20,48,64,24,80,36,56,18,70,40,26,62,44];
+    h.forEach((v,i) => el(s,'rect',{x:12+i*11.2,y:110-v,width:8,height:v,fill:i%4===0?'#01d6f4':(i===7?'#f5007f':'#4a4a47')})); el(s,'rect',{x:12,y:114,width:178,height:2,fill:'#01d6f4'}); })();
+  (() => { const s = document.getElementById('fig-canvas'); const W = 32, H = 16, cw = 200/W, ch = 125/H;
+    for (let y = 0; y < H; y++) for (let x = 0; x < W; x++){ const d = Math.hypot(x-16, (y-8)*2); const l = Math.max(0, Math.round(15 - d*.9 + Math.sin(x*.7)*2)); if (l > 0) el(s,'rect',{x:x*cw,y:y*ch,width:cw-.6,height:ch-.6,fill:`rgba(255,207,31,${l/15})`}); } })();
+  (() => { const s = document.getElementById('fig-sound'); let d = '';
+    for (let x = 0; x <= 200; x += 2){ const y = 64 + Math.sin(x/8)*30*Math.exp(-x/140) + Math.sin(x/2.7)*8*Math.exp(-x/80); d += (x?'L':'M') + x + ' ' + y.toFixed(1); }
+    el(s,'path',{d:'M0 64H200',stroke:'#3a3a38','stroke-width':1}); el(s,'path',{d, fill:'none', stroke:'#01d6f4','stroke-width':2.4}); })();
+  (() => { const s = document.getElementById('map'); if (!s) return; let seed = 3; const rnd = () => (seed = (seed * 16807) % 2147483647) / 2147483647;
+    const land = (x,y) => { const blobs = [[38,22,22,13],[58,48,10,16],[100,18,14,10],[104,40,12,16],[140,22,32,13],[166,52,12,7]]; return blobs.some(([bx,by,rx,ry]) => ((x-bx)/rx)**2 + ((y-by)/ry)**2 < 1); };
+    for (let y = 2; y < 70; y += 4) for (let x = 2; x < 200; x += 4) if (land(x,y)) el(s,'rect',{x,y,width:2.6,height:2.6,fill:rnd()<.06?'#01d6f4':'#b9b9b5'});
+    el(s,'rect',{x:60,y:52,width:5,height:5,fill:'#f5007f'}); })();
+
+  /* ningún link externo reemplaza la página: todos abren en pestaña nueva */
+  document.querySelectorAll('a[href^="http"]').forEach(a => { a.target = '_blank'; a.rel = 'noopener'; });
+
+  document.querySelectorAll('a[href="#"]').forEach(a => a.addEventListener('click', e => e.preventDefault()));
+  /* botones de arriba: marca la sección que está a la vista */
+  (() => {
+    const keys = [...document.querySelectorAll('.top .hk[data-sec]')];
+    const mark = () => {
+      const mid = innerHeight * .45; let cur = null;
+      keys.forEach(k => { const el = document.getElementById(k.dataset.sec); if (!el) return; const b = el.getBoundingClientRect(); if (b.top <= mid && b.bottom >= mid) cur = k.dataset.sec; });
+      keys.forEach(k => k.classList.toggle('here', k.dataset.sec === cur));
+    };
+    addEventListener('scroll', mark, { passive: true }); addEventListener('resize', mark); mark();
+  })();
+  /* filtros de herramientas web (las etiquetas se traducen junto con el resto de la página) */
+  (() => {
+    const box = document.querySelector('.filt'); if (!box) return;
+    const cards = [...document.querySelectorAll('.web-grid [data-cat]')];
+    const L = {
+      all:   ['Todo','All','Alle','すべて','全部','सभी'],
+      seq:   ['Secuencias','Sequencing','Sequenzen','シーケンス','音序','सीक्वेंस'],
+      synth: ['Síntesis','Synthesis','Synthese','シンセシス','合成','सिंथेसिस'],
+      piano: ['Piano','Piano','Klavier','ピアノ','钢琴','पियानो'],
+      elec:  ['Electrónica','Electronics','Elektronik','電子工作','电子','इलेक्ट्रॉनिक्स'],
+      code:  ['Programación','Coding','Programmieren','プログラミング','编程','प्रोग्रामिंग']
+    };
+    const tr = () => { const ix = Math.max(0, ['es','en','de','ja','zh','hi'].indexOf(document.documentElement.lang));
+      box.querySelectorAll('button').forEach(b => { b.textContent = L[b.dataset.f][ix]; }); };
+    box.addEventListener('click', e => {
+      const b = e.target.closest('button'); if (!b) return;
+      const f = b.dataset.f;
+      box.querySelectorAll('button').forEach(x => x.setAttribute('aria-pressed', String(x === b)));
+      cards.forEach(c => { c.hidden = f !== 'all' && c.dataset.cat !== f; });
+    });
+    new MutationObserver(tr).observe(document.documentElement, { attributes: true, attributeFilter: ['lang'] });
+    tr();
+  })();
+})();
+</script>
+
+</body></html>
