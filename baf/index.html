@@ -1200,6 +1200,23 @@ footer .f-mail{overflow-wrap:anywhere}
     const upd = () => { bs[0].disabled = t.scrollLeft < 4; bs[1].disabled = t.scrollLeft + t.clientWidth > t.scrollWidth - 4; };
     bs.forEach(b => b.addEventListener('click', () => t.scrollBy({ left: step() * +b.dataset.d, behavior: reduce ? 'auto' : 'smooth' })));
     t.addEventListener('scroll', upd, { passive: true }); addEventListener('resize', upd); upd();
+    /* pasa solo cada 3,5 s; al llegar al final vuelve al principio. Se frena mientras la persona lo toca,
+       pasa el mouse o tiene el foco adentro, y cuando no está en pantalla o la pestaña está oculta */
+    if (reduce) return;
+    let hold = false, seen = false, last = 0;
+    const tick = () => {
+      if (hold || !seen || document.hidden || Date.now() - last < 6000) return;
+      const end = t.scrollLeft + t.clientWidth > t.scrollWidth - 4;
+      t.scrollTo({ left: end ? 0 : t.scrollLeft + step(), behavior: 'smooth' });
+    };
+    setInterval(tick, 3500);
+    const stop = () => { last = Date.now(); };
+    ['pointerdown','touchstart','wheel','keydown'].forEach(ev => t.addEventListener(ev, stop, { passive: true }));
+    bs.forEach(b => b.addEventListener('click', stop));
+    t.addEventListener('mouseenter', () => { hold = true; }); t.addEventListener('mouseleave', () => { hold = false; });
+    t.addEventListener('focusin', () => { hold = true; }); t.addEventListener('focusout', () => { hold = false; });
+    if ('IntersectionObserver' in window) new IntersectionObserver(es => { seen = es[es.length - 1].isIntersecting; }, { threshold: .5 }).observe(t);
+    else seen = true;
   })();
   /* la marca roja del dial de la radio sigue al volumen */
   (() => { const th = document.querySelector('.shield .thumb'); if (!th) return;
