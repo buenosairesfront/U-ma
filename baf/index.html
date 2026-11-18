@@ -452,6 +452,32 @@ footer .f-mail{overflow-wrap:anywhere}
   .top .tnav .btn.hk{justify-content:center;min-height:38px;padding:0 2px;font-size:10.5px;letter-spacing:.02em}
   .tp,.sub,.escuchar,#radio{scroll-margin-top:130px}
 }
+
+/* ---------- carrusel: 10 entre web apps e instrumentos norns (se desliza; no se mueve solo) ---------- */
+#destacados{scroll-margin-top:90px}
+.car>.wrap{padding-block:clamp(28px,4vw,48px)}
+.cr-h{display:flex;align-items:center;gap:12px;margin-bottom:16px}
+.cr-l{font:400 clamp(26px,3vw,38px)/1 var(--display);text-transform:uppercase}
+.cr-n{font:700 11px/1 var(--mono);padding:5px 7px;background:var(--ink);color:#fff}
+.cr-btns{margin-left:auto;display:flex;gap:10px}
+.cr-b{appearance:none;cursor:pointer;width:44px;height:44px;font:700 18px/1 var(--mono);color:var(--ink);background:#fff;border:2px solid var(--ink);box-shadow:3px 3px 0 var(--ink);transition:transform .12s,box-shadow .12s}
+.cr-b:hover{transform:translate(-1px,-1px);box-shadow:4px 4px 0 var(--ink)}
+.cr-b:active{transform:translate(3px,3px);box-shadow:0 0 0 var(--ink)}
+.cr-b:disabled{opacity:.3;cursor:default;transform:none;box-shadow:3px 3px 0 var(--ink)}
+.cr-t{list-style:none;margin:0 calc(-1 * var(--gr)) 0 0;padding:4px var(--gr) 14px 0;display:grid;grid-auto-flow:column;grid-auto-columns:calc((100% - 3 * 18px) / 3.6);gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding-left:0;overscroll-behavior-x:contain;scrollbar-width:thin}
+.cr-t>li{scroll-snap-align:start}
+.cr-c{display:flex;flex-direction:column;height:100%;text-decoration:none;color:var(--ink);background:var(--panel);border:2px solid var(--ink);box-shadow:5px 5px 0 var(--ink);transition:transform .15s,box-shadow .15s}
+.cr-c:hover{transform:translate(-2px,-2px);box-shadow:7px 7px 0 var(--ink)}
+.cr-i{position:relative;display:block;aspect-ratio:16/10;background:#0b0b0b;overflow:hidden;border-bottom:2px solid var(--ink)}
+.cr-i img{position:absolute;inset:0;width:100%;height:100%;display:block}
+.web .cr-i img{object-fit:cover;object-position:top}
+.nn .cr-i img{object-fit:contain;padding:8%;image-rendering:pixelated;image-rendering:crisp-edges}
+.cr-m{display:flex;flex-direction:column;align-items:flex-start;gap:6px;padding:12px 14px 16px}
+.cr-tag{padding:4px 6px;font:700 10px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;background:var(--c);border:1.5px solid var(--ink)}
+.cr-m b{font:400 clamp(24px,2.4vw,30px)/1 var(--display);text-transform:uppercase}
+.cr-m .k{color:var(--dim);font:500 11px/1.3 var(--mono);letter-spacing:.06em;text-transform:uppercase}
+@media (max-width:900px){.cr-t{grid-auto-columns:calc((100% - 18px) / 2.3)}}
+@media (max-width:560px){.cr-t{grid-auto-columns:78%;gap:14px}.cr-b{width:40px;height:40px}}
 </style>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -584,6 +610,14 @@ footer .f-mail{overflow-wrap:anywhere}
   </section>
 
   <!-- ESCUCHAR -->
+  <!-- carrusel: 10 entre web apps e instrumentos norns -->
+  <section class="sec car" id="destacados" aria-label="U-MA">
+    <div class="wrap">
+      <div class="cr-h"><span class="cr-l">U-MA</span><span class="cr-n">10</span><span class="cr-btns"><button type="button" class="cr-b" data-d="-1" aria-label="Anterior">←</button><button type="button" class="cr-b" data-d="1" aria-label="Siguiente">→</button></span></div>
+      <ul class="cr-t" id="cr-t"><li><a class="cr-c web" href="https://buenosairesfront.github.io/gate303/" target="_blank" rel="noopener"><span class="cr-i"><img src="img/tool-gate303.webp" alt="Gate-03" width="480" height="551" loading="lazy"></span><span class="cr-m"><span class="cr-tag" style="--c:var(--cya)">Web app</span><b>Gate-03</b><span class="k">Secuenciador · TB-303</span></span></a></li><li><a class="cr-c nn" href="#instrumentos"><span class="cr-i"><img src="img/img-4fe17681.png" alt="Chordex 80" width="512" height="256" loading="lazy"></span><span class="cr-m"><span class="cr-tag" style="--c:var(--mag)">Norns</span><b>Chordex 80</b><span class="k">Polisynth · acordes</span></span></a></li><li><a class="cr-c web" href="https://buenosairesfront.github.io/matrizdepatcheo/" target="_blank" rel="noopener"><span class="cr-i"><img src="img/tool-matrizdepatcheo.webp" alt="Matriz de patcheo" width="480" height="371" loading="lazy"></span><span class="cr-m"><span class="cr-tag" style="--c:var(--cya)">Web app</span><b>Matriz de patcheo</b><span class="k">Sinte modular web</span></span></a></li><li><a class="cr-c nn" href="#instrumentos"><span class="cr-i"><img src="img/img-f52edabf.png" alt="alto" width="512" height="256" loading="lazy"></span><span class="cr-m"><span class="cr-tag" style="--c:var(--mag)">Norns</span><b>alto</b><span class="k">Sinte · secuenciador</span></span></a></li><li><a class="cr-c web" href="https://buenosairesfront.github.io/drumpatterns/" target="_blank" rel="noopener"><span class="cr-i"><img src="img/tool-drumpatterns.webp" alt="Drum Patterns" width="480" height="443" loading="lazy"></span><span class="cr-m"><span class="cr-tag" style="--c:var(--cya)">Web app</span><b>Drum Patterns</b><span class="k">Caja de ritmos</span></span></a></li><li><a class="cr-c nn" href="#instrumentos"><span class="cr-i"><img src="img/img-897838d7.png" alt="umi" width="512" height="256" loading="lazy"></span><span class="cr-m"><span class="cr-tag" style="--c:var(--mag)">Norns</span><b>umi</b><span class="k">Sinte · mar generativo</span></span></a></li><li><a class="cr-c web" href="https://buenosairesfront.github.io/ataripunk/" target="_blank" rel="noopener"><span class="cr-i"><img src="img/tool-ataripunk.webp" alt="Atari Punk" width="480" height="439" loading="lazy"></span><span class="cr-m"><span class="cr-tag" style="--c:var(--cya)">Web app</span><b>Atari Punk</b><span class="k">Simulador de circuito</span></span></a></li><li><a class="cr-c nn" href="#instrumentos"><span class="cr-i"><img src="img/img-5990611b.png" alt="alan" width="512" height="256" loading="lazy"></span><span class="cr-m"><span class="cr-tag" style="--c:var(--mag)">Norns</span><b>alan</b><span class="k">Drone · cuerpo 3D</span></span></a></li><li><a class="cr-c web" href="https://buenosairesfront.github.io/escalas/" target="_blank" rel="noopener"><span class="cr-i"><img src="img/tool-escalas.webp" alt="Escalas" width="480" height="439" loading="lazy"></span><span class="cr-m"><span class="cr-tag" style="--c:var(--cya)">Web app</span><b>Escalas</b><span class="k">Piano · escalas</span></span></a></li><li><a class="cr-c nn" href="#instrumentos"><span class="cr-i"><img src="img/img-ce33c863.png" alt="Chordex FM" width="512" height="256" loading="lazy"></span><span class="cr-m"><span class="cr-tag" style="--c:var(--mag)">Norns</span><b>Chordex FM</b><span class="k">FM · acordes</span></span></a></li></ul>
+    </div>
+  </section>
+
   <section class="sec escuchar" id="escuchar">
     <div class="wrap">
       <div class="sh"><h2>Escuchar</h2></div>
@@ -1156,6 +1190,16 @@ footer .f-mail{overflow-wrap:anywhere}
       } else if (sec === 'escuchar') hop([...document.querySelectorAll('.listen .play')]);
       
     }));
+  })();
+
+  /* carrusel: flechas que avanzan de a una tarjeta */
+  (() => {
+    const t = document.getElementById('cr-t'); if (!t) return;
+    const bs = [...document.querySelectorAll('.cr-b')];
+    const step = () => { const li = t.querySelector('li'); return li ? li.getBoundingClientRect().width + parseFloat(getComputedStyle(t).columnGap || 0) : t.clientWidth; };
+    const upd = () => { bs[0].disabled = t.scrollLeft < 4; bs[1].disabled = t.scrollLeft + t.clientWidth > t.scrollWidth - 4; };
+    bs.forEach(b => b.addEventListener('click', () => t.scrollBy({ left: step() * +b.dataset.d, behavior: reduce ? 'auto' : 'smooth' })));
+    t.addEventListener('scroll', upd, { passive: true }); addEventListener('resize', upd); upd();
   })();
   /* la marca roja del dial de la radio sigue al volumen */
   (() => { const th = document.querySelector('.shield .thumb'); if (!th) return;
