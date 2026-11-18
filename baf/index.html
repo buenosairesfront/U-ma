@@ -498,6 +498,26 @@ footer .f-mail{overflow-wrap:anywhere}
   .radio-hint{font-size:14px}
   .car>.wrap{padding-block:22px 26px}
 }
+
+/* ---------- radio en estilo plano: caja cian, borde negro y sombra dura; bloques Denshi detrás de los controles ---------- */
+.shield.st{transform:none;border-radius:0;background:#01d6f4;border:3px solid var(--ink);box-shadow:8px 8px 0 var(--ink)}
+.shield.st .hinge{left:5%;right:5%;top:1.4%;height:4.4%;border-radius:0;background:none;box-shadow:none;display:flex;align-items:center;font:400 clamp(12px,calc(var(--w) * .065),17px)/1 var(--display);text-transform:uppercase;letter-spacing:.02em;color:var(--ink)}
+.shield.st .hinge::before{content:"BAF Radio"}
+.shield.st .face{inset:7% 4% 35% 4%;border-radius:0;border:2px solid var(--ink);box-shadow:none;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 80' fill='none' stroke-linecap='round' stroke-linejoin='round'%3E%3Cg fill='rgba(255,255,255,.4)' stroke='%230b0b0b' stroke-opacity='.55' stroke-width='1.2'%3E%3Crect x='2' y='2' width='36' height='36' rx='4'/%3E%3Crect x='42' y='2' width='36' height='36' rx='4'/%3E%3Crect x='2' y='42' width='36' height='36' rx='4'/%3E%3Crect x='42' y='42' width='36' height='36' rx='4'/%3E%3C/g%3E%3Cg stroke='%230b0b0b' stroke-width='1.6' stroke-opacity='.45'%3E%3Cpath d='M6 20h7l2-5 3 10 3-10 3 10 3-10 2 5h7'/%3E%3Cpath d='M46 20h13M61 20h13M59 12v16M61 12v16'/%3E%3Cpath d='M6 60h10M28 60h6M16 53v14M16 60l12-7v14z'/%3E%3Ccircle cx='60' cy='60' r='10'/%3E%3Cpath d='M46 60h10M56 54v12M56 57l10-6M56 63l10 6M66 51v-5M66 69v5'/%3E%3C/g%3E%3C/svg%3E") 0 0/40% 33.34% repeat,#01d6f4}
+.shield.st::after{display:none}
+.shield.st .screen{border-radius:0;box-shadow:0 0 0 3px var(--ink)}
+.shield.st .grille{left:4%;width:92%;border-radius:0;border:2px solid var(--ink);background:repeating-linear-gradient(180deg,var(--ink) 0 2px,transparent 2px 9px) 50% 22%/86% 56% no-repeat,#01d6f4;box-shadow:none}
+.shield.st .badge{border-radius:0;border:2px solid var(--ink);box-shadow:none}
+.shield.st .thumb{border-radius:0;background:#fff;border:2px solid var(--ink);box-shadow:none}
+.shield.st .thumb::before{display:none}
+.shield.st .key{border-radius:0;background:#fff;box-shadow:3px 3px 0 var(--ink);border:2px solid var(--ink)}
+.shield.st .key span{color:var(--ink);letter-spacing:-.08em}
+.shield.st .key.a{background:var(--mag)}
+.shield.st .key:active{transform:translate(3px,3px);box-shadow:0 0 0 var(--ink)}
+.shield.st .key.on{background:var(--ink);box-shadow:3px 3px 0 var(--mag);border-color:var(--ink)}
+.shield.st .key.on span{color:var(--mag)}
+.shield.st .knob{background:#fff;border:2px solid var(--ink);box-shadow:none}
+.klbl{width:auto;transform:translateX(-50%);margin-left:8.25%;padding:2px 4px;background:var(--ink);color:#fff}
 </style>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
