@@ -65,6 +65,22 @@
   </section>
 
 
+  <!-- PAD DE EFECTOS: un pad XY tipo Kaoss Pad que procesa lo que suena en la radio (kaoss.js) -->
+  <section class="sec kaoss" id="pad">
+    <div class="wrap kx">
+      <div class="kx-t">
+        <div class="sh"><h2>Pad de efectos</h2></div>
+        <h2 class="big">Tocá <span class="m">la radio</span></h2>
+        <p class="lead">Apoyá el dedo en el pad y arrastrá: el tema que está sonando pasa por el efecto que elijas. Al soltar vuelve a sonar normal; con HOLD el efecto queda puesto.</p>
+      </div>
+      <div class="kx-dev" style="--c:#01d6f4">
+        <div class="kx-top"><b>BAF Pad</b><span class="kx-read" id="kx-read" aria-live="polite"></span></div>
+        <canvas class="kx-pad" id="kx-pad" tabindex="0"></canvas>
+        <div class="kx-keys" role="group" aria-label="Efecto"><button type="button" data-p="0"></button><button type="button" data-p="1"></button><button type="button" data-p="2"></button><button type="button" data-p="3"></button><button type="button" data-p="4"></button><button type="button" class="kx-hold" id="kx-hold" aria-pressed="false">Hold</button></div>
+      </div>
+    </div>
+  </section>
+
   <!-- ESCUCHAR -->
   <section class="sec escuchar" id="escuchar">
     <div class="wrap">
@@ -94,6 +110,7 @@
 </footer>
 
 <script src="tr.js"></script>
+<script src="kaoss.js"></script>
 <script>
 (() => {
   const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -212,7 +229,9 @@
       gain = actx.createGain(); gain.gain.value = R.vol;
       an = actx.createAnalyser(); an.fftSize = 256; an.smoothingTimeConstant = .75;
       lpf = actx.createBiquadFilter(); lpf.type = 'lowpass'; lpf.Q.value = 11; lpf.frequency.value = cutHz(R.cut);
-      gain.connect(lpf); lpf.connect(an); an.connect(actx.destination);
+      gain.connect(lpf); an.connect(actx.destination);
+      /* el pad de efectos (kaoss.js) va entre el filtro CUT y el analizador; si no está, directo */
+      if (window.BAFKaoss) window.BAFKaoss.attach(actx, lpf, an); else lpf.connect(an);
     } catch(e){ actx = null; }
   }
   /* un solo reproductor para todas las estaciones: una vez que arrancó con un toque, el navegador lo deja seguir
@@ -295,6 +314,8 @@
   function next(d){ ensureAudio(); if (actx && actx.state === 'suspended') actx.resume(); if (!R.started){ R.started = true; R.playing = true; keyA.classList.add('on'); } tune(d); }
 
   const keyA = document.getElementById('k-1'), knobE1 = document.getElementById('e-1');
+  /* el pad de efectos prende la radio si está apagada */
+  window.BAFRadio = { start(){ if (!(R.started && R.playing)) toggle(); } };
   keyA.addEventListener('click', toggle);
   document.getElementById('k-2').addEventListener('click', () => next(-1));
   document.getElementById('k-3').addEventListener('click', () => next(1));
