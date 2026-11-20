@@ -404,3 +404,56 @@ footer .ai-note{grid-column:1/-1;margin:0;padding-top:18px;border-top:1px solid 
   .car>.wrap{padding-block:22px 26px}
 }
 
+
+/* ---------- página de Música: secciones nuevas ---------- */
+/* marcador de lugar para fotos que todavía no están: se reemplaza por <img> */
+.ph{position:relative;display:grid;place-items:center;background:repeating-linear-gradient(45deg,#e4e4e0 0 10px,#ececea 10px 20px);border:2px dashed #9a9a96;color:var(--dim);font:400 11px/1.2 var(--pixel);text-transform:uppercase;letter-spacing:.06em}
+.ph span{background:var(--paper);padding:4px 8px;border:1px solid #9a9a96}
+
+/* lista de temas */
+.tl{list-style:none;margin:clamp(24px,3vw,36px) 0 0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px clamp(16px,2vw,28px)}
+@media (max-width:860px){.tl{grid-template-columns:minmax(0,1fr)}}
+.tl li{display:flex;align-items:stretch;min-width:0;border:2px solid var(--ink);background:#fff;transition:transform .12s,box-shadow .12s}
+.tl li:hover{transform:translate(-2px,-2px);box-shadow:4px 4px 0 var(--ink)}
+.tl li.on{background:var(--cya);box-shadow:4px 4px 0 var(--ink)}
+.tl-b{appearance:none;flex:1;min-width:0;display:grid;grid-template-columns:auto auto minmax(0,1fr) auto;align-items:center;gap:12px;padding:12px 14px;background:none;border:0;color:var(--ink);text-align:left;cursor:pointer;font:inherit}
+.tl-b:focus-visible{outline:3px solid var(--mag);outline-offset:-3px}
+.tl-n{font:400 10px/1 var(--pixel);color:var(--dim)}
+.tl li.on .tl-n{color:var(--ink)}
+.tl-f{font:700 12px/1 var(--mono);font-variant-numeric:tabular-nums;padding:4px 6px;background:var(--ink);color:var(--oled)}
+.tl-t{font:400 clamp(18px,1.8vw,24px)/1.05 var(--display);text-transform:uppercase;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.tl-eq{display:none;align-items:flex-end;gap:2px;height:14px}
+.tl-eq i{width:3px;background:var(--ink);animation:eqm .7s ease-in-out infinite alternate}
+.tl-eq i:nth-child(2){animation-delay:-.25s}.tl-eq i:nth-child(3){animation-delay:-.5s}
+.tl li.play .tl-eq{display:inline-flex}
+.tl-go{flex:none;display:flex;align-items:center;padding:0 12px;border-left:2px solid var(--ink);background:var(--c);color:var(--ink);font:800 11px/1 var(--mono);letter-spacing:.05em;text-transform:uppercase;text-decoration:none}
+.tl-go:hover{filter:brightness(1.08)}
+@media (max-width:420px){.tl-b{gap:8px;padding:10px}.tl-n{display:none}.tl-go{padding:0 8px;font-size:10px}}
+
+/* último lanzamiento */
+.lz{display:grid;grid-template-columns:minmax(0,420px) minmax(0,1fr);gap:clamp(28px,5vw,72px);align-items:center}
+.lz-cover{aspect-ratio:1;width:100%;max-width:100%;box-shadow:10px 10px 0 var(--mag);border-style:solid;border-color:var(--ink);border-width:3px}
+.lz-k{margin:14px 0 0;font:700 13px/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--mag)}
+.lz-b{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.lz-b .btn{border:3px solid var(--ink)}
+.lz-b .btn[style]{background:var(--c);color:var(--ink)}
+.lz-b .btn[style] .arrow{color:var(--ink)}
+@media (max-width:760px){.lz{grid-template-columns:minmax(0,1fr)}.lz-cover{max-width:420px}}
+
+/* sobre */
+.sb{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(28px,5vw,72px);align-items:center}
+.sb-ph{aspect-ratio:4/3;width:100%}
+@media (max-width:760px){.sb{grid-template-columns:minmax(0,1fr)}}
+
+/* gear: 17 sintes; el primero va grande, así la grilla queda completa (5 filas de 4) */
+.gear-g{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(14px,1.8vw,22px);margin-top:clamp(24px,3vw,36px)}
+.gear-c{margin:0;display:flex;flex-direction:column;background:#fff;border:2px solid var(--ink);min-width:0}
+.gear-c.big{grid-column:span 2;grid-row:span 2}
+.gear-ph{flex:1;aspect-ratio:4/3;border:0;border-bottom:2px solid var(--ink)}
+.gear-c img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;border-bottom:2px solid var(--ink)}
+.gear-c.big img{flex:1;aspect-ratio:auto;min-height:0}
+.gear-c figcaption{display:flex;flex-direction:column;gap:4px;padding:10px 12px 12px}
+.gear-c figcaption b{font:400 22px/1 var(--display);text-transform:uppercase}
+.gear-c figcaption span{font:500 11px/1.2 var(--mono);color:var(--dim);text-transform:uppercase;letter-spacing:.05em}
+.gear-c.big figcaption b{font-size:clamp(26px,2.6vw,36px)}
+@media (max-width:860px){.gear-g{grid-template-columns:repeat(2,minmax(0,1fr))}}

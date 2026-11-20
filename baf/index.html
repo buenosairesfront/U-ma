@@ -20,7 +20,7 @@
 <link rel="stylesheet" href="baf.css">
 <style>
 /* solo esta página */
-@media (max-width:760px){.top nav.tnav{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:760px){.top nav.tnav{grid-template-columns:repeat(5,minmax(0,1fr))}}
 </style>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -31,7 +31,7 @@
   <div class="wrap">
     <a class="brand" href="#top"><img src="img/img-8b13c664.png" alt="Buenos Aires Front" width="51" height="40"><img class="brand-uma" src="img/img-0386d779.webp" alt="U-MA サウンド" width="64" height="40"></a>
     <div class="lang" id="lang"><button type="button" class="lang-t" id="lang-t" aria-haspopup="true" aria-expanded="false" aria-controls="lang-m" aria-label="Idioma / Language"><b id="lang-cur">ES</b><svg class="lang-c" viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></button><div class="lang-m" id="lang-m" role="group" aria-label="Idioma / Language" hidden><button type="button" data-lang="es" data-code="ES" lang="es" aria-pressed="true"><b>ES</b>Español</button><button type="button" data-lang="en" data-code="EN" lang="en" aria-pressed="false"><b>EN</b>English</button><button type="button" data-lang="de" data-code="DE" lang="de" aria-pressed="false"><b>DE</b>Deutsch</button><button type="button" data-lang="ja" data-code="JA" lang="ja" aria-pressed="false"><b>JA</b>日本語</button><button type="button" data-lang="zh" data-code="ZH" lang="zh" aria-pressed="false"><b>ZH</b>中文</button><button type="button" data-lang="hi" data-code="HI" lang="hi" aria-pressed="false"><b>HI</b>हिन्दी</button></div></div>
-    <nav class="tnav" id="menu-uma" aria-label="Secciones"><a class="btn sm hk rd" data-sec="radio" href="#radio" style="--c:var(--cya)"><i class="led" aria-hidden="true"></i>Radio <span class="eqm" aria-hidden="true"><b></b><b></b><b></b></span></a><a class="btn sm hk" data-sec="escuchar" href="#escuchar" style="--c:#fff">Escuchar</a><a class="btn sm hk" href="u-ma/" style="--c:var(--mag)">U-MA</a></nav>
+    <nav class="tnav" id="menu-uma" aria-label="Secciones"><a class="btn sm hk rd" data-sec="radio" href="#radio" style="--c:var(--cya)"><i class="led" aria-hidden="true"></i>Radio <span class="eqm" aria-hidden="true"><b></b><b></b><b></b></span></a><a class="btn sm hk" data-sec="temas" href="#temas" style="--c:var(--yel)">Temas</a><a class="btn sm hk" data-sec="gear" href="#gear" style="--c:var(--grn)">Gear</a><a class="btn sm hk" data-sec="escuchar" href="#escuchar" style="--c:#fff">Escuchar</a><a class="btn sm hk" href="u-ma/" style="--c:var(--mag)">U-MA</a></nav>
   </div>
 </header>
 
@@ -64,6 +64,70 @@
     
   </section>
 
+
+  <!-- TEMAS: la lista de estaciones de la radio (se arma sola con los temas de RADIO_TRACKS) -->
+  <section class="sec temas" id="temas">
+    <div class="wrap">
+      <div class="sh"><h2>En la radio</h2></div>
+      <h2 class="big">Los <span class="m">15 temas</span></h2>
+      <p class="lead">Tocá uno para sintonizarlo. El orden de las estaciones cambia en cada visita.</p>
+      <ol class="tl" id="tl" aria-label="Estaciones de la radio"></ol>
+    </div>
+  </section>
+
+  <!-- ÚLTIMO LANZAMIENTO: cambiar tapa, título, tipo, año y links -->
+  <section class="sec lanz" id="lanzamiento">
+    <div class="wrap lz">
+      <div class="ph lz-cover" aria-hidden="true"><span>Tapa</span></div>
+      <div class="lz-t">
+        <div class="sh"><h2>Último lanzamiento</h2></div>
+        <h2 class="big">Otro Mar</h2>
+        <p class="lz-k">Álbum · 2026</p>
+        <p class="lead">Dos o tres líneas sobre el disco: cómo se hizo, con qué máquinas y qué se va a encontrar quien lo escuche.</p>
+        <div class="lz-b"><a class="btn" href="https://open.spotify.com/album/3JRtT1DYTKgWC2BiTyvG9l" target="_blank" rel="noopener" style="--c:var(--mag)">Escuchar en Spotify <svg class="arrow"><use href="#ar"/></svg></a><a class="btn ghost" href="https://soundcloud.com/buenos-aires-front" target="_blank" rel="noopener">SoundCloud <svg class="arrow"><use href="#ar"/></svg></a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE BUENOS AIRES FRONT: texto en borrador para corregir, y una foto del estudio -->
+  <section class="sec sobre" id="sobre">
+    <div class="wrap sb">
+      <div class="sb-t">
+        <div class="sh"><h2>Sobre Buenos Aires Front</h2></div>
+        <h2 class="big">Hecho <span class="m">en casa</span></h2>
+        <p class="lead">Buenos Aires Front es un proyecto de música electrónica hecho en un estudio casero de San Telmo. Máquinas y humanos: sintes, cajas de ritmos e instrumentos hechos a mano, conectados entre sí hasta que aparece un tema.</p>
+      </div>
+      <div class="ph sb-ph" aria-hidden="true"><span>Foto del estudio</span></div>
+    </div>
+  </section>
+
+  <!-- GEAR: 17 sintes del estudio. Cambiar cada "Foto NN" por la imagen y el nombre por marca y modelo -->
+  <section class="sec gear" id="gear">
+    <div class="wrap">
+      <div class="sh"><h2>Gear</h2></div>
+      <h2 class="big">El <span class="m">estudio</span></h2>
+      <p class="lead">Los 17 sintes con los que hago la música de la radio.</p>
+      <div class="gear-g">
+        <figure class="gear-c big"><div class="ph gear-ph" aria-hidden="true"><span>Foto 01</span></div><figcaption><b>Sinte 01</b><span>Marca · Modelo</span></figcaption></figure>
+        <figure class="gear-c"><div class="ph gear-ph" aria-hidden="true"><span>Foto 02</span></div><figcaption><b>Sinte 02</b><span>Marca · Modelo</span></figcaption></figure>
+        <figure class="gear-c"><div class="ph gear-ph" aria-hidden="true"><span>Foto 03</span></div><figcaption><b>Sinte 03</b><span>Marca · Modelo</span></figcaption></figure>
+        <figure class="gear-c"><div class="ph gear-ph" aria-hidden="true"><span>Foto 04</span></div><figcaption><b>Sinte 04</b><span>Marca · Modelo</span></figcaption></figure>
+        <figure class="gear-c"><div class="ph gear-ph" aria-hidden="true"><span>Foto 05</span></div><figcaption><b>Sinte 05</b><span>Marca · Modelo</span></figcaption></figure>
+        <figure class="gear-c"><div class="ph gear-ph" aria-hidden="true"><span>Foto 06</span></div><figcaption><b>Sinte 06</b><span>Marca · Modelo</span></figcaption></figure>
+        <figure class="gear-c"><div class="ph gear-ph" aria-hidden="true"><span>Foto 07</span></div><figcaption><b>Sinte 07</b><span>Marca · Modelo</span></figcaption></figure>
+        <figure class="gear-c"><div class="ph gear-ph" aria-hidden="true"><span>Foto 08</span></div><figcaption><b>Sinte 08</b><span>Marca · Modelo</span></figcaption></figure>
+        <figure class="gear-c"><div class="ph gear-ph" aria-hidden="true"><span>Foto 09</span></div><figcaption><b>Sinte 09</b><span>Marca · Modelo</span></figcaption></figure>
+        <figure class="gear-c"><div class="ph gear-ph" aria-hidden="true"><span>Foto 10</span></div><figcaption><b>Sinte 10</b><span>Marca · Modelo</span></figcaption></figure>
+        <figure class="gear-c"><div class="ph gear-ph" aria-hidden="true"><span>Foto 11</span></div><figcaption><b>Sinte 11</b><span>Marca · Modelo</span></figcaption></figure>
+        <figure class="gear-c"><div class="ph gear-ph" aria-hidden="true"><span>Foto 12</span></div><figcaption><b>Sinte 12</b><span>Marca · Modelo</span></figcaption></figure>
+        <figure class="gear-c"><div class="ph gear-ph" aria-hidden="true"><span>Foto 13</span></div><figcaption><b>Sinte 13</b><span>Marca · Modelo</span></figcaption></figure>
+        <figure class="gear-c"><div class="ph gear-ph" aria-hidden="true"><span>Foto 14</span></div><figcaption><b>Sinte 14</b><span>Marca · Modelo</span></figcaption></figure>
+        <figure class="gear-c"><div class="ph gear-ph" aria-hidden="true"><span>Foto 15</span></div><figcaption><b>Sinte 15</b><span>Marca · Modelo</span></figcaption></figure>
+        <figure class="gear-c"><div class="ph gear-ph" aria-hidden="true"><span>Foto 16</span></div><figcaption><b>Sinte 16</b><span>Marca · Modelo</span></figcaption></figure>
+        <figure class="gear-c"><div class="ph gear-ph" aria-hidden="true"><span>Foto 17</span></div><figcaption><b>Sinte 17</b><span>Marca · Modelo</span></figcaption></figure>
+      </div>
+    </div>
+  </section>
 
   <!-- ESCUCHAR -->
   <section class="sec escuchar" id="escuchar">
@@ -572,7 +636,7 @@
   /* botones de arriba: LED en la sección actual, estado de la radio y señal al llegar */
   (() => {
     const keys = [...document.querySelectorAll('.top .hk')];
-    const secs = { radio: document.getElementById('radio'), escuchar: document.getElementById('escuchar') };
+    const secs = { radio: document.getElementById('radio'), temas: document.getElementById('temas'), gear: document.getElementById('gear'), escuchar: document.getElementById('escuchar') };
     const mark = () => {
       const mid = innerHeight * .45; let cur = null;
       Object.entries(secs).forEach(([k, el]) => { if (!el) return; const b = el.getBoundingClientRect(); if (b.top <= mid && b.bottom >= mid) cur = k; });
@@ -592,6 +656,29 @@
     }));
   })();
 
+  /* lista de temas: una fila por estación; tocarla sintoniza la radio en ese tema */
+  (() => {
+    const ol = document.getElementById('tl'); if (!ol) return;
+    const nice = n => n.toLowerCase().replace(/(^|\s)\S/g, c => c.toUpperCase());
+    const rows = STATIONS.map((st, i) => {
+      const w = WHERE[st.where] || WHERE.soundcloud, li = document.createElement('li');
+      li.innerHTML = `<button type="button" class="tl-b"><span class="tl-n">EST ${String(i + 1).padStart(2, '0')}</span><span class="tl-f">${st.f.toFixed(1)}</span><b class="tl-t"></b><span class="tl-eq" aria-hidden="true"><i></i><i></i><i></i></span></button><a class="tl-go" href="${st.url || w.u}" target="_blank" rel="noopener"></a>`;
+      li.querySelector('.tl-t').textContent = nice(st.name);
+      li.querySelector('.tl-go').textContent = w.n;
+      li.querySelector('.tl-go').style.setProperty('--c', w.c);
+      li.querySelector('.tl-b').addEventListener('click', () => tuneTo(i));
+      ol.appendChild(li); return li;
+    });
+    function tuneTo(i){
+      ensureAudio(); if (actx && actx.state === 'suspended') actx.resume();
+      const now = performance.now();
+      R.prevF = R.started ? STATIONS[R.idx].f : 87.5; stopAll();
+      R.started = true; R.playing = true; R.manualF = null; keyA.classList.add('on');
+      R.idx = i; R.tuneFrom = now; R.tuneUntil = now + 750; noise();
+      setTimeout(() => { if (R.playing && R.idx === i && performance.now() >= R.tuneUntil - 5) startCurrent(); }, 760);
+    }
+    setInterval(() => rows.forEach((li, i) => { const on = R.started && R.idx === i; li.classList.toggle('on', on); li.classList.toggle('play', on && R.playing); }), 300);
+  })();
   /* la marca roja del dial de la radio sigue al volumen */
   (() => { const th = document.querySelector('.shield .thumb'); if (!th) return;
     setInterval(() => { try { th.style.setProperty('--v', R.vol.toFixed(2)); } catch(e){} }, 150); })();
