@@ -24,6 +24,7 @@ NORNS = [
          "zh": "80 年代复音合成器，配 outrun 日落画面",
          "hi": "outrun सूर्यास्त वाला 80 के दशक का पॉलीसिंथ"}},
     {"repo": "chordexfm", "name": "Chordex FM", "family": "chordex", "thumb": "docs/3_metal.png",
+     "video": "https://www.youtube.com/watch?v=BWhcO29VITY",
      "desc": {
          "en": "4-operator FM, drawn as a flower",
          "es": "FM de 4 operadores, dibujado como una flor",
@@ -33,6 +34,7 @@ NORNS = [
          "zh": "4 算子 FM，画成一朵花",
          "hi": "4-ऑपरेटर FM, फूल के रूप में"}},
     {"repo": "chordexstg", "name": "ChordexSTG", "family": "chordex", "thumb": "docs/2_tutti.png",
+     "video": "https://www.youtube.com/watch?v=raXaA_75UN4",
      "desc": {
          "en": "orchestral strings with real bowed-string motion",
          "es": "cuerdas de orquesta con el movimiento real de una cuerda frotada",
@@ -42,6 +44,7 @@ NORNS = [
          "zh": "管弦乐弦乐，呈现真实的拉弦运动",
          "hi": "गज़ से बजे तार की असली गति वाले ऑर्केस्ट्रा स्ट्रिंग्स"}},
     {"repo": "chordexwt", "name": "Chordex WT", "family": "chordex", "thumb": "docs/2_vocal.png",
+     "video": "https://www.youtube.com/watch?v=5qZaGcb9niU",
      "desc": {
          "en": "wavetable: 8 banks of 8 waves, drawn as a 3D table",
          "es": "wavetable: 8 bancos de 8 ondas, dibujado como una tabla en 3D",
@@ -101,6 +104,7 @@ NORNS = [
          "zh": "由数据构成的 3D 身体，每个部位都是一个持续音声部：移动它、环绕摄像机、把它解体成粒子",
          "hi": "डेटा से बना 3D शरीर, जिसका हर अंग एक ड्रोन आवाज़ है: उसे हिलाएँ, कैमरा घुमाएँ और उसे कणों में बिखेर दें"}},
     {"repo": "umi", "name": "umi", "family": None, "thumb": "docs/1_sea.png",
+     "video": "https://www.youtube.com/watch?v=vIleCohYcMw",
      "desc": {
          "en": "a sea that plays itself: a sailboat, a whale and a bird are three voices, the waves pick the notes and you steer the wind",
          "es": "un mar que se toca solo: un velero, una ballena y un ave son tres voces, las olas eligen las notas y vos manejás el viento",
