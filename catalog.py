@@ -14,6 +14,7 @@ UMA_REPO = "U-ma"
 # instrumentos para norns: repo, nombre, captura (dentro del repo), familia
 NORNS = [
     {"repo": "chordex80", "name": "Chordex 80", "family": "chordex", "thumb": "docs/1_d50.png",
+     "video": "https://www.youtube.com/watch?v=7JI673EX2nI",
      "desc": {
          "en": "'80s polysynth with an outrun sunset",
          "es": "polisynth ochentoso con atardecer outrun",
@@ -50,6 +51,7 @@ NORNS = [
          "zh": "波表：8 个库、每库 8 个波形，画成 3D 波表",
          "hi": "वेवटेबल: 8 वेव वाले 8 बैंक, 3D टेबल के रूप में"}},
     {"repo": "chordexchip", "name": "Chordex CHIP", "family": "chordex", "thumb": "docs/1_nes.png",
+     "video": "https://www.youtube.com/watch?v=WlHZPWEgV_k",
      "desc": {
          "en": "chiptune: 8 console chips × 8 presets, drawn as a tracker",
          "es": "chiptune: 8 chips de consola × 8 presets, dibujado como un tracker",
@@ -59,6 +61,7 @@ NORNS = [
          "zh": "芯片音乐：8 种游戏机芯片 × 8 个预设，画成 tracker",
          "hi": "चिपट्यून: 8 कंसोल चिप × 8 प्रीसेट, ट्रैकर के रूप में"}},
     {"repo": "chordexabnt", "name": "Chordex ABNT", "family": "chordex", "thumb": "docs/1_warm_pad.png",
+     "video": "https://www.youtube.com/watch?v=Bey5HbIgDBo",
      "desc": {
          "en": "pads, ambient, leads and textures: 4 families × 8 presets, with MOTION instead of an arpeggiator",
          "es": "pads, ambient, leads y texturas: 4 familias × 8 presets, con MOVIMIENTO en lugar de arpegiador",
@@ -68,6 +71,7 @@ NORNS = [
          "zh": "铺底、氛围、主奏和纹理：4 个系列 × 8 个预设，用“运动”取代琶音器",
          "hi": "पैड, एंबिएंट, लीड और टेक्सचर: 4 परिवार × 8 प्रीसेट, आर्पेजिएटर की जगह मूवमेंट"}},
     {"repo": "chordexfilo", "name": "Chordex Filo", "family": "chordex", "thumb": "docs/1_modem.png",
+     "video": "https://www.youtube.com/watch?v=ByxeWkyR-qA",
      "desc": {
          "en": "broken lo-fi mono: one voice and a cloud of grains, with a FAILURE on K2 instead of an arpeggiator",
          "es": "mono lo-fi roto: una voz y una nube de granos, con FALLA en K2 en lugar de arpegiador",
@@ -77,6 +81,7 @@ NORNS = [
          "zh": "破碎的 lo-fi 单音：一个声部加一团颗粒云，K2 不是琶音器而是“故障”",
          "hi": "टूटा हुआ lo-fi मोनो: एक आवाज़ और ग्रेन का बादल, आर्पेजिएटर की जगह K2 पर ख़राबी"}},
     {"repo": "alto", "name": "alto", "family": None, "thumb": "docs/2_voices.png",
+     "video": "https://www.youtube.com/watch?v=DA8QANiuzZ8",
      "desc": {
          "en": "three-layer polyphonic synth with a 3-ring polyrhythmic sequencer; every page is a picture of the sound",
          "es": "sinte polifónico de tres capas con secuenciador polirrítmico de 3 anillos; cada página es un dibujo del sonido",
@@ -86,6 +91,7 @@ NORNS = [
          "zh": "三层复音合成器，配 3 环复节奏音序器；每一页都是声音的图像",
          "hi": "3 रिंग वाले पॉलीरिद्मिक सीक्वेंसर के साथ तीन परतों वाला पॉलीफ़ोनिक सिंथ; हर पेज ध्वनि का चित्र है"}},
     {"repo": "alan", "name": "alan", "family": None, "thumb": "docs/2_body.png",
+     "video": "https://www.youtube.com/watch?v=41DAt7QdH90",
      "desc": {
          "en": "a 3D body made of data where every limb is a drone voice: move it, orbit the camera and dissolve it into particles",
          "es": "un cuerpo en 3D hecho de datos donde cada parte es una voz de drone: movelo, girá la cámara y desintegralo en partículas",
@@ -103,7 +109,28 @@ NORNS = [
          "ja": "ひとりでに鳴る海：ヨット、クジラ、鳥が 3 つの声。波が音を選び、あなたは風を操る",
          "zh": "一片会自己演奏的海：帆船、鲸鱼和鸟是三个声部，海浪挑选音符，你来掌控风",
          "hi": "अपने आप बजता समंदर: नाव, व्हेल और चिड़िया तीन आवाज़ें हैं, लहरें सुर चुनती हैं और हवा आप चलाते हैं"}},
+    {"repo": "bixen", "name": "J. L. Bixen", "family": None, "github": False,
+     "video": "https://www.youtube.com/watch?v=zJLjUnmk3z8",
+     "desc": {
+         "en": "a poetry maker in 7 languages: each word is a note and each syllable a step, with exquisite corpse and a writer mode for MIDI keyboards",
+         "es": "un hacedor de poesía en 7 idiomas: cada palabra es una nota y cada sílaba un paso, con cadáver exquisito y modo writer para teclado MIDI",
+         "fr": "une machine à poésie en 7 langues : chaque mot est une note et chaque syllabe un pas, avec cadavre exquis et mode writer pour clavier MIDI",
+         "de": "ein Poesie-Generator in 7 Sprachen: jedes Wort ist ein Ton und jede Silbe ein Schritt, mit Cadavre exquis und Writer-Modus für MIDI-Keyboards",
+         "ja": "7 か国語の詩の生成器：単語ひとつが音、音節ひとつがステップ。優美な屍骸と MIDI キーボード用のライターモード付き",
+         "zh": "7 种语言的写诗机：每个词是一个音，每个音节是一步，带“精致的尸体”和 MIDI 键盘写作模式",
+         "hi": "7 भाषाओं में कविता बनाने वाला: हर शब्द एक सुर और हर अक्षर एक स्टेप, कैडेवर एक्सक्विज़ और MIDI कीबोर्ड के लिए राइटर मोड के साथ"}},
+    {"repo": "dandelions", "name": "Dandelions", "family": None, "github": False,
+     "video": "https://www.youtube.com/watch?v=qii29x8pOP0",
+     "desc": {
+         "en": "one blow, a thousand seeds: blow on a dandelion and every seed that flies is a note; freeze them in the air and move them around",
+         "es": "un soplido, mil semillas: soplás un diente de león y cada semilla que vuela es una nota; congelalas en el aire y movelas",
+         "fr": "un souffle, mille graines : soufflez sur un pissenlit et chaque graine qui s'envole est une note ; figez-les dans l'air et déplacez-les",
+         "de": "ein Hauch, tausend Samen: puste auf eine Pusteblume und jeder fliegende Samen ist ein Ton; friere sie in der Luft ein und verschiebe sie",
+         "ja": "ひと吹きで千の種：タンポポを吹くと、飛ぶ種のひとつひとつが音になる。空中で止めて動かせる",
+         "zh": "一口气，一千颗种子：吹一朵蒲公英，每颗飞起的种子都是一个音；让它们停在空中并移动它们",
+         "hi": "एक फूँक, हज़ार बीज: सिंहपर्णी पर फूँकें और उड़ता हर बीज एक सुर है; उन्हें हवा में रोकें और इधर-उधर करें"}},
     {"repo": "glitch", "name": "glitch", "family": None, "thumb": "docs/1_kit_a.png",
+     "video": "https://www.youtube.com/watch?v=262vTrbWUhY",
      "desc": {
          "en": "glitch and TV-static drum machine: 3 voices × 3 broken machines, probabilistic polymetric patterns, stutter and mutation",
          "es": "caja de ritmos de glitch y estática de TV: 3 voces × 3 máquinas rotas, patrones probabilísticos y polimétricos, stutter y mutación",
@@ -279,6 +306,7 @@ T = {
         "ja": "インストール不要：開いてすぐ使えます。",
         "zh": "无需安装：打开即可使用。",
         "hi": "कुछ इंस्टॉल नहीं करना: खोलें और बजाएँ।"},
+    "video": {"en": "video", "es": "video", "fr": "vidéo", "de": "Video", "ja": "動画", "zh": "视频", "hi": "वीडियो"},
     "code": {"en": "code", "es": "código", "fr": "code", "de": "Code", "ja": "コード", "zh": "代码", "hi": "कोड"},
     "footer": {
         "en": "This page keeps growing: new U-MA things are added as they come out.",

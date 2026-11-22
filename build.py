@@ -44,9 +44,18 @@ def install(repo):
 
 
 def norns_row(item, lang, width):
-    url = repo_url(item["repo"], lang)
-    img = f'<a href="{url}"><img src="{RAW}{item["repo"]}/main/{item["thumb"]}" width="{width}" alt="{item["name"]}"></a>'
-    text = f'**[{item["name"]}]({url})**<br>{item["desc"][lang]}<br>{install(item["repo"])}'
+    if item.get("github", True):
+        url = repo_url(item["repo"], lang)
+        thumb = f'{RAW}{item["repo"]}/main/{item["thumb"]}'
+        text = f'**[{item["name"]}]({url})**<br>{item["desc"][lang]}<br>{install(item["repo"])}'
+    else:
+        # sin repo publicado: se enlaza el video y se usa su miniatura de YouTube
+        url = item["video"]
+        thumb = f'https://img.youtube.com/vi/{url.split("v=")[1]}/hqdefault.jpg'
+        text = f'**[{item["name"]}]({url})**<br>{item["desc"][lang]}'
+    img = f'<a href="{url}"><img src="{thumb}" width="{width}" alt="{item["name"]}"></a>'
+    if item.get("video"):
+        text += f'<br>[▶ {T["video"][lang]}]({item["video"]})'
     return f"| {img} | {text} |"
 
 
@@ -123,6 +132,8 @@ def main():
             f.write(showcase(lang))
     changed = []
     for item in NORNS:
+        if not item.get("github", True):
+            continue
         if os.path.isdir(os.path.join(REPOS, item["repo"])):
             changed += update_repo(item)
         else:
