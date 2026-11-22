@@ -404,3 +404,5 @@ footer .ai-note{grid-column:1/-1;margin:0;padding-top:18px;border-top:1px solid 
   .car>.wrap{padding-block:22px 26px}
 }
 
+
+.vid{margin:-6px 14px 16px;cursor:pointer}.vid::after{content:"▶";color:var(--c)}
