@@ -23,6 +23,45 @@
 @media (max-width:760px){.top nav.tnav{grid-template-columns:repeat(5,minmax(0,1fr))}}
 .u-hero .h2l{max-width:none}
 .radio-cta{margin-top:clamp(24px,3vw,36px)}
+
+/* secciones abiertas, como en la página de Música: rótulo chico, título grande, bajada y contenido */
+#web,#instrumentos,#herramientas-norns,#diy{scroll-margin-top:68px}
+@media (max-width:760px){#web,#instrumentos,#herramientas-norns,#diy{scroll-margin-top:110px}}
+.sec .big+.lead{margin-top:14px}
+.u-lz{grid-template-columns:minmax(0,360px) minmax(0,1fr);margin-bottom:clamp(36px,5vw,56px)}
+.u-lz .lz-cover{height:auto;object-fit:cover;box-shadow:10px 10px 0 var(--c)}
+.u-lz .lead{max-width:62ch}
+@media (max-width:760px){.u-lz{grid-template-columns:minmax(0,1fr)}.u-lz .lz-cover{max-width:280px}}
+
+/* tarjetas: caja blanca con borde negro, como los temas y el gear de Música */
+.screens{grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(14px,1.8vw,22px);margin-top:clamp(24px,3vw,36px)}
+.filt+.screens{margin-top:0}
+@media (max-width:1060px){.screens{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:860px){.screens{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:560px){.screens{grid-template-columns:minmax(0,1fr)}}
+.diy-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+@media (max-width:860px){.diy-grid{grid-template-columns:minmax(0,1fr)}}
+.card{background:#fff;border:2px solid var(--ink);transition:transform .12s,box-shadow .12s}
+.card:hover{border-color:var(--ink);transform:translate(-2px,-2px);box-shadow:4px 4px 0 var(--ink)}
+.soon-card:hover{border-color:var(--ink);transform:none;box-shadow:none}
+.card .img,.card .oled{margin:0;border-bottom:2px solid var(--ink)}
+.card .meta{align-items:flex-start;padding:12px 14px 4px}
+.card h3{font:400 clamp(22px,1.9vw,26px)/1 var(--display);letter-spacing:.005em}
+.card .k{margin-top:5px;font:500 11px/1.2 var(--mono);letter-spacing:.05em}
+.card p{padding:8px 14px 14px;line-height:1.55}
+.inst-i{border-left:4px solid var(--c)}
+.lbtns .btn{border-width:2px}
+.lbtns .btn:not(.ghost){background:var(--c);color:var(--ink)}
+.lbtns .btn:not(.ghost) .arrow{color:var(--ink)}
+.lbtns .btn:not(.ghost):hover{filter:brightness(1.08)}
+.vid{align-self:flex-start;background:#fff;color:var(--ink)}
+.vid:hover{background:var(--c)}
+.vid::after{color:var(--ink)}
+.note{border-width:2px;box-shadow:6px 6px 0 var(--c)}
+.tools{margin-top:clamp(24px,3vw,36px)}
+.tools .info{align-self:center;padding:0 clamp(0px,1vw,12px) 0 0;background:none;border:0}
+.tools .info .lbl{display:block;font:700 13px/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--mag)}
+.tools .info h3{margin:12px 0 0;font:400 clamp(28px,2.8vw,40px)/.95 var(--display);text-transform:uppercase}
 </style>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -52,16 +91,16 @@
     </div>
   </section>
 
-  <!-- secciones de U-MA -->
-  <section class="panels" id="paneles">
+  <!-- HERRAMIENTAS WEB -->
+  <section class="sec" id="web" style="--c:var(--grn)">
     <div class="wrap">
-      <div class="tabs" id="umaTabs">
-        <div class="tp" id="web" role="tabpanel" aria-label="Herramientas web">
-          <div class="tp-h" style="--c:var(--grn)"><b>Herramientas web</b></div>
-      <h2 class="big" style="margin-bottom:clamp(24px,3vw,36px)">Aprendé, practicá y <span class="g">experimentá</span></h2>
-      <div class="lead-wrap">
-      <figure class="polaroid"><img src="../img/img-8196f1ef.webp" alt="Una de las web apps de U-MA abierta en un celular" width="480" height="480"><figcaption>Web apps</figcaption></figure>
-      <p class="lead">Una serie de recursos para entender, aprender y explorar el diseño sonoro y la síntesis de audio. Todas estas web apps corren en el navegador de tu iPhone, Android, Mac, PC o Linux, y las podés instalar como app. Guardan tus settings y presets, no recolectan datos personales y son de código abierto.</p>
+      <div class="lz u-lz">
+        <img class="lz-cover" src="../img/img-8196f1ef.webp" alt="Una de las web apps de U-MA abierta en un celular" width="480" height="480">
+        <div class="lz-t">
+          <div class="sh"><h2>Herramientas web</h2></div>
+          <h2 class="big">Aprendé, practicá y <span class="m">experimentá</span></h2>
+          <p class="lead">Una serie de recursos para entender, aprender y explorar el diseño sonoro y la síntesis de audio. Todas estas web apps corren en el navegador de tu iPhone, Android, Mac, PC o Linux, y las podés instalar como app. Guardan tus settings y presets, no recolectan datos personales y son de código abierto.</p>
+        </div>
       </div>
       <div class="filt" role="group" aria-label="Filtrar herramientas"><button type="button" data-f="all" aria-pressed="true">Todo</button><button type="button" data-f="seq" aria-pressed="false">Secuencias</button><button type="button" data-f="synth" aria-pressed="false">Síntesis</button><button type="button" data-f="piano" aria-pressed="false">Piano</button><button type="button" data-f="elec" aria-pressed="false">Electrónica</button><button type="button" data-f="code" aria-pressed="false">Programación</button></div>
       <div class="screens web-grid">
@@ -77,14 +116,19 @@
         <div class="card inst lcard" data-cat="synth" style="--c:var(--cya)"><a class="img" href="https://buenosairesfront.github.io/synthlab-2/" target="_blank" rel="noopener"><img src="../img/tool-synthlab-2.webp" alt="Captura de Una aproximación a las Síntesis" width="480" height="391" loading="lazy"></a><div class="meta"><div><h3>Una aproximación a las Síntesis</h3><div class="k">Síntesis</div></div></div><p>Un recorrido por las bases de todo esto. Es imprescindible que, aunque sea, «lo tengas visto»: acá hay un par de cositas visuales que te la hacen más asible.</p><div class="lbtns"><a class="btn sm" href="https://buenosairesfront.github.io/synthlab-2/" target="_blank" rel="noopener">Abrir <svg class="arrow"><use href="#ar"/></svg></a><a class="btn sm ghost" href="https://github.com/buenosairesfront/synthlab-2" target="_blank" rel="noopener">GitHub <svg class="arrow"><use href="#ar"/></svg></a></div></div>
       </div>
       <div class="note inst-note"><svg viewBox="0 0 34 34" fill="none" stroke="#0b0b0b" stroke-width="2"><rect x="4" y="6" width="26" height="20" rx="2"/><path d="M12 30h10M10 14l4 4 8-8" stroke="#f5007f" stroke-width="2.6"/></svg><div><p>Todos están en el GitHub de Buenos Aires Front. Se abren en el navegador, sin instalar nada; si querés, bajá el código desde cada repo.</p><a class="btn sm" href="https://github.com/buenosairesfront" target="_blank" rel="noopener">Ver todo en GitHub <svg class="arrow"><use href="#ar"/></svg></a></div></div>
-          <a class="back" href="#top"><span aria-hidden="true">↑</span> Volver arriba</a>
+    </div>
+  </section>
+
+  <!-- INSTRUMENTOS NORNS -->
+  <section class="sec" id="instrumentos" style="--c:var(--mag)">
+    <div class="wrap">
+      <div class="lz u-lz">
+        <img class="lz-cover" src="../img/img-9b4f95a9.webp" alt="norns shield DIY con carcasa naranja" width="365" height="384">
+        <div class="lz-t">
+          <div class="sh"><h2>Instrumentos norns</h2></div>
+          <h2 class="big">Scripts que <span class="m">suenan</span></h2>
+          <p class="lead">norns es un instrumento abierto creado por monome: un sinte mini con pantalla, tres perillas y tres botones que corre scripts escritos en Lua, con motores de sonido en SuperCollider. El norns shield es su versión DIY que se monta sobre una Raspberry Pi. Estos son los scripts que hago para él. Cada uno es un instrumento distinto, con su propio motor, pensado para tocar de verdad y meterle fantasía a tu sonido. También los encontrás en <a href="https://www.rackears.io/" target="_blank" rel="noopener">rackears.io</a> y <a href="https://norns.community" target="_blank" rel="noopener">norns.community</a>.</p>
         </div>
-        <div class="tp" id="instrumentos" role="tabpanel" aria-label="Instrumentos norns">
-          <div class="tp-h" style="--c:var(--mag)"><b>Instrumentos norns</b></div>
-      <h2 class="big">Scripts que <span class="y">suenan</span></h2>
-      <div class="lead-wrap">
-      <figure class="polaroid"><img src="../img/img-9b4f95a9.webp" alt="norns shield DIY con carcasa naranja" width="365" height="384"><figcaption>Norns Shield</figcaption></figure>
-      <p class="lead">norns es un instrumento abierto creado por monome: un sinte mini con pantalla, tres perillas y tres botones que corre scripts escritos en Lua, con motores de sonido en SuperCollider. El norns shield es su versión DIY que se monta sobre una Raspberry Pi. Estos son los scripts que hago para él. Cada uno es un instrumento distinto, con su propio motor, pensado para tocar de verdad y meterle fantasía a tu sonido. También los encontrás en <a href="https://www.rackears.io/" target="_blank" rel="noopener">rackears.io</a> y <a href="https://norns.community" target="_blank" rel="noopener">norns.community</a>.</p>
       </div>
       <div class="screens">
         <a class="card inst" href="https://github.com/buenosairesfront/chordex80" target="_blank" rel="noopener" style="--c:var(--mag)"><div class="oled"><img src="../img/img-4fe17681.png" alt="Pantalla de Chordex 80 en norns" width="512" height="256" loading="lazy"></div><div class="meta"><div><h3>Chordex 80</h3><div class="k">Polisynth · acordes</div></div><svg class="arrow"><use href="#ar"/></svg></div><p>Synth ochentoso, puede contener trazas de synthwave, dreamwave y Windows 3.1.</p><div class="inst-i"><span class="lbl">Instalar en maiden</span><code>;install https://github.com/buenosairesfront/chordex80</code></div><span class="btn sm vid" role="link" tabindex="0" data-v="https://www.youtube.com/watch?v=7JI673EX2nI">Ver video</span></a>
@@ -102,12 +146,17 @@
         <a class="card inst" href="https://www.youtube.com/watch?v=qii29x8pOP0" target="_blank" rel="noopener" style="--c:var(--mag)"><div class="oled"><img src="../img/oled-dandelions.png" alt="Pantalla de Dandelions en norns" width="512" height="256" loading="lazy"></div><div class="meta"><div><h3>Dandelions</h3><div class="k">Sinte · semillas</div></div><svg class="arrow"><use href="#ar"/></svg></div><p>Un soplido, mil semillas: cada semilla que vuela es una nota. Congelalas en el aire y movelas para cambiar la melodía y el brillo.</p></a>
       </div>
                 <div class="note inst-note"><svg viewBox="0 0 34 34" fill="none" stroke="#0b0b0b" stroke-width="2"><path d="M17 4v18M10 15l7 7 7-7" stroke="#f5007f" stroke-width="2.6"/><path d="M5 24v6h24v-6"/></svg><div><p>Todos están en el GitHub de Buenos Aires Front. Copiá el comando ;install en maiden y después reiniciá la norns para que compile el motor de sonido.</p><a class="btn sm" href="https://github.com/buenosairesfront" target="_blank" rel="noopener">Ver todo en GitHub <svg class="arrow"><use href="#ar"/></svg></a></div></div>
-          <div class="sub" id="herramientas-norns">
-            <div class="sh"><h2>Herramientas para norns</h2></div>
-      <h2 class="big" style="margin-bottom:clamp(28px,4vw,48px)">Diseñá tu <span class="m">script</span></h2>
+    </div>
+  </section>
+
+  <!-- HERRAMIENTAS PARA NORNS -->
+  <section class="sec" id="herramientas-norns" style="--c:var(--cya)">
+    <div class="wrap">
+      <div class="sh"><h2>Herramientas para norns</h2></div>
+      <h2 class="big">Diseñá tu <span class="m">script</span></h2>
       <div class="tools">
         <div class="info">
-          <span class="lbl" style="color:var(--dim)">Para quien programa norns</span>
+          <span class="lbl">Para quien programa norns</span>
           <h3>Buscá tu sonido, diseñá tu imagen</h3>
           <p>Explorá el sonido de tu instrumento con Norns Sound Creator, buscá elementos gráficos para darle rostro a tu proyecto con Norns Canvas y exportá el código listo para pegar en tu script. Todo desde el navegador, en Mac, PC y Linux o en tu Android o iPhone.</p>
         </div>
@@ -124,20 +173,19 @@
         <div class="lbtns"><a class="btn sm" href="https://buenosairesfront.github.io/nornssoundcreator/" target="_blank" rel="noopener">Abrir <svg class="arrow"><use href="#ar"/></svg></a><a class="btn sm ghost" href="https://github.com/buenosairesfront/nornssoundcreator" target="_blank" rel="noopener">GitHub <svg class="arrow"><use href="#ar"/></svg></a></div>
         </div>
       </div>
-          </div>
-          <a class="back" href="#top"><span aria-hidden="true">↑</span> Volver arriba</a>
-        </div>
-        <div class="tp" id="diy" role="tabpanel" aria-label="DIY">
-          <div class="tp-h" style="--c:var(--yel)"><b>DIY</b></div>
+    </div>
+  </section>
+
+  <!-- DIY -->
+  <section class="sec" id="diy" style="--c:var(--yel)">
+    <div class="wrap">
+      <div class="sh"><h2>DIY</h2></div>
       <h2 class="big">Hacé tus propios<br><span class="m">instrumentos</span></h2>
-      <p class="lead" style="margin-bottom:clamp(24px,3vw,36px)">Prototipos, sintes, módulos y cosas electrónicas</p>
+      <p class="lead">Prototipos, sintes, módulos y cosas electrónicas</p>
       <div class="screens diy-grid">
         <div class="card inst lcard soon-card" style="--c:var(--yel)"><div class="img"><img src="../img/img-95885ef9.webp" alt="Módulo rítmico de bajo rendimiento: perillas naranjas y llaves sobre el panel" width="640" height="583" loading="lazy" style="object-position:center 55%"><span class="stamp">Próximamente</span></div><div class="meta"><div><h3>Módulo rítmico de bajo rendimiento</h3><div class="k">DIY · CMOS</div></div></div><p>Una batería glitch construida a partir de un 40106 y un 4021.</p></div>
         <div class="card inst lcard soon-card" style="--c:var(--yel)"><div class="img"><img src="../img/img-efc315dd.webp" alt="Clon del Coron DS7: perillas violetas, roja y celeste sobre el panel negro" width="640" height="360" loading="lazy" style="object-position:center 45%"><span class="stamp">Próximamente</span></div><div class="meta"><div><h3>Coron DS7 clon</h3><div class="k">DIY · Clon</div></div></div><p>Un clon de esa pequeña bestia sobrada en versatilidad.</p></div>
         <div class="card inst lcard soon-card" style="--c:var(--yel)"><div class="img"><img src="../img/img-da89b210.webp" alt="Módulos Eurorack DIY: Logical, Clock Divider y Буран" width="640" height="583" loading="lazy" style="object-position:center 40%"><span class="stamp">Próximamente</span></div><div class="meta"><div><h3>Módulos</h3><div class="k">DIY · Eurorack</div></div></div><p>VCO, LFO, VCA, ADSR y más: todos proyectos DIY.</p></div>
-      </div>
-          <a class="back" href="#top"><span aria-hidden="true">↑</span> Volver arriba</a>
-        </div>
       </div>
     </div>
   </section>
