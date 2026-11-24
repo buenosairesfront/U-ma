@@ -580,7 +580,7 @@ const SND={
 const OL=document.querySelector("#ol span"),OS=$("os");
 let msgT;
 function oled(msg){if(msg){OL.textContent=msg;clearTimeout(msgT);msgT=setTimeout(()=>oled(),1800);return}
- OL.textContent=(playing?"Sonando: ":"Radio BAF · en pausa · ")+cap(TR[idx][0])+" · tocá para escuchar";OS.textContent="FM "+fq(idx)}
+ OL.textContent=(playing?"Sonando · ":"Radio BAF · en pausa · ")+cap(TR[idx][0])+" · tocá para escuchar";OS.textContent="FM "+fq(idx)}
 const NAME={kick:"Radio",stab:"Música",acid:"Gear",hat:"Links"};
 const PADS=$("pads"),SW=$("sw");let playMode=false;
 SW.onclick=()=>{playMode=!playMode;SW.setAttribute("aria-checked",playMode);PADS.classList.toggle("play",playMode);$("mp").classList.toggle("on",playMode);$("mb").classList.toggle("on",!playMode);oled(playMode?"Modo play · tocá los pads":"Modo button · links")};
@@ -769,7 +769,7 @@ function init(){
  const wrap=(s,max)=>{const out=[];let l="";for(const w of s.toUpperCase().split(" ")){const x=l?l+" "+w:w;if(sg.measureText(x).width>max&&l){out.push(l);l=w}else l=x}out.push(l);return out};
  const paint=()=>{sg.clearRect(0,0,640,800);sg.drawImage(vis,61,19,519,268);
   sg.fillStyle="#0b0b0b";sg.textAlign="center";sg.textBaseline="top";
-  sg.globalAlpha=.65;sg.font="700 20px JBM, monospace";sg.fillText("S O N A N D O",320,440);sg.globalAlpha=1;
+  sg.globalAlpha=.65;sg.font="700 20px JBM, monospace";{const so=window.I18N?I18N.t("SONANDO"):"SONANDO";sg.fillText(/[A-Z]/.test(so)?so.split("").join(" "):so,320,440)}sg.globalAlpha=1;
   sg.font="700 46px JBM, 'Courier New', monospace";let y=478;wrap(tn.textContent,330).forEach(l=>{sg.fillText(l,320,y);y+=50});
   sg.font="700 26px JBM, monospace";sg.fillText(tm.textContent,320,y+12);stx.needsUpdate=true};
  hp.classList.add("is3d");document.getElementById("rv").classList.add("is3d");
@@ -849,4 +849,5 @@ async function linksInit(){
   holder.rotation.set(.07+pitch,yaw,0);r.render(scene,cam)})(0);
 }
 </script>
+<script src="i18n.js"></script>
 </body></html>
