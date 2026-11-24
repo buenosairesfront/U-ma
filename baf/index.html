@@ -363,6 +363,13 @@ body{display:block;padding:0!important}
 .phone{width:100%;max-width:480px;margin:0 auto;border:0;border-radius:0;box-shadow:none}
 .phone::before{display:none}
 .scr{height:100vh;height:100dvh}
+/* ---- +1 punto en Inicio, Radio y Gear; nombre del equipo más separado de la foto ---- */
+.claim{font-size:20px}.tag{font-size:14px}.hc .lb,.mode{font-size:10px}.tools small{font-size:10px}.tools b{font-size:19px}.foot{font-size:11px}
+#rv .rv-top,#gv .rv-top{font-size:12px}#rv .tlh,#gv .tlh{font-size:11px}#rv .tl button,#gv .tl button{font-size:13px}#rv .tl .w,#gv .tl .w{font-size:10px}.dk-i a,.st{font-size:11px}
+.gsl p{font-size:14px}.gsl .mm{font-size:11px}.gl{font-size:11px}.gs{font-size:10px}
+.gsl b{font-size:29px;margin-top:18px}
+/* el carrusel toma el alto del equipo que se ve, así la lista queda a la vista */
+.gcar{align-items:flex-start;overflow-y:hidden;transition:height .25s ease}
 </style>
 <div class="phone"><div class="scr">
   <section class="hero">
@@ -688,7 +695,9 @@ function gplay(i){GS.forEach(d=>d.querySelector(".gs").textContent="");
  gau.play().then(gui).catch(()=>{GS[i].querySelector(".gs").textContent="Sin audio todavía";gui()})}
 gau.addEventListener("ended",gui);gau.addEventListener("pause",gui);
 gau.addEventListener("error",()=>{if(gcur>=0)GS[gcur].querySelector(".gs").textContent="Sin audio todavía";gui()});
-gcar.addEventListener("scroll",()=>{const i=Math.round(gcar.scrollLeft/gw());if(i!==gix){gix=i;gui()}},{passive:true});
+const gfit=()=>{const s=GS[gix];if(s&&s.offsetHeight)gcar.style.height=s.offsetHeight+"px"};
+gcar.addEventListener("scroll",()=>{const i=Math.round(gcar.scrollLeft/gw());if(i!==gix){gix=i;gui();gfit()}},{passive:true});
+addEventListener("resize",gfit);addEventListener("hashchange",()=>setTimeout(gfit,0));GS.forEach(d=>{const im=d.querySelector("img");if(im)im.addEventListener("load",gfit)});setTimeout(gfit,0);
 gui();
 setDial(FQ[0]);
 load(0);route();
