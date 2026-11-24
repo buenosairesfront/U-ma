@@ -589,7 +589,8 @@ document.querySelectorAll(".pad").forEach(p=>{
  const hit=e=>{e.preventDefault();flash();
   if(playMode){const c=ac();if(c)SND[p.dataset.s](c,c.currentTime+.01);return}
   if(p.dataset.s==="kick")setTimeout(()=>location.hash="radio",150);else if(p.dataset.s==="acid")setTimeout(()=>location.hash="gear",150);else if(p.dataset.s==="hat")setTimeout(()=>location.hash="links",150);else if(p.dataset.s==="stab")setTimeout(()=>location.hash="musica",150);else oled(NAME[p.dataset.s]+" · próximamente")};
- p.addEventListener("pointerdown",hit);p.addEventListener("click",e=>e.preventDefault());
+ /* modo PLAY: suena al apoyar el dedo. Modo BUTTON: abre solo con un toque completo, así al scrollear no se abre nada */
+ p.addEventListener("pointerdown",e=>{if(playMode)hit(e)});p.addEventListener("click",e=>{e.preventDefault();if(!playMode)hit(e)});
  p.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" ")hit(e)})});
 $("hplay").onclick=()=>playing?pause():play();
 /* medidor de la OLED y LEDs al ritmo de la radio */
