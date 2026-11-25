@@ -473,7 +473,7 @@ body{display:block;padding:0!important}
   <section class="gv" id="gv" hidden>
     <div class="rv-top"><a class="back" href="#inicio">← INICIO</a><span class="rtr"><span>GEAR</span><button class="rdot" type="button" aria-label="Encender la radio"><i></i>RADIO</button></span></div>
     <div class="gcar" id="gcar" aria-label="Equipos: deslizá de costado"></div>
-    <div class="tlh"><span>EQUIPOS · ESTUDIO</span><span>18</span></div>
+    <div class="tlh"><span>EQUIPOS · ESTUDIO</span><span>19</span></div>
     <ol class="tl" id="gtl"></ol>
   </section>
   <section class="lv" id="lv" hidden>
@@ -655,8 +655,8 @@ kd.addEventListener("wheel",e=>{e.preventDefault();if(!held)grab();turn(cur-e.de
 kd.addEventListener("keydown",e=>{const k=e.key;if(k==="ArrowUp"||k==="ArrowRight"){e.preventDefault();tuned=true;tune(idx+1,"step")}if(k==="ArrowDown"||k==="ArrowLeft"){e.preventDefault();tuned=true;tune(idx-1,"step")}});
 const FP=$("fp");setInterval(()=>FP.classList.toggle("on",playing||!!tuning),90);
 const PR=$("prende");let rAt=0,wasR=false;setInterval(()=>{const r=location.hash==="#radio";if(r&&!wasR)rAt=Date.now();wasR=r;PR.classList.toggle("show",r&&!playing&&!tuning&&Date.now()-rAt>500)},150);
-/* ---- Gear: 18 equipos. Para cargar cada uno: n (nombre), m (marca · modelo), t (texto), img (foto), snd (audio) y url ---- */
-const GEAR=Array.from({length:18},(_,i)=>{const k=String(i+1).padStart(2,"0");return{n:"Equipo "+k,m:"Marca · Modelo",t:"",img:"gear/g"+k+".webp",snd:"gear/g"+k+".mp3",url:"https://example.com/gear/"+k}});
+/* ---- Gear: 19 equipos. Para cargar cada uno: n (nombre), m (marca · modelo), t (texto), img (foto), snd (audio) y url ---- */
+const GEAR=Array.from({length:19},(_,i)=>{const k=String(i+1).padStart(2,"0");return{n:"Equipo "+k,m:"Marca · Modelo",t:"",img:"gear/g"+k+".webp",snd:"gear/g"+k+".mp3",url:"https://example.com/gear/"+k}});
 Object.assign(GEAR[0],{n:"MicroFreak",m:"Arturia · MicroFreak",url:"https://www.arturia.com/products/hardware-synths/microfreak/overview",lb:"SITIO OFICIAL EN ARTURIA",t:"Me gusta su versatilidad, sirve para tocar lead, para diseñar sonido, para experimentar con patch y la posibilidad de sumar sintes oficiales, me encanta. Lo elijo como Gear fijo, no tengo intenciones de venderlo"});
 Object.assign(GEAR[1],{n:"Norns Shield",m:"Monome · Norns Shield",url:"https://monome.org/docs/norns/shield/",h:'Lo vi en una review y no entendí qué era pero me destrozó la cabeza: algo que hace Sonido y no se entiende si jugas o tocas. Pedí una usada de Francia y al toque empecé a hacer sintes con vibe coding, están <a href="https://buenosairesfront.github.io/U-ma/baf/u-ma/#instrumentos" target="_blank" rel="noopener">acá</a>, si tenes una norns los podes instalar y darles duro'});
 Object.assign(GEAR[2],{n:"Bastl Kastle 2 Alchemist",m:"Bastl · Kastle 2 Alchemist",url:"https://bastl-instruments.com/instruments/kastle-2-alchemist",h:"Conocía de vista el Bdrum Kastle y me gustaba pero me parecía que todavía le faltaba un golpe de horno. Estaba en Tokyo y fui <a href=\"https://fiveg.net/\" target=\"_blank\" rel=\"noopener\">Five G</a>, ahi lo vi y lo pude, a duras penas, hacer sonar pero el concepto me pareció violento y es como pienso que los sintes deben ser, pequeños, baratos, versatiles y con actitud..."});
@@ -675,6 +675,7 @@ Object.assign(GEAR[14],{n:"NEKLOPS",m:"Ludotecnia · NEKLOPS",url:"https://www.j
 Object.assign(GEAR[15],{n:"MODULAR",m:"",h:"La primera vez que hice un sintetizador fuerte fue un VCO de <a href=\"https://www.birthofasynth.com/Thomas_Henry/Pages/VCO-1.html\" target=\"_blank\" rel=\"noopener\">THOMAS HENRY</a> en el taller <a href=\"https://www.instagram.com/tercerbrazoestudio/\" target=\"_blank\" rel=\"noopener\">Tercer Brazo</a> Del genio de Manu Osorio. Ese entendí mi finitud, cuando lo terminé pensé en las últimas líneas del peoma EL Golem de J.L.B pero no medetuve e hice unos 50 módulos, de los cuales uso unos 43. Muy duro de tocar, no sé si es falta precisión o que \"es asi\" pero no se pueden hacer largas cadenas porque el sonido se rompe, no obstante su sonido en general es el más hermoso que escuché en mi vida."});
 Object.assign(GEAR[16],{n:"Coron Ds-7",m:"Clon · Coron Ds-7",url:"http://m.bareille.free.fr/ds7clone/ds7.htm",h:'Lo armé en el taller de Manu Osorio, <a href="https://www.instagram.com/tercerbrazoestudio/" target="_blank" rel="noopener">tercerbrazo</a>. Entra en cualquier set, sonido ammmplio y súper versátil, le podés meter CV y Gate además del golpe. Lo armé en la carcasa de un módem viejo pero tengo otros 5 armados en el modular con distintos rangos.'});
 Object.assign(GEAR[17],{n:"KEYSTEP 37",m:"Arturia · KeyStep 37",url:"https://www.hispasonic.com/reviews/arturia-keystep-37-controlador-aumenta-opciones/45319",lb:"SITIO NO OFICIAL",t:"Por lejos, la mejor opción del mercado en su rango de $, transportable, acordes, sequencer, arpegiattor, hace lo que tiene que hacer por demas, aún no entiendo por qué no tiene función Hold, como el teclado del Microfreak????????"});
+Object.assign(GEAR[18],{n:"MODULO RITMICO DE BAJO RENDIMIENTO",m:"U-MA · MRBR V01",url:"https://buenosairesfront.github.io/U-ma/baf/u-ma/#diy",t:"purisimo sonido analógico, un ic cd4021 y un cd40106, un sonido único, que no se escucha mucho, con un random genial. Esta es la V01 de del MRBR, la v02 tiene potes para los 3 sonidos y es un poco mas liviana de perillas y potes."});
 const gau=new Audio();gau.preload="none";let gcur=-1,gix=0;
 const PLAY="M7 4v16l13-8z",PAUSE="M6 4h4v16H6zM14 4h4v16h-4z";
 const gcar=$("gcar"),gtl=$("gtl");
