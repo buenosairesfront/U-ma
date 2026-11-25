@@ -685,10 +685,13 @@ const GS=GEAR.map((e,i)=>{const d=document.createElement("article");d.className=
  d.querySelector(".gph").classList.add("fl");const im=d.querySelector("img");im.onload=()=>d.querySelector(".gph").classList.add("has");im.onerror=()=>im.remove();im.alt=e.n+" · "+e.m;im.src=e.img;
  d.querySelector("b").textContent=e.n;d.querySelector(".mm").textContent=e.m;const tx=d.querySelector("p");if(e.h)tx.innerHTML=e.h;else if(e.t)tx.textContent=e.t;else tx.remove();
  const a=d.querySelector(".gl");a.href=e.url;if(e.lb)a.textContent=e.lb+" ↗";a.setAttribute("aria-label","Link de referencia de "+e.n);
- const b=d.querySelector(".gp");b.onclick=()=>gplay(i);gcar.appendChild(d);
+ const b=d.querySelector(".gp");b.onclick=()=>gplay(i);
  const li=document.createElement("li");li.innerHTML=`<button type="button"><span class="i">${k}</span><span></span><span class="w"></span></button>`;
  li.querySelector("span:nth-child(2)").textContent=e.n;li.querySelector(".w").textContent=e.m.split(" · ")[0].toUpperCase();
- li.firstChild.onclick=()=>{gcar.scrollTo({left:i*gw(),behavior:"smooth"});scr.scrollTo({top:0,behavior:"smooth"})};gtl.appendChild(li);return d});
+ li.firstChild.onclick=()=>{gcar.scrollTo({left:GPOS[i]*gw(),behavior:"smooth"});scr.scrollTo({top:0,behavior:"smooth"})};gtl.appendChild(li);return d});
+/* tarjetas en orden random en cada visita; la lista de abajo queda fija */
+const GORD=GS.map((_,i)=>i);for(let j=GORD.length-1;j>0;j--){const r=Math.floor(Math.random()*(j+1));[GORD[j],GORD[r]]=[GORD[r],GORD[j]]}
+const GPOS=[];GORD.forEach((g,p)=>{GPOS[g]=p;gcar.appendChild(GS[g])});gix=GORD[0];
 /* zoom de cada equipo: barrita + arrastrar con el dedo cuando está ampliado */
 GS.forEach(g=>{const ph=g.querySelector(".gph.fl"),im=ph&&ph.querySelector("img");if(!im)return;
  const zr=document.createElement("input");Object.assign(zr,{type:"range",min:"1",max:"6",step:"0.01",value:"1",className:"gz"});zr.setAttribute("aria-label","Zoom de la foto");ph.appendChild(zr);
@@ -709,7 +712,7 @@ function gplay(i){GS.forEach(d=>d.querySelector(".gs").textContent="");
 gau.addEventListener("ended",gui);gau.addEventListener("pause",gui);
 gau.addEventListener("error",()=>{if(gcur>=0)GS[gcur].querySelector(".gs").textContent="Sin audio todavía";gui()});
 const gfit=()=>{const s=GS[gix];if(s&&s.offsetHeight)gcar.style.height=s.offsetHeight+"px"};
-gcar.addEventListener("scroll",()=>{const i=Math.round(gcar.scrollLeft/gw());if(i!==gix){gix=i;gui();gfit()}},{passive:true});
+gcar.addEventListener("scroll",()=>{const i=GORD[Math.round(gcar.scrollLeft/gw())];if(i!==gix){gix=i;gui();gfit()}},{passive:true});
 addEventListener("resize",gfit);addEventListener("hashchange",()=>setTimeout(gfit,0));GS.forEach(d=>{const im=d.querySelector("img");if(im)im.addEventListener("load",gfit)});setTimeout(gfit,0);
 gui();
 setDial(FQ[0]);
