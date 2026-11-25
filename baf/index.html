@@ -97,6 +97,12 @@ body{margin:0;background:var(--bg);font-family:JBM,ui-monospace,monospace;color:
 .gp:focus-visible,.gl:focus-visible,.gv .tl button:focus-visible{outline:3px solid var(--mag);outline-offset:2px}
 .gl{font-size:10px;letter-spacing:.06em;color:#fff;background:var(--ink);text-decoration:none;padding:6px 10px;border-radius:10px;white-space:nowrap}
 .gs{font-size:9px;font-weight:700;color:var(--mag)}
+/* zoom separado de la foto + botón grande ESCUCHALO */
+.gph img{height:calc(100% - 34px)}
+.gz{bottom:2px}
+.gr{flex-wrap:wrap;margin-top:8px}
+.gp{width:auto;height:50px;border-radius:25px;padding:0 22px 0 18px;display:flex;align-items:center;gap:10px;font:700 13px/1 JBM,"Courier New",monospace;letter-spacing:.12em}
+.gp svg{width:18px;height:18px}
 .gv .tl .on{color:var(--yel)}
 /* ---- vista Links: LINKS en 3D arriba + cuatro pads ---- */
 .scr.is-links{background:var(--grn)}
@@ -681,7 +687,7 @@ const PLAY="M7 4v16l13-8z",PAUSE="M6 4h4v16H6zM14 4h4v16h-4z";
 const gcar=$("gcar"),gtl=$("gtl");
 const gw=()=>Math.max(1,gcar.firstElementChild?gcar.firstElementChild.offsetWidth:gcar.clientWidth);
 const GS=GEAR.map((e,i)=>{const d=document.createElement("article");d.className="gsl";const k=String(i+1).padStart(2,"0");d.setAttribute("aria-label",k+" de "+GEAR.length+": "+e.n);
- d.innerHTML=`<div class="gph"><span>FOTO ${k}</span><img alt=""></div><b></b><span class="mm"></span><p></p><div class="gr"><button type="button" class="gp"><svg viewBox="0 0 24 24"><path d="${PLAY}"/></svg></button><a class="gl" target="_blank" rel="noopener">SITIO OFICIAL ↗</a><span class="gs"></span></div>`;
+ d.innerHTML=`<div class="gph"><span>FOTO ${k}</span><img alt=""></div><b></b><span class="mm"></span><p></p><div class="gr"><button type="button" class="gp"><svg viewBox="0 0 24 24"><path d="${PLAY}"/></svg><span>ESCUCHALO</span></button><a class="gl" target="_blank" rel="noopener">SITIO OFICIAL ↗</a><span class="gs"></span></div>`;
  d.querySelector(".gph").classList.add("fl");const im=d.querySelector("img");im.onload=()=>d.querySelector(".gph").classList.add("has");im.onerror=()=>im.remove();im.alt=e.n+" · "+e.m;im.src=e.img;
  d.querySelector("b").textContent=e.n;d.querySelector(".mm").textContent=e.m;const tx=d.querySelector("p");if(e.h)tx.innerHTML=e.h;else if(e.t)tx.textContent=e.t;else tx.remove();
  const a=d.querySelector(".gl");a.href=e.url;if(e.lb)a.textContent=e.lb+" ↗";a.setAttribute("aria-label","Link de referencia de "+e.n);
