@@ -677,7 +677,7 @@ const PLAY="M7 4v16l13-8z",PAUSE="M6 4h4v16H6zM14 4h4v16h-4z";
 const gcar=$("gcar"),gtl=$("gtl");
 const gw=()=>Math.max(1,gcar.firstElementChild?gcar.firstElementChild.offsetWidth:gcar.clientWidth);
 const GS=GEAR.map((e,i)=>{const d=document.createElement("article");d.className="gsl";const k=String(i+1).padStart(2,"0");d.setAttribute("aria-label",k+" de 17: "+e.n);
- d.innerHTML=`<div class="gph"><span>FOTO ${k}</span><img alt=""></div><b></b><span class="mm"></span><p></p><div class="gr"><button type="button" class="gp"><svg viewBox="0 0 24 24"><path d="${PLAY}"/></svg></button><a class="gl" target="_blank" rel="noopener">LINK ${i+1} ↗</a><span class="gs"></span></div>`;
+ d.innerHTML=`<div class="gph"><span>FOTO ${k}</span><img alt=""></div><b></b><span class="mm"></span><p></p><div class="gr"><button type="button" class="gp"><svg viewBox="0 0 24 24"><path d="${PLAY}"/></svg></button><a class="gl" target="_blank" rel="noopener">SITIO OFICIAL ↗</a><span class="gs"></span></div>`;
  d.querySelector(".gph").classList.add("fl");const im=d.querySelector("img");im.onload=()=>d.querySelector(".gph").classList.add("has");im.onerror=()=>im.remove();im.alt=e.n+" · "+e.m;im.src=e.img;
  d.querySelector("b").textContent=e.n;d.querySelector(".mm").textContent=e.m;const tx=d.querySelector("p");if(e.h)tx.innerHTML=e.h;else if(e.t)tx.textContent=e.t;else tx.remove();
  const a=d.querySelector(".gl");a.href=e.url;a.setAttribute("aria-label","Link de referencia de "+e.n);
