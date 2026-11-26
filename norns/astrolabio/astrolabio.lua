@@ -295,7 +295,7 @@ local function dibujar_pozo(fx, fy)
   local halos = math.floor(params:get("mezcla") * 3 + 0.5)
   for h = halos, 1, -1 do
     screen.level(cong and (3 + h) or h)
-    screen.circle(fx, fy, rad + h * 3)
+    screen.circle(fx, fy, rad + h * 2)
     screen.stroke()
   end
   screen.level(0)
@@ -340,14 +340,6 @@ function redraw()
   ajustar(e, w)
   local fx, fy = aPantalla(0, 0)
 
-  -- orbita punteada
-  screen.level(2)
-  for i = 0, 95, 2 do
-    local x, y = aPantalla(punto(i / 96 * TAU, e, w))
-    screen.pixel(math.floor(x), math.floor(y))
-    screen.fill()
-  end
-
   -- radio vector (barre areas iguales en tiempos iguales)
   local cx, cy = aPantalla(punto(nu + w, e, w))
   screen.level(1)
@@ -357,13 +349,13 @@ function redraw()
 
   dibujar_pozo(fx, fy)
 
-  -- estrellas (notas)
+  -- estrellas (notas): ellas mismas dibujan la orbita
   local K = #notas
   for s = 0, S - 1 do
     local x, y = aPantalla(punto(s / S * TAU, e, w))
     x, y = math.floor(x), math.floor(y)
     local idx = nota_de(s)
-    local base = 2 + math.floor((idx - 1) / math.max(1, K - 1) * 6)
+    local base = 3 + math.floor((idx - 1) / math.max(1, K - 1) * 9)
     local d = destellos[s + 1] or 0
     if d > base then
       screen.level(d)
