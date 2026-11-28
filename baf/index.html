@@ -516,7 +516,7 @@ let ui=function(){const t=TR[idx],w=W[t[1]];$("tn").textContent=cap(t[0]);$("tw"
  [...tl.children].forEach((li,i)=>li.firstChild.classList.toggle("on",i===idx));
  $("pi").setAttribute("d",playing?"M6 4h4v16H6zM14 4h4v16h-4z":"M7 4v16l13-8z");$("play").setAttribute("aria-label",playing?"Pausar":"Reproducir");
  $("live").classList.toggle("off",!playing);$("live").textContent=playing?"● EN EL AIRE":"● RADIO BAF"}
-function load(i){idx=(i+TR.length)%TR.length;au.src="radio/r"+String(idx+1).padStart(2,"0")+".mp3";$("st").textContent="";ui()}
+function load(i){idx=(i+TR.length)%TR.length;au.loop=false;au.src="radio/r"+String(idx+1).padStart(2,"0")+".mp3";$("st").textContent="";ui()}
 function graph(){if(ctx)return;try{ctx=new (window.AudioContext||window.webkitAudioContext)();const s=ctx.createMediaElementSource(au);filt=ctx.createBiquadFilter();filt.type="lowpass";filt.Q.value=4;gain=ctx.createGain();an=ctx.createAnalyser();an.fftSize=128;buf=new Uint8Array(an.frequencyBinCount);mg=ctx.createGain();s.connect(mg);mg.connect(filt).connect(gain).connect(an).connect(ctx.destination);apply()}catch(e){ctx=null}}
 function apply(){if(gain)gain.gain.value=val.vol;else au.volume=val.vol;if(filt)filt.frequency.value=200*Math.pow(90,val.cut)}
 function play(){graph();if(ctx&&ctx.state==="suspended")ctx.resume();au.play().then(()=>{playing=true;ui()}).catch(()=>{playing=false;$("st").textContent="No se pudo reproducir";ui()})}
@@ -524,7 +524,23 @@ function pause(){au.pause();playing=false;ui()}
 $("play").onclick=()=>playing?pause():play();
 $("prev").onclick=()=>{load(idx-1);if(playing)play()};
 $("next").onclick=()=>{load(idx+1);if(playing)play()};
-au.addEventListener("ended",()=>tune(idx+1,"gap"));
+/* sonidos de la radio (radio/c01…c11): siempre suenan 1 o 2 (nunca más de 2 seguidos)
+   - el tema termina solo: tema → sonidos → interferencia → tema siguiente
+   - PREV/NEXT/SCAN: interferencia → sonidos → tema (si se vuelve a tocar en medio de un sonido, va directo al tema)
+   - dial: mientras se gira, entre estación y estación suenan de fondo, mezclados con la estática */
+const CLIPS=Array.from({length:11},(_,i)=>"radio/c"+String(i+1).padStart(2,"0")+".mp3");let clipBag=[],lastClip="",brk=0,brkWait=false,brkT,brkAfter=null,brkNext=0,dialGap=-1;
+function pickClip(){if(!clipBag.length){clipBag=CLIPS.slice();for(let i=clipBag.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[clipBag[i],clipBag[j]]=[clipBag[j],clipBag[i]]}if(clipBag[0]===lastClip)clipBag.push(clipBag.shift())}return lastClip=clipBag.shift()}
+const clipCount=()=>Math.random()<.6?1:2;
+function cancelBreak(){clearTimeout(brkT);brk=0;brkWait=false;brkAfter=null}
+function endBreak(){const f=brkAfter;cancelBreak();if(f)f()}
+function playClip(){brkWait=false;au.loop=false;au.src=pickClip();T(mg&&mg.gain,1,.05);$("st").textContent="";au.play().then(()=>{if(brk>0){playing=true;ui()}}).catch(()=>{if(brk>0)endBreak()})}
+/* un silencio corto antes de cada sonido (con la pantalla apagada va directo, porque ahí los temporizadores se frenan) */
+function queueClip(ms){if(document.hidden)playClip();else{brkWait=true;brkT=setTimeout(playClip,ms)}}
+function startBreak(n,next,after,ms){brk=n;brkNext=next;brkAfter=after;queueClip(ms)}
+au.addEventListener("ended",()=>{if(brk>0){if(--brk>0)return queueClip(150+Math.random()*250);return endBreak()}const nx=idx+1;startBreak(clipCount(),nx,()=>tune(nx,"gap"),350+Math.random()*500)});
+/* dial: al cruzar cada estación cambia el sonido de fondo; suena más cuanto más lejos de una estación */
+function dialMix(f){if(!held||!ctx)return;const gp=FQ.filter(q=>q<f).length;if(gp!==dialGap){dialGap=gp;au.loop=true;au.src=pickClip();au.play().catch(()=>{})}
+ const near=Math.min(...FQ.map(q=>Math.abs(q-f)));T(mg&&mg.gain,.55*Math.max(0,Math.min(1,(near-.15)/.35)),.05)}
 au.addEventListener("waiting",()=>$("st").textContent="Cargando…");
 au.addEventListener("playing",()=>$("st").textContent="");
 au.addEventListener("timeupdate",()=>{const s=au.currentTime|0;$("tm").textContent=(s/60|0)+":"+String(s%60).padStart(2,"0")});
@@ -624,7 +640,7 @@ function setDial(f){cur=f;$("needle").style.left=((f-F0)/FS*100)+"%";$("fq").tex
  const kd=$("kdial");kd.style.setProperty("--r",(-135+270*(f-F0)/FS)+"deg");kd.setAttribute("aria-valuenow",f.toFixed(1));kd.setAttribute("aria-valuetext","FM "+f.toFixed(1))}
 function air(f){if(!nbp)return;nbp.frequency.setTargetAtTime(500+Math.abs(Math.sin(f*6.3))*3200,ctx.currentTime,.02);
  const near=Math.min(...FQ.map(q=>Math.abs(q-f)));wg.gain.setTargetAtTime(near<.3?.045*(1-near/.3):0,ctx.currentTime,.02);whis.frequency.setTargetAtTime(250+near*9000,ctx.currentTime,.02)}
-function tune(i,mode){on=true;i=(i+TR.length)%TR.length;graph();if(ctx&&ctx.state==="suspended")ctx.resume();noise();
+function tune(i,mode){const skip=brk>0;cancelBreak();on=true;i=(i+TR.length)%TR.length;graph();if(ctx&&ctx.state==="suspended")ctx.resume();noise();
  const tok={},from=cur,dur=mode==="scan"?900+Math.random()*400:mode==="step"?700:mode==="gap"?1100:mode==="snap"?350:1000,t0=performance.now();tuning=tok;
  let span=FQ[i]-from;if(mode==="scan"&&span<=.05)span+=FS;
  au.pause();T(mg&&mg.gain,0,.02);T(ng&&ng.gain,mode==="gap"?.3:.45,.04);$("scan").classList.toggle("on",mode==="scan");
@@ -632,16 +648,19 @@ function tune(i,mode){on=true;i=(i+TR.length)%TR.length;graph();if(ctx&&ctx.stat
  (function step(now){if(tuning!==tok)return;const k=Math.min(1,(now-t0)/dur),e=mode==="scan"?k:1-Math.pow(1-k,3);
   let f=from+span*e;if(f>F1)f-=FS;setDial(f);
   air(f);
-  if(k<1)return requestAnimationFrame(step);T(wg&&wg.gain,0);arrive(i,tok,mode)})(t0)}
-function arrive(i,tok,mode){load(i);setDial(FQ[i]);$("st").textContent="Sintonizando…";
+  if(k<1)return requestAnimationFrame(step);T(wg&&wg.gain,0);arrive(i,tok,mode,skip)})(t0)}
+function arrive(i,tok,mode,skip){
+ if(!skip&&(mode==="step"||mode==="scan")){load(i);setDial(FQ[i]);tuning=false;playing=true;$("scan").classList.remove("on");T(ng&&ng.gain,.06,.3);
+  return startBreak(clipCount(),i,()=>{const t2={};tuning=t2;au.pause();T(mg&&mg.gain,0,.02);T(ng&&ng.gain,.3,.04);setTimeout(()=>{if(tuning===t2)arrive(i,t2,mode,true)},350)},0)}
+ load(i);setDial(FQ[i]);$("st").textContent="Sintonizando…";
  const go=()=>{if(tuning!==tok)return;if(mode!=="gap"&&isFinite(au.duration))au.currentTime=au.duration*(.1+Math.random()*.5);
   au.play().then(()=>{if(tuning!==tok)return;fails=0;tuning=false;playing=true;$("scan").classList.remove("on");T(mg&&mg.gain,1,.12);T(ng&&ng.gain,.022,.3);$("st").textContent="";ui()})
    .catch(e=>{if(tuning!==tok)return;if((e&&e.name==="NotAllowedError")||++fails>=TR.length){fails=0;on=false;tuning=false;$("scan").classList.remove("on");$("st").textContent="No se pudo sintonizar";ui()}else tune(i+1,"gap")})};
  au.addEventListener("loadedmetadata",go,{once:true});au.load()}
-function off(){on=false;fails=0;tuning=false;au.pause();playing=false;T(ng&&ng.gain,0,.05);$("scan").classList.remove("on");ui()}
+function off(){if(brk>0){const n=brkNext;cancelBreak();load(n)}on=false;fails=0;tuning=false;au.pause();playing=false;T(ng&&ng.gain,0,.05);$("scan").classList.remove("on");ui()}
 let tuned=false,on=false,fails=0;
 /* si un tema falla o se corta, pasa al siguiente: la radio solo se apaga con POWER */
-au.addEventListener("error",()=>{if(!on)return;if(++fails>=TR.length){off();$("st").textContent="No se pudo sintonizar";return}tune(idx+1,"gap")});
+au.addEventListener("error",()=>{if(!on||held)return;if(brk>0)return endBreak();if(++fails>=TR.length){off();$("st").textContent="No se pudo sintonizar";return}tune(idx+1,"gap")});
 au.addEventListener("pause",()=>{if(on&&!tuning&&!au.ended&&playing)setTimeout(()=>{if(on&&!tuning&&au.paused&&!au.ended)au.play().catch(()=>{})},400)});
 function power(){if(playing||tuning)return off();if(!tuned){tuned=true;return tune(idx,"pick")}on=true;play();T(ng&&ng.gain,.022,.3)}
 $("play").onclick=power;$("hplay").onclick=power;
@@ -651,10 +670,10 @@ $("scan").onclick=()=>{tuned=true;tune(idx+1+Math.floor(Math.random()*(TR.length
 /* perilla del dial: girar para recorrer la banda; al soltar engancha la estación más cercana */
 const kd=$("kdial");let px=null,py,pf,moved=false,wt,held=false;
 const nearest=f=>FQ.reduce((b,q,j)=>Math.abs(q-f)<Math.abs(FQ[b]-f)?j:b,0);
-function grab(){on=true;held=true;tuned=true;graph();if(ctx&&ctx.state==="suspended")ctx.resume();noise();tuning={};au.pause();playing=false;
+function grab(){cancelBreak();dialGap=-1;on=true;held=true;tuned=true;graph();if(ctx&&ctx.state==="suspended")ctx.resume();noise();tuning={};au.pause();playing=false;
  T(mg&&mg.gain,0,.02);T(ng&&ng.gain,.45,.04);$("scan").classList.remove("on");$("st").textContent="Sintonizando…";ui();$("live").textContent="● SINTONIZANDO";$("live").classList.remove("off")}
-function turn(f){f=Math.min(F1,Math.max(F0,f));setDial(f);air(f)}
-function release(){held=false;T(wg&&wg.gain,0);tune(nearest(cur),"snap")}
+function turn(f){f=Math.min(F1,Math.max(F0,f));setDial(f);air(f);dialMix(f)}
+function release(){held=false;dialGap=-1;T(wg&&wg.gain,0);tune(nearest(cur),"snap")}
 kd.addEventListener("pointerdown",e=>{px=e.clientX;py=e.clientY;pf=cur;moved=false;kd.setPointerCapture(e.pointerId)});
 kd.addEventListener("pointermove",e=>{if(px==null)return;const d=(e.clientX-px)-(e.clientY-py);
  if(!moved){if(Math.abs(d)<4)return;moved=true;grab()}turn(pf+d/20)});
